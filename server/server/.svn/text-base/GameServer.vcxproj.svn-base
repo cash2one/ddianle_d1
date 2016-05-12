@@ -1,0 +1,799 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{066F6E90-1992-45E9-BF0B-35E53015AA9A}</ProjectGuid>
+    <RootNamespace>GameServer</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\debug\gameserver\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_GAME_SERVER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ForceConformanceInForLoopScope>false</ForceConformanceInForLoopScope>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <ShowIncludes>false</ShowIncludes>
+      <DisableSpecificWarnings>4350;4365;4514;4710;4820;4640;4100;4127;4996</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/NODEFAULTLIB:msvcrt.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>lua5.1.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>./$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>../lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>./$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_GAME_SERVER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>lua5.1.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>./$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>../lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="achievement\GameMsg_C2S_AchievementGetReward.cpp" />
+    <ClCompile Include="achievement\GameMsg_C2S_GetAchievementList.cpp" />
+    <ClCompile Include="achievement\GameMsg_S2C_AchievementCompleted.cpp" />
+    <ClCompile Include="achievement\GameMsg_S2C_AchievementGetRewardResult.cpp" />
+    <ClCompile Include="achievement\GameMsg_S2C_GetAchievementList.cpp" />
+    <ClCompile Include="activeness\ActivenessComponent.cpp" />
+    <ClCompile Include="activeness\ActivenessDataManager.cpp" />
+    <ClCompile Include="activeness\ActivenessService.cpp" />
+    <ClCompile Include="activeness\GameMsg_Activeness.cpp" />
+    <ClCompile Include="activity\BuyItemGotMedalMgr.cpp" />
+    <ClCompile Include="activity\CumulativeSpendActivity.cpp" />
+    <ClCompile Include="activity\CumulativeSpendMgr.cpp" />
+    <ClCompile Include="activity\EffectStoneExchange\EffectStoneExchangeManager.cpp" />
+    <ClCompile Include="activity\GameMsg_Activity.cpp" />
+    <ClCompile Include="activity\GameMsg_C2S_GetGift.cpp" />
+    <ClCompile Include="activity\GameMsg_LevelUpReward.cpp" />
+    <ClCompile Include="activity\GameMsg_S2C_GetGiftResult.cpp" />
+    <ClCompile Include="activity\GameMsg_S2C_InTimeOnlineReward.cpp" />
+    <ClCompile Include="activity\GameMsg_S2C_SendGift.cpp" />
+    <ClCompile Include="activity\GameMsg_S2C_UpdateExtraExpActivityState.cpp" />
+    <ClCompile Include="activity\GameMsg_S2C_UpdateGiftInfo.cpp" />
+    <ClCompile Include="activity\LongactingCumulativeRechareMgr.cpp" />
+    <ClCompile Include="activity\ProprietaryActivity.cpp" />
+    <ClCompile Include="activity\MallShareMgr.cpp" />
+    <ClCompile Include="activity\RedEnvelope\GameMsg_CS_RedEnvelope.cpp" />
+    <ClCompile Include="activity\RedEnvelope\RedEnvelopeActivityManager.cpp" />
+    <ClCompile Include="activity\SocialShareActivity.cpp" />
+    <ClCompile Include="AmuseRoom\GameMsg_C2S_AmuseMsg.cpp" />
+    <ClCompile Include="AmuseRoom\GameMsg_S2C_AmuseMsg.cpp" />
+    <ClCompile Include="AmuseRoom\GameMsg_TimeEggMsg.cpp" />
+    <ClCompile Include="anti-addiction\GameMsg_S2C_AntiAddiction.cpp" />
+    <ClCompile Include="attribute\EntityAttributeComponent.cpp" />
+    <ClCompile Include="attribute\GameAttributeManager.cpp" />
+    <ClCompile Include="attribute\GameMsg_C2S_ChangeBirthday.cpp" />
+    <ClCompile Include="attribute\GameMsg_C2S_ChangeRoleName.cpp" />
+    <ClCompile Include="attribute\GameMsg_C2S_ChangeRoleSignature.cpp" />
+    <ClCompile Include="attribute\GameMsg_CompleteGuide.cpp" />
+    <ClCompile Include="attribute\GameMsg_S2C_ChangeBirthdayRes.cpp" />
+    <ClCompile Include="attribute\GameMsg_S2C_ChangeRoleNameResult.cpp" />
+    <ClCompile Include="attribute\GameMsg_S2C_ChangeRoleSignatureResult.cpp" />
+    <ClCompile Include="attribute\GameMsg_S2C_RoleAttrbuteChange.cpp" />
+    <ClCompile Include="attribute\guidereward.cpp" />
+    <ClCompile Include="bet\MagicArray\GameMsg_CS_MagicLuckDraw.cpp" />
+    <ClCompile Include="bet\MagicArray\MagicArrayDataManager.cpp" />
+    <ClCompile Include="bet\MagicArray\MagicArrayManager.cpp" />
+    <ClCompile Include="box\DynamicBoxInfoManager.cpp" />
+    <ClCompile Include="activity\SocialShareMgr.cpp" />
+    <ClCompile Include="activity\TimeRanges.cpp" />
+    <ClCompile Include="CeremonyRoom\ceremonyRoom.cpp" />
+    <ClCompile Include="CeremonyRoom\ceremonyRoomManager.cpp" />
+    <ClCompile Include="CeremonyRoom\GameMsg_CeremonyRoomSC.cpp" />
+    <ClCompile Include="chat\GameMsg_C2S_Chat.cpp" />
+    <ClCompile Include="chat\GameMsg_S2C_Chat.cpp" />
+    <ClCompile Include="chat\GameMsg_S2C_Chat_Private2Self.cpp" />
+    <ClCompile Include="CheckIn\GameMsg_C2S_Check.cpp" />
+    <ClCompile Include="CheckIn\GameMsg_C2S_GetCheckInInfo.cpp" />
+    <ClCompile Include="CheckIn\GameMsg_S2C_CheckResult.cpp" />
+    <ClCompile Include="CheckIn\GameMsg_S2C_GetCheckInInfoResult.cpp" />
+    <ClCompile Include="compensation\CompensationComponent.cpp" />
+    <ClCompile Include="compensation\GameMsg_S2C_NewCompensation.cpp" />
+    <ClCompile Include="Couple\DivorceAgreement.cpp" />
+    <ClCompile Include="Couple\GameMsg_C2S_Couple.cpp" />
+    <ClCompile Include="Couple\GameMsg_S2C_Couple.cpp" />
+    <ClCompile Include="dancegroup\DanceGroupChallengeManager.cpp" />
+    <ClCompile Include="dancegroup\EntityBigMama.cpp" />
+    <ClCompile Include="dancegroup\EntityDanceGroupComponent.cpp" />
+    <ClCompile Include="dancegroup\GameMsg_BigMama.cpp" />
+    <ClCompile Include="dancegroup\GameMsg_C2S_DanceGroupChallenge.cpp" />
+    <ClCompile Include="dancegroup\GameMsg_S2C_DanceGroupChallenge.cpp" />
+    <ClCompile Include="Dungeon\Dungeon.cpp" />
+    <ClCompile Include="Dungeon\DungeonDataMgr.cpp" />
+    <ClCompile Include="Dungeon\DungeonDefine.cpp" />
+    <ClCompile Include="Dungeon\DungeonMgr.cpp" />
+    <ClCompile Include="Dungeon\EntityDungeonComponent.cpp" />
+    <ClCompile Include="Dungeon\GameMsg_Dungeon.cpp" />
+    <ClCompile Include="friend\GameMsg_C2S_Friend.cpp" />
+    <ClCompile Include="friend\GameMsg_S2C_Friend.cpp" />
+    <ClCompile Include="Handbook\EntityHandbookComponent.cpp" />
+    <ClCompile Include="Handbook\HandbookCfg.cpp" />
+    <ClCompile Include="Horse\EntityHorseComponent.cpp" />
+    <ClCompile Include="Horse\HorseCfg.cpp" />
+    <ClCompile Include="Horse\Msg\GameMsg_Horse.cpp" />
+    <ClCompile Include="item\BagConfigManager.cpp" />
+    <ClCompile Include="item\BagManager.cpp" />
+    <ClCompile Include="item\ClothEffect.cpp" />
+    <ClCompile Include="item\EntityItemComponent.cpp" />
+    <ClCompile Include="item\EquipManager.cpp" />
+    <ClCompile Include="item\GameMsg_C2S_AwardMsg.cpp" />
+    <ClCompile Include="item\GameMsg_S2C_AwardMsg.cpp" />
+    <ClCompile Include="item\ItemManager.cpp" />
+    <ClCompile Include="item\ItemProcess.cpp" />
+    <ClCompile Include="..\datastructure\LogicInitData.cpp" />
+    <ClCompile Include="logic\CommandProcessor.cpp" />
+    <ClCompile Include="logic\EntityComponent.cpp" />
+    <ClCompile Include="logic\EntityTimerComponent.cpp" />
+    <ClCompile Include="logic\GetRoleProcessorObj.cpp" />
+    <ClCompile Include="logic\LogicCirculator.cpp" />
+    <ClCompile Include="logic\LogicMain.cpp" />
+    <ClCompile Include="logic\MainManager.cpp" />
+    <ClCompile Include="logic\MsgDeliver.cpp" />
+    <ClCompile Include="logic\PlayerLoginManager.cpp" />
+    <ClCompile Include="logic\PlayerManager.cpp" />
+    <ClCompile Include="logic\RoleComponentImpl.cpp" />
+    <ClCompile Include="logic\SrvManagerBase.cpp" />
+    <ClCompile Include="chat\AdminChat.cpp" />
+    <ClCompile Include="chat\ChatManager.cpp" />
+    <ClCompile Include="chat\CurrentChat.cpp" />
+    <ClCompile Include="chat\DanceGroupChat.cpp" />
+    <ClCompile Include="chat\EntityChatComponent.cpp" />
+    <ClCompile Include="chat\GlobalChat.cpp" />
+    <ClCompile Include="chat\IChat.cpp" />
+    <ClCompile Include="chat\PrivateChat.cpp" />
+    <ClCompile Include="chat\SystemChat.cpp" />
+    <ClCompile Include="chat\WorldChat.cpp" />
+    <ClCompile Include="..\datastructure\Entity.cpp" />
+    <ClCompile Include="..\datastructure\RoleEntity.cpp" />
+    <ClCompile Include="login\GameMsg_C2S_TouristSignInfo.cpp" />
+    <ClCompile Include="login\GameMsg_Game2GatePlayerLogout.cpp" />
+    <ClCompile Include="login\GameMsg_Payment.cpp" />
+    <ClCompile Include="login\GameMsg_Player_CheckRoleName.cpp" />
+    <ClCompile Include="login\GameMsg_Player_CheckRoleNameResult.cpp" />
+    <ClCompile Include="login\GameMsg_Player_CreateRole.cpp" />
+    <ClCompile Include="login\GameMsg_Player_CreateRoleRes.cpp" />
+    <ClCompile Include="login\GameMsg_Player_Logout.cpp" />
+    <ClCompile Include="login\GameMsg_S2C_RequireCreateRole.cpp" />
+    <ClCompile Include="login\GameMsg_S2G_SwitchLineComplete.cpp" />
+    <ClCompile Include="mall\DesiredItem.cpp" />
+    <ClCompile Include="mall\EntityMallComponent.cpp" />
+    <ClCompile Include="mall\Mall.cpp" />
+    <ClCompile Include="mall\MallDataMgr.cpp" />
+    <ClCompile Include="lua\LuaRoleFuction.cpp" />
+    <ClCompile Include="lua\LuaServerFunction.cpp" />
+    <ClCompile Include="EntityNetComponent\EntityNetComponent.cpp" />
+    <ClCompile Include="Medal\GameMsg_Medal.cpp" />
+    <ClCompile Include="Medal\MedalCfgMgr.cpp" />
+    <ClCompile Include="Medal\MedalCfg.cpp" />
+    <ClCompile Include="Medal\EntityMedalComponent.cpp" />
+    <ClCompile Include="Medal\MedalConditionImp.cpp" />
+    <ClCompile Include="MonthCard\GameMsg_C2S_MonthCard.cpp" />
+    <ClCompile Include="MonthCard\GameMsg_S2C_MonthCard.cpp" />
+    <ClCompile Include="MonthCard\MonthCardDataMgr.cpp" />
+    <ClCompile Include="MonthCard\EntityMonthCardComponent.cpp" />
+    <ClCompile Include="Notification\NotificationManager.cpp" />
+    <ClCompile Include="Pet\GameMsg_Pet.cpp" />
+    <ClCompile Include="Pet\PetComponent.cpp" />
+    <ClCompile Include="Pet\PetConfig\PetBaseInfo.cpp" />
+    <ClCompile Include="Pet\PetConfig\PetConfigManager.cpp" />
+    <ClCompile Include="Pet\PetConfig\PetEvolutionInfo.cpp" />
+    <ClCompile Include="Pet\PetConfig\PetExchangeInfo.cpp" />
+    <ClCompile Include="Pet\PetConfig\PetQualityInfo.cpp" />
+    <ClCompile Include="Pet\PetConfig\PetSkillConfig.cpp" />
+    <ClCompile Include="Pet\PetEggConfig\PetEggBaseInfo.cpp" />
+    <ClCompile Include="Pet\PetEggConfig\PetEggConfigManager.cpp" />
+    <ClCompile Include="Pet\PetEggConfig\PetIncubatorInfo.cpp" />
+    <ClCompile Include="Pet\PetEggConfig\RandomPetCollect.cpp" />
+    <ClCompile Include="Pet\PetEggService.cpp" />
+    <ClCompile Include="Pet\PetService.cpp" />
+    <ClCompile Include="PhotoRoom\GameMsg_C2S_PhotoRoom.cpp" />
+    <ClCompile Include="PhotoRoom\GameMsg_S2C_PhotoRoom.cpp" />
+    <ClCompile Include="player\GameMsg_Announcement.cpp" />
+    <ClCompile Include="player\GameMsg_Buff.cpp" />
+    <ClCompile Include="player\GameMsg_C2S_BugReport.cpp" />
+    <ClCompile Include="player\GameMsg_C2S_GetRoleInfo.cpp" />
+    <ClCompile Include="player\GameMsg_C2S_RealNameAuth.cpp" />
+    <ClCompile Include="player\GameMsg_S2C_GetRoleInfoResult.cpp" />
+    <ClCompile Include="quest\EntityQuestComponent.cpp" />
+    <ClCompile Include="quest\EntityQuestNewComponent.cpp" />
+    <ClCompile Include="quest\GameMsg_C2S_AcceptQuest.cpp" />
+    <ClCompile Include="quest\GameMsg_C2S_GetQuestList.cpp" />
+    <ClCompile Include="quest\GameMsg_C2S_GetQuestReward.cpp" />
+    <ClCompile Include="quest\GameMsg_C2S_QuestRead.cpp" />
+    <ClCompile Include="quest\GameMsg_S2C_AcceptQuestResult.cpp" />
+    <ClCompile Include="quest\GameMsg_S2C_GetQuestListResult.cpp" />
+    <ClCompile Include="quest\GameMsg_S2C_GetQuestRewardResult.cpp" />
+    <ClCompile Include="quest\GameMsg_S2C_Quest.cpp" />
+    <ClCompile Include="quest\GameMsg_S2C_QuestStateChange.cpp" />
+    <ClCompile Include="quest\QuestDataManager.cpp" />
+    <ClCompile Include="mall\MallMsgDefine.cpp" />
+    <ClCompile Include="mail\MailMsgDefine.cpp" />
+    <ClCompile Include="item\ItemMsgDefine.cpp" />
+    <ClCompile Include="Location\GameMsg_Location.cpp" />
+    <ClCompile Include="AmuseRoom\GameMsg_ConstellationMatch.cpp" />
+    <ClCompile Include="Message\PlatformPrivilege\UCVIP\GameMsg_UCVIP.cpp" />
+    <ClCompile Include="Notification\GameMsg_Notification.cpp" />
+    <ClCompile Include="quest\QuestListEntry.cpp" />
+    <ClCompile Include="quest\QuestRecord.cpp" />
+    <ClCompile Include="quest\QuestTargetSend.cpp" />
+    <ClCompile Include="quest\SpecailQuestMgr.cpp" />
+    <ClCompile Include="Rank\GameMsg_Rank_CS.cpp" />
+    <ClCompile Include="Rank\RankComponent.cpp" />
+    <ClCompile Include="Rank\RankConfigData.cpp" />
+    <ClCompile Include="room\BigMamaRoom.cpp" />
+    <ClCompile Include="room\DanceGroupArcadeRoom.cpp" />
+    <ClCompile Include="room\DanceRoom.cpp" />
+    <ClCompile Include="room\GameMsg_C2S_LiveRoomMsg.cpp" />
+    <ClCompile Include="room\GameMsg_S2C_LiveRoomMsg.cpp" />
+    <ClCompile Include="room\NewRoomManager.cpp" />
+    <ClCompile Include="room\RoomBase.cpp" />
+    <ClCompile Include="security\GameMsg_Security.cpp" />
+    <ClCompile Include="..\datastructure\DataStruct_Game.cpp" />
+    <ClCompile Include="friend\EntityFriendComponent.cpp" />
+    <ClCompile Include="friend\RelationInfo.cpp" />
+    <ClCompile Include="player\PlayerInfoComponent.cpp" />
+    <ClCompile Include="mail\EntityMailComponent.cpp" />
+    <ClCompile Include="mail\MailMgr.cpp" />
+    <ClCompile Include="gene\EntityGeneComponent.cpp" />
+    <ClCompile Include="achievement\EntityAchievementComponent.cpp" />
+    <ClCompile Include="achievement\IEntityAchivementComponent.cpp" />
+    <ClCompile Include="achievement\IRequirementHandler.cpp" />
+    <ClCompile Include="achievement\RequirementHandlerManager.cpp" />
+    <ClCompile Include="achievement\CheckInHandler.cpp" />
+    <ClCompile Include="achievement\CompletedAllQuestHandler.cpp" />
+    <ClCompile Include="achievement\ContinuousWinBetween2To4PersonsHandler.cpp" />
+    <ClCompile Include="achievement\ContinuousWinIn4PersonsHandler.cpp" />
+    <ClCompile Include="achievement\GrowQuestHandler.cpp" />
+    <ClCompile Include="achievement\HistoryAutoMatchWithOppositeSexCountHandler.cpp" />
+    <ClCompile Include="achievement\HistoryBadgeCountHandler.cpp" />
+    <ClCompile Include="achievement\HistoryBigSpeakersUseInSevenDaysCountHandler.cpp" />
+    <ClCompile Include="achievement\HistoryComboMusicCountHandler.cpp" />
+    <ClCompile Include="achievement\HistoryCompletedAchievementCountHandler.cpp" />
+    <ClCompile Include="achievement\HistoryGainClothCountHandler.cpp" />
+    <ClCompile Include="achievement\HistoryGainWishItemCountHandler.cpp" />
+    <ClCompile Include="achievement\HistoryHotValueHandler.cpp" />
+    <ClCompile Include="achievement\HistorySendFlowersCountInSevenDays.cpp" />
+    <ClCompile Include="achievement\HistorySmallSpeakersUseInSevenDaysCountHandler.cpp" />
+    <ClCompile Include="achievement\HistoryTaikoComboCountHandler.cpp" />
+    <ClCompile Include="achievement\HistoryTitleCountHandler.cpp" />
+    <ClCompile Include="achievement\HistoryTotalScoreHandler.cpp" />
+    <ClCompile Include="achievement\HistoryUseBouquetCountHandler.cpp" />
+    <ClCompile Include="achievement\HistoryWishItemCountHandler.cpp" />
+    <ClCompile Include="achievement\LevelHandler.cpp" />
+    <ClCompile Include="achievement\OnlineTimeHandler.cpp" />
+    <ClCompile Include="SystemSetting\SystemSettingMgr.cpp" />
+    <ClCompile Include="vip\EntityVIPComponent.cpp" />
+    <ClCompile Include="vip\GameMsg_VIP.cpp" />
+    <ClCompile Include="room\LiveRoomDataMgr.cpp" />
+    <ClCompile Include="room\LiveRoomManager.cpp" />
+    <ClCompile Include="room\Room.cpp" />
+    <ClCompile Include="room\RoomComponent.cpp" />
+    <ClCompile Include="room\RoomManager.cpp" />
+    <ClCompile Include="room\RoomRewardDataMgr.cpp" />
+    <ClCompile Include="room\RoomTimer.cpp" />
+    <ClCompile Include="Command\CommandHandler.cpp" />
+    <ClCompile Include="Command\CommandHandlerManager.cpp" />
+    <ClCompile Include="announcement\AnnouncementMgr.cpp" />
+    <ClCompile Include="Location\LocationMgr.cpp" />
+    <ClCompile Include="Money\MoneyMgr.cpp" />
+    <ClCompile Include="activity\ActivityDataStruct.cpp" />
+    <ClCompile Include="activity\EntityActivityComponent.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+    </ClCompile>
+    <ClCompile Include="activity\AllActivitiesConfigMgr.cpp" />
+    <ClCompile Include="activity\CumulativeRechargeMgr.cpp" />
+    <ClCompile Include="activity\ExchangeItemInfoMgr.cpp" />
+    <ClCompile Include="activity\ExtraActivityInfoMgr.cpp" />
+    <ClCompile Include="activity\FestivalBlessActivityDataMgr.cpp" />
+    <ClCompile Include="activity\FestivalWishDataMgr.cpp" />
+    <ClCompile Include="activity\FresherActivityMgr.cpp" />
+    <ClCompile Include="activity\GiftCodeInfoMgr.cpp" />
+    <ClCompile Include="activity\GlobalActivityData.cpp" />
+    <ClCompile Include="activity\InTimeOnlineInfoMgr.cpp" />
+    <ClCompile Include="activity\InvitationActivityMgr.cpp" />
+    <ClCompile Include="activity\LevelUpRewardInfoMgr.cpp" />
+    <ClCompile Include="activity\MeetActivityMgr.cpp" />
+    <ClCompile Include="activity\OnlineRewardInfoMgr.cpp" />
+    <ClCompile Include="activity\PlainTextActivityInfoMg.cpp" />
+    <ClCompile Include="activity\PlatformPrivilegeDataMgr.cpp" />
+    <ClCompile Include="activity\PuzzleDataMgr.cpp" />
+    <ClCompile Include="activity\XmasFreeRewardDataMgr.cpp" />
+    <ClCompile Include="activity\CumulativeRechargeActivity.cpp" />
+    <ClCompile Include="activity\DanceGroupTimerActivity.cpp" />
+    <ClCompile Include="activity\ExchagneItemActivity.cpp" />
+    <ClCompile Include="activity\ExtraExpActivity.cpp" />
+    <ClCompile Include="activity\FestivalWishActivity.cpp" />
+    <ClCompile Include="activity\GiftCodeActivityShow.cpp" />
+    <ClCompile Include="activity\GiftSystem.cpp" />
+    <ClCompile Include="activity\InTimeOnlineActivity.cpp" />
+    <ClCompile Include="activity\InvitationActivity.cpp" />
+    <ClCompile Include="activity\MeetActivity.cpp" />
+    <ClCompile Include="activity\PlainTextActivity.cpp" />
+    <ClCompile Include="activity\PuzzleActivity.cpp" />
+    <ClCompile Include="activity\XmasFreeRewardActivity.cpp" />
+    <ClCompile Include="activity\SystemActivityManager.cpp" />
+    <ClCompile Include="activity\TimerActivity.cpp" />
+    <ClCompile Include="Couple\CoupleDataStructrue.cpp" />
+    <ClCompile Include="Couple\EntityCoupleComponent.cpp" />
+    <ClCompile Include="Couple\WeddingRoom.cpp" />
+    <ClCompile Include="Couple\WeddingRoomManager.cpp" />
+    <ClCompile Include="box\BoxInfoManager.cpp" />
+    <ClCompile Include="bet\BetComponent.cpp" />
+    <ClCompile Include="PhotoRoom\EntityPhotoRoomComponent.cpp" />
+    <ClCompile Include="PhotoRoom\PhotoRoom.cpp" />
+    <ClCompile Include="PhotoRoom\PhotoRoomDataStruct.cpp" />
+    <ClCompile Include="PhotoRoom\PhotoRoomLuaDataManager.cpp" />
+    <ClCompile Include="PhotoRoom\PhotoRoomManager.cpp" />
+    <ClCompile Include="AmuseRoom\AmuseParam.cpp" />
+    <ClCompile Include="AmuseRoom\AmuseRoom.cpp" />
+    <ClCompile Include="AmuseRoom\AmuseRoomComponent.cpp" />
+    <ClCompile Include="AmuseRoom\AmuseRoomDataManager.cpp" />
+    <ClCompile Include="AmuseRoom\AmuseRoomDevice.cpp" />
+    <ClCompile Include="AmuseRoom\AmuseRoomManager.cpp" />
+    <ClCompile Include="AmuseRoom\ConstellationMatchDataManager.cpp" />
+    <ClCompile Include="AmuseRoom\ConstellationMatchManager.cpp" />
+    <ClCompile Include="AmuseRoom\AmuseAction_CommitTimeEggInfo.cpp" />
+    <ClCompile Include="AmuseRoom\AmuseAction_CreateTimeEgg.cpp" />
+    <ClCompile Include="AmuseRoom\AmuseAction_GetTimeEggGiftList.cpp" />
+    <ClCompile Include="AmuseRoom\AmuseAction_InviteDevice.cpp" />
+    <ClCompile Include="AmuseRoom\AmuseAction_LeaveDevice.cpp" />
+    <ClCompile Include="AmuseRoom\AmuseAction_LeavePose.cpp" />
+    <ClCompile Include="AmuseRoom\AmuseAction_OpenTimeEgg.cpp" />
+    <ClCompile Include="AmuseRoom\AmuseAction_ReponseDevice.cpp" />
+    <ClCompile Include="AmuseRoom\AmuseAction_RequestDevice.cpp" />
+    <ClCompile Include="AmuseRoom\AmuseAction_UseDevice.cpp" />
+    <ClCompile Include="AmuseRoom\AmuseAction_UsePose.cpp" />
+    <ClCompile Include="AmuseRoom\AmuseEvent_AddExp.cpp" />
+    <ClCompile Include="AmuseRoom\AmuseEvent_PushSwing.cpp" />
+    <ClCompile Include="AmuseRoom\AmuseEvent_StartBoat.cpp" />
+    <ClCompile Include="AmuseRoom\AmuseEvent_StartCarrousel.cpp" />
+    <ClCompile Include="AmuseRoom\AmuseEvent_StartSwing.cpp" />
+    <ClCompile Include="anti-addiction\AntiAddictionDataMgr.cpp" />
+    <ClCompile Include="anti-addiction\EntityAntiAddictionComponent.cpp" />
+    <ClCompile Include="PlatformPrivilege\EntityPlatformPrivilegeComponent.cpp" />
+    <ClCompile Include="PlatformPrivilege\UCVIP\UCVIP.cpp" />
+    <ClCompile Include="Notification\NotificationComponent.cpp" />
+    <ClCompile Include="Notification\PushRatingDataManager.cpp" />
+    <ClCompile Include="security\SecurityComponent.cpp" />
+    <ClCompile Include="security\SecurityQuiz.cpp" />
+    <ClCompile Include="security\SecurityQuizDataManager.cpp" />
+    <ClCompile Include="CheckIn\CheckInfoMgr.cpp" />
+    <ClCompile Include="CheckIn\EntityCheckInComponent.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="achievement\GameMsg_C2S_AchievementGetReward.h" />
+    <ClInclude Include="achievement\GameMsg_C2S_GetAchievementList.h" />
+    <ClInclude Include="achievement\GameMsg_S2C_AchievementCompleted.h" />
+    <ClInclude Include="achievement\GameMsg_S2C_AchievementGetRewardResult.h" />
+    <ClInclude Include="achievement\GameMsg_S2C_GetAchievementList.h" />
+    <ClInclude Include="activeness\ActivenessComponent.h" />
+    <ClInclude Include="activeness\ActivenessDataManager.h" />
+    <ClInclude Include="activeness\ActivenessService.h" />
+    <ClInclude Include="activeness\GameMsg_Activeness.h" />
+    <ClInclude Include="activity\BuyItemGotMedalMgr.h" />
+    <ClInclude Include="activity\CumulativeSpendActivity.h" />
+    <ClInclude Include="activity\CumulativeSpendMgr.h" />
+    <ClInclude Include="activity\EffectStoneExchange\EffectStoneExchangeManager.h" />
+    <ClInclude Include="activity\GameMsg_Activity.h" />
+    <ClInclude Include="activity\GameMsg_C2S_GetGift.h" />
+    <ClInclude Include="activity\GameMsg_LevelUpReward.h" />
+    <ClInclude Include="activity\GameMsg_S2C_GetGiftResult.h" />
+    <ClInclude Include="activity\GameMsg_S2C_InTimeOnlineReward.h" />
+    <ClInclude Include="activity\GameMsg_S2C_SendGift.h" />
+    <ClInclude Include="activity\GameMsg_S2C_UpdateExtraExpActivityState.h" />
+    <ClInclude Include="activity\GameMsg_S2C_UpdateGiftInfo.h" />
+    <ClInclude Include="activity\LongactingCumulativeRechareMgr.h" />
+    <ClInclude Include="activity\ProprietaryActivity.h" />
+    <ClInclude Include="activity\MallShareMgr.h" />
+    <ClInclude Include="activity\RedEnvelope\GameMsg_CS_RedEnvelope.h" />
+    <ClInclude Include="activity\RedEnvelope\RedEnvelopeActivityManager.h" />
+    <ClInclude Include="activity\SocialShareActivity.h" />
+    <ClInclude Include="AmuseRoom\GameMsg_C2S_AmuseMsg.h" />
+    <ClInclude Include="AmuseRoom\GameMsg_S2C_AmuseMsg.h" />
+    <ClInclude Include="AmuseRoom\GameMsg_TimeEggMsg.h" />
+    <ClInclude Include="anti-addiction\GameMsg_S2C_AntiAddiction.h" />
+    <ClInclude Include="attribute\EntityAttributeComponent.h" />
+    <ClInclude Include="attribute\GameAttributeManager.h" />
+    <ClInclude Include="attribute\GameMsg_C2S_ChangeBirthday.h" />
+    <ClInclude Include="attribute\GameMsg_C2S_ChangeRoleName.h" />
+    <ClInclude Include="attribute\GameMsg_C2S_ChangeRoleSignature.h" />
+    <ClInclude Include="attribute\GameMsg_CompleteGuide.h" />
+    <ClInclude Include="attribute\GameMsg_S2C_ChangeBirthdayRes.h" />
+    <ClInclude Include="attribute\GameMsg_S2C_ChangeRoleNameResult.h" />
+    <ClInclude Include="attribute\GameMsg_S2C_ChangeRoleSignatureResult.h" />
+    <ClInclude Include="attribute\GameMsg_S2C_RoleAttrbuteChange.h" />
+    <ClInclude Include="attribute\guidereward.h" />
+    <ClInclude Include="bet\MagicArray\GameMsg_CS_MagicLuckDraw.h" />
+    <ClInclude Include="bet\MagicArray\MagicArrayDataManager.h" />
+    <ClInclude Include="bet\MagicArray\MagicArrayManager.h" />
+    <ClInclude Include="box\DynamciBoxInfoManager.h" />
+    <ClInclude Include="activity\SocialShareMgr.h" />
+    <ClInclude Include="activity\TimeRanges.h" />
+    <ClInclude Include="CeremonyRoom\ceremonyRoom.h" />
+    <ClInclude Include="CeremonyRoom\ceremonyRoomManager.h" />
+    <ClInclude Include="CeremonyRoom\GameMsg_CeremonyRoomSC.h" />
+    <ClInclude Include="chat\GameMsg_C2S_Chat.h" />
+    <ClInclude Include="chat\GameMsg_S2C_Chat.h" />
+    <ClInclude Include="chat\GameMsg_S2C_Chat_Private2Self.h" />
+    <ClInclude Include="CheckIn\GameMsg_C2S_Check.h" />
+    <ClInclude Include="CheckIn\GameMsg_C2S_GetCheckInInfo.h" />
+    <ClInclude Include="CheckIn\GameMsg_S2C_CheckResult.h" />
+    <ClInclude Include="CheckIn\GameMsg_S2C_GetCheckInInfoResult.h" />
+    <ClInclude Include="compensation\CompensationComponent.h" />
+    <ClInclude Include="compensation\GameMsg_S2C_NewCompensation.h" />
+    <ClInclude Include="Couple\DivorceAgreement.h" />
+    <ClInclude Include="Couple\GameMsg_C2S_Couple.h" />
+    <ClInclude Include="Couple\GameMsg_S2C_Couple.h" />
+    <ClInclude Include="dancegroup\DanceGroupChallengeManager.h" />
+    <ClInclude Include="dancegroup\EntityBigMama.h" />
+    <ClInclude Include="dancegroup\EntityDanceGroupComponent.h" />
+    <ClInclude Include="dancegroup\GameMsg_BigMama.h" />
+    <ClInclude Include="dancegroup\GameMsg_C2S_DanceGroupChallenge.h" />
+    <ClInclude Include="dancegroup\GameMsg_S2C_DanceGroupChallenge.h" />
+    <ClInclude Include="Dungeon\Dungeon.h" />
+    <ClInclude Include="Dungeon\DungeonDataMgr.h" />
+    <ClInclude Include="Dungeon\DungeonDefine.h" />
+    <ClInclude Include="Dungeon\DungeonMgr.h" />
+    <ClInclude Include="Dungeon\EntityDungeonComponent.h" />
+    <ClInclude Include="Dungeon\GameMsg_Dungeon.h" />
+    <ClInclude Include="friend\GameMsg_C2S_Friend.h" />
+    <ClInclude Include="friend\GameMsg_S2C_Friend.h" />
+    <ClInclude Include="Handbook\EntityHandbookComponent.h" />
+    <ClInclude Include="Handbook\HandbookCfg.h" />
+    <ClInclude Include="Horse\EntityHorseComponent.h" />
+    <ClInclude Include="Horse\HorseCfg.h" />
+    <ClInclude Include="Horse\Msg\GameMsg_Horse.h" />
+    <ClInclude Include="item\BagConfigManager.h" />
+    <ClInclude Include="item\BagManager.h" />
+    <ClInclude Include="item\ClothEffect.h" />
+    <ClInclude Include="item\EntityItemComponent.h" />
+    <ClInclude Include="item\EquipManager.h" />
+    <ClInclude Include="item\GameMsg_C2S_AwardMsg.h" />
+    <ClInclude Include="item\GameMsg_S2C_AwardMsg.h" />
+    <ClInclude Include="item\ItemManager.h" />
+    <ClInclude Include="item\ItemProcess.h" />
+    <ClInclude Include="..\datastructure\LogicInitData.h" />
+    <ClInclude Include="logic\CommandProcessor.h" />
+    <ClInclude Include="logic\EntityComponent.h" />
+    <ClInclude Include="logic\EntityComponentEventID.h" />
+    <ClInclude Include="logic\EntityTimerComponent.h" />
+    <ClInclude Include="logic\GetRoleProcessorObj.h" />
+    <ClInclude Include="logic\ISerializable.h" />
+    <ClInclude Include="logic\LogicCirculator.h" />
+    <ClInclude Include="logic\MainManager.h" />
+    <ClInclude Include="logic\MsgDeliver.h" />
+    <ClInclude Include="logic\PlayerLoginManager.h" />
+    <ClInclude Include="logic\PlayerManager.h" />
+    <ClInclude Include="logic\RoleComponentImpl.h" />
+    <ClInclude Include="logic\SrvManagerBase.h" />
+    <ClInclude Include="chat\AdminChat.h" />
+    <ClInclude Include="chat\ChatManager.h" />
+    <ClInclude Include="chat\CurrentChat.h" />
+    <ClInclude Include="chat\DanceGroupChat.h" />
+    <ClInclude Include="chat\EntityChatComponent.h" />
+    <ClInclude Include="chat\GlobalChat.h" />
+    <ClInclude Include="chat\IChat.h" />
+    <ClInclude Include="chat\PrivateChat.h" />
+    <ClInclude Include="chat\SystemChat.h" />
+    <ClInclude Include="chat\WorldChat.h" />
+    <ClInclude Include="..\datastructure\Entity.h" />
+    <ClInclude Include="..\datastructure\datainfor\EntityType.h" />
+    <ClInclude Include="..\datastructure\IEntity.h" />
+    <ClInclude Include="..\datastructure\RoleEntity.h" />
+    <ClInclude Include="login\GameMsg_C2S_TouristSignInfo.h" />
+    <ClInclude Include="login\GameMsg_Game2GatePlayerLogout.h" />
+    <ClInclude Include="login\GameMsg_Payment.h" />
+    <ClInclude Include="login\GameMsg_Player_CheckRoleName.h" />
+    <ClInclude Include="login\GameMsg_Player_CheckRoleNameResult.h" />
+    <ClInclude Include="login\GameMsg_Player_CreateRole.h" />
+    <ClInclude Include="login\GameMsg_Player_CreateRoleRes.h" />
+    <ClInclude Include="login\GameMsg_Player_Logout.h" />
+    <ClInclude Include="login\GameMsg_S2C_RequireCreateRole.h" />
+    <ClInclude Include="login\GameMsg_S2G_SwitchLineComplete.h" />
+    <ClInclude Include="mall\CurrencyType.h" />
+    <ClInclude Include="mall\DesiredItem.h" />
+    <ClInclude Include="mall\EntityMallComponent.h" />
+    <ClInclude Include="mall\Mall.h" />
+    <ClInclude Include="mall\MallDataMgr.h" />
+    <ClInclude Include="mall\MallDefine.h" />
+    <ClInclude Include="EntityNetComponent\EntityNetComponent.h" />
+    <ClInclude Include="Medal\GameMsg_Medal.h" />
+    <ClInclude Include="Medal\MedalCfg.h" />
+    <ClInclude Include="Medal\EntityMedalComponent.h" />
+    <ClInclude Include="Medal\MedalCfgMgr.h" />
+    <ClInclude Include="Medal\MedalConditionImp.h" />
+    <ClInclude Include="MonthCard\GameMsg_C2S_MonthCard.h" />
+    <ClInclude Include="MonthCard\GameMsg_S2C_MonthCard.h" />
+    <ClInclude Include="MonthCard\MonthCardDataMgr.h" />
+    <ClInclude Include="MonthCard\EntityMonthCardComponent.h" />
+    <ClInclude Include="Notification\NotificationManager.h" />
+    <ClInclude Include="Pet\GameMsg_Pet.h" />
+    <ClInclude Include="Pet\PetComponent.h" />
+    <ClInclude Include="Pet\PetConfig\PetBaseInfo.h" />
+    <ClInclude Include="Pet\PetConfig\PetConfigManager.h" />
+    <ClInclude Include="Pet\PetConfig\PetEvolutionInfo.h" />
+    <ClInclude Include="Pet\PetConfig\PetExchangeInfo.h" />
+    <ClInclude Include="Pet\PetConfig\PetQualityInfo.h" />
+    <ClInclude Include="Pet\PetConfig\PetSkillConfig.h" />
+    <ClInclude Include="Pet\PetEggConfig\PetEggBaseInfo.h" />
+    <ClInclude Include="Pet\PetEggConfig\PetEggConfigManager.h" />
+    <ClInclude Include="Pet\PetEggConfig\PetIncubatorInfo.h" />
+    <ClInclude Include="Pet\PetEggConfig\RandomPetCollect.h" />
+    <ClInclude Include="Pet\PetEggService.h" />
+    <ClInclude Include="Pet\PetService.h" />
+    <ClInclude Include="PhotoRoom\GameMsg_C2S_PhotoRoom.h" />
+    <ClInclude Include="PhotoRoom\GameMsg_S2C_PhotoRoom.h" />
+    <ClInclude Include="player\GameMsg_Announcement.h" />
+    <ClInclude Include="player\GameMsg_Buff.h" />
+    <ClInclude Include="player\GameMsg_C2S_BugReport.h" />
+    <ClInclude Include="player\GameMsg_C2S_GetRoleInfo.h" />
+    <ClInclude Include="player\GameMsg_C2S_RealNameAuth.h" />
+    <ClInclude Include="player\GameMsg_S2C_GetRoleInfoResult.h" />
+    <ClInclude Include="quest\EntityQuestComponent.h" />
+    <ClInclude Include="quest\EntityQuestNewComponent.h" />
+    <ClInclude Include="quest\GameMsg_C2S_AcceptQuest.h" />
+    <ClInclude Include="quest\GameMsg_C2S_GetQuestList.h" />
+    <ClInclude Include="quest\GameMsg_C2S_GetQuestReward.h" />
+    <ClInclude Include="quest\GameMsg_C2S_QuestRead.h" />
+    <ClInclude Include="quest\GameMsg_S2C_AcceptQuestResult.h" />
+    <ClInclude Include="quest\GameMsg_S2C_GetQuestListResult.h" />
+    <ClInclude Include="quest\GameMsg_S2C_GetQuestRewardResult.h" />
+    <ClInclude Include="quest\GameMsg_S2C_Quest.h" />
+    <ClInclude Include="quest\GameMsg_S2C_QuestStateChange.h" />
+    <ClInclude Include="quest\QuestDataManager.h" />
+    <ClInclude Include="mall\MallMsgDefine.h" />
+    <ClInclude Include="mail\MailMsgDefine.h" />
+    <ClInclude Include="item\ItemMsgDefine.h" />
+    <ClInclude Include="Location\GameMsg_Location.h" />
+    <ClInclude Include="AmuseRoom\GameMsg_ConstellationMatch.h" />
+    <ClInclude Include="Message\PlatformPrivilege\UCVIP\GameMsg_UCVIP.h" />
+    <ClInclude Include="Notification\GameMsg_Notification.h" />
+    <ClInclude Include="quest\QuestListEntry.h" />
+    <ClInclude Include="quest\QuestRecord.h" />
+    <ClInclude Include="quest\QuestTargetSend.h" />
+    <ClInclude Include="quest\SpecailQuestMgr.h" />
+    <ClInclude Include="Rank\GameMsg_Rank_CS.h" />
+    <ClInclude Include="Rank\RankComponent.h" />
+    <ClInclude Include="Rank\RankConfigData.h" />
+    <ClInclude Include="room\BigMamaRoom.h" />
+    <ClInclude Include="room\DanceGroupArcadeRoom.h" />
+    <ClInclude Include="room\DanceRoom.h" />
+    <ClInclude Include="room\GameMsg_C2S_LiveRoomMsg.h" />
+    <ClInclude Include="room\GameMsg_S2C_LiveRoomMsg.h" />
+    <ClInclude Include="room\NewRoomManager.h" />
+    <ClInclude Include="room\RoomBase.h" />
+    <ClInclude Include="security\GameMsg_Security.h" />
+    <ClInclude Include="..\datastructure\datainfor\ItemType.h" />
+    <ClInclude Include="..\datastructure\DataStruct_Game.h" />
+    <ClInclude Include="friend\EntityFriendComponent.h" />
+    <ClInclude Include="friend\FriendDefine.h" />
+    <ClInclude Include="friend\RelationInfo.h" />
+    <ClInclude Include="player\PlayerInfoComponent.h" />
+    <ClInclude Include="player\PlayerSettingDefine.h" />
+    <ClInclude Include="mail\EntityMailComponent.h" />
+    <ClInclude Include="mail\MailDefine.h" />
+    <ClInclude Include="mail\MailMgr.h" />
+    <ClInclude Include="gene\EntityGeneComponent.h" />
+    <ClInclude Include="achievement\EntityAchievementComponent.h" />
+    <ClInclude Include="achievement\IEntityAchivementComponent.h" />
+    <ClInclude Include="achievement\IRequirementHandler.h" />
+    <ClInclude Include="achievement\RequirementHandlerManager.h" />
+    <ClInclude Include="achievement\CheckInHandler.h" />
+    <ClInclude Include="achievement\CompletedAllQuestHandler.h" />
+    <ClInclude Include="achievement\ContinuousWinBetween2To4PersonsHandler.h" />
+    <ClInclude Include="achievement\ContinuousWinIn4PersonsHandler.h" />
+    <ClInclude Include="achievement\GrowQuestHandler.h" />
+    <ClInclude Include="achievement\HistoryAutoMatchWithOppositeSexCountHandler.h" />
+    <ClInclude Include="achievement\HistoryBadgeCountHandler.h" />
+    <ClInclude Include="achievement\HistoryBigSpeakersUseInSevenDaysCountHandler.h" />
+    <ClInclude Include="achievement\HistoryComboMusicCountHandler.h" />
+    <ClInclude Include="achievement\HistoryCompletedAchievementCountHandler.h" />
+    <ClInclude Include="achievement\HistoryGainClothCountHandler.h" />
+    <ClInclude Include="achievement\HistoryGainWishItemCountHandler.h" />
+    <ClInclude Include="achievement\HistoryHotValueHandler.h" />
+    <ClInclude Include="achievement\HistorySendFlowersCountInSevenDays.h" />
+    <ClInclude Include="achievement\HistorySmallSpeakersUseInSevenDaysCountHandler.h" />
+    <ClInclude Include="achievement\HistoryTaikoComboCountHandler.h" />
+    <ClInclude Include="achievement\HistoryTitleCountHandler.h" />
+    <ClInclude Include="achievement\HistoryTotalScoreHandler.h" />
+    <ClInclude Include="achievement\HistoryUseBouquetCountHandler.h" />
+    <ClInclude Include="achievement\HistoryWishItemCountHandler.h" />
+    <ClInclude Include="achievement\LevelHandler.h" />
+    <ClInclude Include="achievement\OnlineTimeHandler.h" />
+    <ClInclude Include="SystemSetting\SystemSettingMgr.h" />
+    <ClInclude Include="vip\EntityVIPComponent.h" />
+    <ClInclude Include="vip\GameMsg_VIP.h" />
+    <ClInclude Include="vip\VIPDefine.h" />
+    <ClInclude Include="room\LiveRoomDataMgr.h" />
+    <ClInclude Include="room\LiveRoomManager.h" />
+    <ClInclude Include="room\Room.h" />
+    <ClInclude Include="room\RoomComponent.h" />
+    <ClInclude Include="room\RoomManager.h" />
+    <ClInclude Include="room\RoomRewardDataMgr.h" />
+    <ClInclude Include="room\RoomTimer.h" />
+    <ClInclude Include="Command\CommandHandler.h" />
+    <ClInclude Include="Command\CommandHandlerManager.h" />
+    <ClInclude Include="Command\ICommandHandler.h" />
+    <ClInclude Include="announcement\AnnouncementMgr.h" />
+    <ClInclude Include="Location\LocationMgr.h" />
+    <ClInclude Include="Money\MoneyMgr.h" />
+    <ClInclude Include="activity\ActivityDataStruct.h" />
+    <ClInclude Include="activity\EntityActivityComponent.h" />
+    <ClInclude Include="activity\AllActivitiesConfigMgr.h" />
+    <ClInclude Include="activity\CumulativeRechargeMgr.h" />
+    <ClInclude Include="activity\ExchangeItemInfoMgr.h" />
+    <ClInclude Include="activity\ExtraActivityInfoMgr.h" />
+    <ClInclude Include="activity\FestivalBlessActivityDataMgr.h" />
+    <ClInclude Include="activity\FestivalWishDataMgr.h" />
+    <ClInclude Include="activity\FresherActivityMgr.h" />
+    <ClInclude Include="activity\GiftCodeInfoMgr.h" />
+    <ClInclude Include="activity\GlobalActivityData.h" />
+    <ClInclude Include="activity\InTimeOnlineInfoMgr.h" />
+    <ClInclude Include="activity\InvitationActivityMgr.h" />
+    <ClInclude Include="activity\LevelUpRewardInfoMgr.h" />
+    <ClInclude Include="activity\MeetActivityMgr.h" />
+    <ClInclude Include="activity\OnlineRewardInfoMgr.h" />
+    <ClInclude Include="activity\PlainTextActivityInfoMgr.h" />
+    <ClInclude Include="activity\PlatformPrivilegeDataMgr.h" />
+    <ClInclude Include="activity\PuzzleDataMgr.h" />
+    <ClInclude Include="activity\XmasFreeRewardDataMgr.h" />
+    <ClInclude Include="activity\CumulativeRechargeActivity.h" />
+    <ClInclude Include="activity\DanceGroupTimerActivity.h" />
+    <ClInclude Include="activity\ExchangeItemActivity.h" />
+    <ClInclude Include="activity\ExtraExpActivity.h" />
+    <ClInclude Include="activity\FestivalWishActivity.h" />
+    <ClInclude Include="activity\GiftCodeActivityShow.h" />
+    <ClInclude Include="activity\GiftSystem.h" />
+    <ClInclude Include="activity\InTimeOnlineActivity.h" />
+    <ClInclude Include="activity\InvitationActivity.h" />
+    <ClInclude Include="activity\MeetActivity.h" />
+    <ClInclude Include="activity\PlainTextActivity.h" />
+    <ClInclude Include="activity\PuzzleActivity.h" />
+    <ClInclude Include="activity\XmasFreeRewardActivity.h" />
+    <ClInclude Include="activity\SystemActivityManager.h" />
+    <ClInclude Include="activity\TimerActivity.h" />
+    <ClInclude Include="Couple\CoupleDataStructrue.h" />
+    <ClInclude Include="Couple\CoupleMacroDef.h" />
+    <ClInclude Include="Couple\EntityCoupleComponent.h" />
+    <ClInclude Include="Couple\WeddingRoom.h" />
+    <ClInclude Include="Couple\WeddingRoomManager.h" />
+    <ClInclude Include="box\BoxInfoManager.h" />
+    <ClInclude Include="bet\BetComponent.h" />
+    <ClInclude Include="PhotoRoom\EntityPhotoRoomComponent.h" />
+    <ClInclude Include="PhotoRoom\PhotoRoom.h" />
+    <ClInclude Include="PhotoRoom\PhotoRoomDataStruct.h" />
+    <ClInclude Include="PhotoRoom\PhotoRoomLuaDataManager.h" />
+    <ClInclude Include="PhotoRoom\PhotoRoomMacroDefine.h" />
+    <ClInclude Include="PhotoRoom\PhotoRoomManager.h" />
+    <ClInclude Include="AmuseRoom\AmuseEnum.h" />
+    <ClInclude Include="AmuseRoom\AmuseParam.h" />
+    <ClInclude Include="AmuseRoom\AmuseRoom.h" />
+    <ClInclude Include="AmuseRoom\AmuseRoomComponent.h" />
+    <ClInclude Include="AmuseRoom\AmuseRoomDataManager.h" />
+    <ClInclude Include="AmuseRoom\AmuseRoomDevice.h" />
+    <ClInclude Include="AmuseRoom\AmuseRoomManager.h" />
+    <ClInclude Include="AmuseRoom\ConstellationMatchDataManager.h" />
+    <ClInclude Include="AmuseRoom\ConstellationMatchManager.h" />
+    <ClInclude Include="AmuseRoom\AmuseAction_CommitTimeEggInfo.h" />
+    <ClInclude Include="AmuseRoom\AmuseAction_CreateTimeEgg.h" />
+    <ClInclude Include="AmuseRoom\AmuseAction_GetTimeEggGiftList.h" />
+    <ClInclude Include="AmuseRoom\AmuseAction_InviteDevice.h" />
+    <ClInclude Include="AmuseRoom\AmuseAction_LeaveDevice.h" />
+    <ClInclude Include="AmuseRoom\AmuseAction_LeavePose.h" />
+    <ClInclude Include="AmuseRoom\AmuseAction_OpenTimeEgg.h" />
+    <ClInclude Include="AmuseRoom\AmuseAction_ReponseDevice.h" />
+    <ClInclude Include="AmuseRoom\AmuseAction_RequestDevice.h" />
+    <ClInclude Include="AmuseRoom\AmuseAction_UseDevice.h" />
+    <ClInclude Include="AmuseRoom\AmuseAction_UsePose.h" />
+    <ClInclude Include="AmuseRoom\AmuseActionBase.h" />
+    <ClInclude Include="AmuseRoom\AmuseEvent_AddExp.h" />
+    <ClInclude Include="AmuseRoom\AmuseEvent_PushSwing.h" />
+    <ClInclude Include="AmuseRoom\AmuseEvent_StartBoat.h" />
+    <ClInclude Include="AmuseRoom\AmuseEvent_StartCarrousel.h" />
+    <ClInclude Include="AmuseRoom\AmuseEvent_StartSwing.h" />
+    <ClInclude Include="AmuseRoom\AmuseEventBase.h" />
+    <ClInclude Include="anti-addiction\AntiAddictionDataMgr.h" />
+    <ClInclude Include="anti-addiction\EntityAntiAddictionComponent.h" />
+    <ClInclude Include="PlatformPrivilege\EntityPlatformPrivilegeComponent.h" />
+    <ClInclude Include="PlatformPrivilege\UCVIP\UCVIP.h" />
+    <ClInclude Include="Notification\NotificationComponent.h" />
+    <ClInclude Include="Notification\NotificationEvent.h" />
+    <ClInclude Include="Notification\PushRatingDataManager.h" />
+    <ClInclude Include="security\SecurityComponent.h" />
+    <ClInclude Include="security\SecurityQuiz.h" />
+    <ClInclude Include="security\SecurityQuizDataManager.h" />
+    <ClInclude Include="CheckIn\CheckInfoMgr.h" />
+    <ClInclude Include="CheckIn\EntityCheckInComponent.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\datainfor\DataInfor.vcxproj">
+      <Project>{008312de-31d3-4b3a-9cc6-9457d79048b9}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\libserverframe\LibServerFrame.vcxproj">
+      <Project>{e362b72a-91ca-408d-8d85-530793f9448c}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\socket\Socket.vcxproj">
+      <Project>{a2db3988-232b-4d45-92ed-113d367d19f6}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

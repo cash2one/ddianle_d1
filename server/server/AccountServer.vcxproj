@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{739CFD5E-902E-4D26-9E24-210311698BBE}</ProjectGuid>
+    <RootNamespace>AccountServer</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\debug\accountserver\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ForceConformanceInForLoopScope>false</ForceConformanceInForLoopScope>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4350;4365;4514;4710;4820;4640;4100;4127;4996</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>lua5.1.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>./$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>../lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>./$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <ForceConformanceInForLoopScope>false</ForceConformanceInForLoopScope>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>./$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>../lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="account\CurrencyTable.cpp" />
+    <ClCompile Include="account\GameMsg_Account_BillingState.cpp" />
+    <ClCompile Include="account\GameMsg_Account_CheckActivate.cpp" />
+    <ClCompile Include="account\GameMsg_Account_CheckActivateResult.cpp" />
+    <ClCompile Include="account\GameMsg_Account_CreateAccount.cpp" />
+    <ClCompile Include="account\GameMsg_Account_CreateAccountResult.cpp" />
+    <ClCompile Include="account\GameMsg_Account_GetGameServersInfo.cpp" />
+    <ClCompile Include="account\GameMsg_Account_Login.cpp" />
+    <ClCompile Include="account\GameMsg_Account_LoginResult.cpp" />
+    <ClCompile Include="account\GameMsg_Account_NotActivated.cpp" />
+    <ClCompile Include="account\GameMsg_Account_QuickCreateAccount.cpp" />
+    <ClCompile Include="account\GameMsg_Account_QuickCreateAccountResult.cpp" />
+    <ClCompile Include="account\GameMsg_Account_RebindAccount.cpp" />
+    <ClCompile Include="account\GameMsg_Account_ServerState.cpp" />
+    <ClCompile Include="account\GameMsg_Currency.cpp" />
+    <ClCompile Include="account\GameMsg_Server_State.cpp" />
+    <ClCompile Include="account\LoginCirculator.cpp" />
+    <ClCompile Include="account\LoginMain.cpp" />
+    <ClCompile Include="account\PlayerCacheData.cpp" />
+    <ClCompile Include="account\PlayerCacheManager.cpp" />
+    <ClCompile Include="lua\luaAccountServerFunction.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="account\CurrencyTable.h" />
+    <ClInclude Include="account\GameMsg_Account_BillingState.h" />
+    <ClInclude Include="account\GameMsg_Account_CheckActivate.h" />
+    <ClInclude Include="account\GameMsg_Account_CheckActivateResult.h" />
+    <ClInclude Include="account\GameMsg_Account_CreateAccount.h" />
+    <ClInclude Include="account\GameMsg_Account_CreateAccountResult.h" />
+    <ClInclude Include="account\GameMsg_Account_GetGameServersInfo.h" />
+    <ClInclude Include="account\GameMsg_Account_Login.h" />
+    <ClInclude Include="account\GameMsg_Account_LoginResult.h" />
+    <ClInclude Include="account\GameMsg_Account_NotActivated.h" />
+    <ClInclude Include="account\GameMsg_Account_QuickCreateAccount.h" />
+    <ClInclude Include="account\GameMsg_Account_QuickCreateAccountResult.h" />
+    <ClInclude Include="account\GameMsg_Account_RebindAccount.h" />
+    <ClInclude Include="account\GameMsg_Account_ServerState.h" />
+    <ClInclude Include="account\GameMsg_Currency.h" />
+    <ClInclude Include="account\GameMsg_Server_State.h" />
+    <ClInclude Include="account\LoginCirculator.h" />
+    <ClInclude Include="account\PlayerCacheData.h" />
+    <ClInclude Include="account\PlayerCacheManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\datainfor\DataInfor.vcxproj">
+      <Project>{008312de-31d3-4b3a-9cc6-9457d79048b9}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\libserverframe\LibServerFrame.vcxproj">
+      <Project>{e362b72a-91ca-408d-8d85-530793f9448c}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\socket\Socket.vcxproj">
+      <Project>{a2db3988-232b-4d45-92ed-113d367d19f6}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

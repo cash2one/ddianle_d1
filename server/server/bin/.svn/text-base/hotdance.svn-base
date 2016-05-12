@@ -1,0 +1,137 @@
+#!/usr/bin/python
+#filename:first.py
+
+import os
+import sys
+import string
+import time
+
+bin_dir = os.path.abspath(os.path.dirname(sys.argv[0])) + "/"
+grep_dir = "/app/rwsj/hotdance"
+
+def stop():
+    sys.stdout.write('stopping server')
+    sys.stdout.flush()
+    
+    killcmd = "kill "
+    cmd = "echo $(ps ax | grep -v 'grep' | grep -v '"+bin_dir+"hotdance' | grep '"+grep_dir+"' | awk '{if(NR==1) {print $1}}')"
+    #print cmd   
+    #return 0 
+    
+    isRunning=0
+    idx = 0
+    while 0==0:
+        sys.stdout.write('...')
+        sys.stdout.flush()
+        idx = idx + 1
+        pids = ""
+
+        result = os.popen(cmd).readlines()
+        size = len(result)
+        
+        time.sleep(0.3)
+        
+        result2 = os.popen(cmd).readlines()
+        size2 = len(result2)
+        
+        if size!=size2 or result[0]!=result2[0]:
+            continue
+        
+        #print 'size=%d' %size 
+        #print "result="+result[0]
+
+        if size>0:
+            if string.strip(result[0]) != "":
+                pids = pids + result[0]+" "
+        
+        if pids == "":
+            size = 0
+       
+                
+        if size>0:
+            isRunning = 1
+            killcmd = "kill " + pids
+            os.system(killcmd)
+            time.sleep(0.1)
+            continue
+        elif isRunning==0:
+            count=0
+            while count<10:
+                sys.stdout.write('...')
+                sys.stdout.flush()
+                time.sleep(0.1)
+                count=count+1
+            print "...Server not running"
+            return 0
+        else:
+            print "[OK]"
+            return 0
+    
+    
+    
+    
+    
+def start():
+    print('Starting server.........')
+    time.sleep(2)
+    cmd = bin_dir+'''Agent -d'''
+    os.system(cmd)
+    time.sleep(1)
+    print('Starting server....................................[OK]')
+
+
+
+def restart():
+	i = stop()
+	while i>0:
+	    i=stop()
+	start()
+
+def getpara():
+    while 1:      
+        print '''what do you want me to do:'''
+        print '''0:quit'''
+        print '''1:stop'''
+        print '''2:start'''
+        print '''3:restart'''
+        chose = sys.stdin.read(1)
+        if chose=='''1''' or chose=='''stop''':
+            para = '''stop'''
+            break
+        elif chose=='''2''' or chose=='''start''':
+            para = '''start'''
+            break
+        elif chose=='''3''' or chose=='''restart''':
+            para = '''restart'''
+            break
+        elif chose=='''0''' or chose=='''quit''':
+            para = '''quit'''
+            break
+    return para
+
+def main():
+    cmd = sys.argv
+    argc = len(cmd)
+    para = ""
+    if argc<2:
+        para = getpara()
+    else:
+        para = cmd[1]
+        if para=='''stop''' or para == '''start''' or para == '''restart''':
+            para = cmd[1]
+        else:
+            para = getpara()
+    
+    if para == '''stop''':
+        stop()
+    elif para == '''start''':
+        start()
+    elif para == '''restart''':
+        restart()
+    elif para == '''quit''':
+        return
+
+
+main()
+        
+

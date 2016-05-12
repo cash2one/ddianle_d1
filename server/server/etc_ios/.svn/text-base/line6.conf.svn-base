@@ -1,0 +1,7 @@
+[agent]
+keepAccountServer=1
+keepGroupServer=1
+keepGameServer=1
+keepGameServer2=1
+keepGameServer3=1
+keepGameServer4=1

@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Util">
+      <UniqueIdentifier>{73b63de8-98b0-4a1c-a527-8dbd512ab192}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Socket">
+      <UniqueIdentifier>{0f2c471f-721e-4590-9538-bce817114c8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Crypt">
+      <UniqueIdentifier>{1178f60c-e429-4588-a177-cf662658750f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message">
+      <UniqueIdentifier>{cb5d7e03-5afd-415a-9a26-d45665183f09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MssageFrameWork">
+      <UniqueIdentifier>{a498f7d6-f8e3-43db-9434-6f7a9e0dddae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DBFrameWork">
+      <UniqueIdentifier>{46d73ab9-1e15-4cff-9e59-dc09d4a4d77d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SharedPtr">
+      <UniqueIdentifier>{53fd3e32-10e4-4a8a-8e48-1c62b6ef30d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Json">
+      <UniqueIdentifier>{db9109b2-dc35-4a3f-949d-214db4257cab}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Deletor.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Ini.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Log.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="MemPool.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Windefine.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="AddrMgr.h">
+      <Filter>Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientSocketMgr.h">
+      <Filter>Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="Crypt.h">
+      <Filter>Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgBaseStruct.h">
+      <Filter>Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="ParamPool.h">
+      <Filter>Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="Slot.h">
+      <Filter>Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="SlotPeer.h">
+      <Filter>Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="SocketDef.h">
+      <Filter>Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="SocketMgr.h">
+      <Filter>Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="WinsockErrCode.h">
+      <Filter>Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="DBIMysql.h">
+      <Filter>DBFrameWork</Filter>
+    </ClInclude>
+    <ClInclude Include="DBQuery_Map.h">
+      <Filter>DBFrameWork</Filter>
+    </ClInclude>
+    <ClInclude Include="DBQuery_Map_Entry.h">
+      <Filter>DBFrameWork</Filter>
+    </ClInclude>
+    <ClInclude Include="DBQuery_Processor_Entry.h">
+      <Filter>DBFrameWork</Filter>
+    </ClInclude>
+    <ClInclude Include="DefaultQueryProcessorObjGet.h">
+      <Filter>DBFrameWork</Filter>
+    </ClInclude>
+    <ClInclude Include="IQueryProcessorObjGet.h">
+      <Filter>DBFrameWork</Filter>
+    </ClInclude>
+    <ClInclude Include="QueryManagerBase.h">
+      <Filter>DBFrameWork</Filter>
+    </ClInclude>
+    <ClInclude Include="Crc.h">
+      <Filter>Crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="Md5.h">
+      <Filter>Crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="GameMsg_Base.h">
+      <Filter>Message</Filter>
+    </ClInclude>
+    <ClInclude Include="GameMsg_System_Connect.h">
+      <Filter>Message</Filter>
+    </ClInclude>
+    <ClInclude Include="GameMsg_System_Disconnect.h">
+      <Filter>Message</Filter>
+    </ClInclude>
+    <ClInclude Include="GameMsg_System_Invalid.h">
+      <Filter>Message</Filter>
+    </ClInclude>
+    <ClInclude Include="GameMsg_System_Packet.h">
+      <Filter>Message</Filter>
+    </ClInclude>
+    <ClInclude Include="GameMsg_System_Ping.h">
+      <Filter>Message</Filter>
+    </ClInclude>
+    <ClInclude Include="GameMsg_System_Slot.h">
+      <Filter>Message</Filter>
+    </ClInclude>
+    <ClInclude Include="GameMsg_Processor.h">
+      <Filter>MssageFrameWork</Filter>
+    </ClInclude>
+    <ClInclude Include="conv.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="IProcessorObjGet.h">
+      <Filter>MssageFrameWork</Filter>
+    </ClInclude>
+    <ClInclude Include="DefaultProcessorObjGet.h">
+      <Filter>MssageFrameWork</Filter>
+    </ClInclude>
+    <ClInclude Include="GameMsg_Map.h">
+      <Filter>MssageFrameWork</Filter>
+    </ClInclude>
+    <ClInclude Include="GameMsg_Map_Entry.h">
+      <Filter>MssageFrameWork</Filter>
+    </ClInclude>
+    <ClInclude Include="GameMsg_Processor_Entry.h">
+      <Filter>MssageFrameWork</Filter>
+    </ClInclude>
+    <ClInclude Include="SocketLibCommonDef.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\SocketLib.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Formatter.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="SharedPtr.h">
+      <Filter>SharedPtr</Filter>
+    </ClInclude>
+    <ClInclude Include="Query.h">
+      <Filter>DBFrameWork</Filter>
+    </ClInclude>
+    <ClInclude Include="json\autolink.h">
+      <Filter>Json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\config.h">
+      <Filter>Json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\features.h">
+      <Filter>Json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\forwards.h">
+      <Filter>Json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\json.h">
+      <Filter>Json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\json_batchallocator.h">
+      <Filter>Json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\reader.h">
+      <Filter>Json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\value.h">
+      <Filter>Json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\writer.h">
+      <Filter>Json</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Ini.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Log.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="MemPool.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="AddrMgr.cpp">
+      <Filter>Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckValid.cpp">
+      <Filter>Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientSocketMgr.cpp">
+      <Filter>Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="Crypt.cpp">
+      <Filter>Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyFileMaker.cpp">
+      <Filter>Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="MsgBaseStruct.cpp">
+      <Filter>Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="ParamPool.cpp">
+      <Filter>Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="Slot.cpp">
+      <Filter>Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="SlotPeer.cpp">
+      <Filter>Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="SocketMgr.cpp">
+      <Filter>Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="ValidClient.cpp">
+      <Filter>Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="DBIMysql.cpp">
+      <Filter>DBFrameWork</Filter>
+    </ClCompile>
+    <ClCompile Include="DBQuery_Map.cpp">
+      <Filter>DBFrameWork</Filter>
+    </ClCompile>
+    <ClCompile Include="DBQuery_Map_Entry.cpp">
+      <Filter>DBFrameWork</Filter>
+    </ClCompile>
+    <ClCompile Include="DBQuery_Processor_Entry.cpp">
+      <Filter>DBFrameWork</Filter>
+    </ClCompile>
+    <ClCompile Include="DefaultQueryProcessorObjGet.cpp">
+      <Filter>DBFrameWork</Filter>
+    </ClCompile>
+    <ClCompile Include="QueryManagerBase.cpp">
+      <Filter>DBFrameWork</Filter>
+    </ClCompile>
+    <ClCompile Include="Crc.cpp">
+      <Filter>Crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="Md5.cpp">
+      <Filter>Crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="GameMsg_Base.cpp">
+      <Filter>Message</Filter>
+    </ClCompile>
+    <ClCompile Include="GameMsg_System_Connect.cpp">
+      <Filter>Message</Filter>
+    </ClCompile>
+    <ClCompile Include="GameMsg_System_Disconnect.cpp">
+      <Filter>Message</Filter>
+    </ClCompile>
+    <ClCompile Include="GameMsg_System_Invalid.cpp">
+      <Filter>Message</Filter>
+    </ClCompile>
+    <ClCompile Include="GameMsg_System_Packet.cpp">
+      <Filter>Message</Filter>
+    </ClCompile>
+    <ClCompile Include="GameMsg_System_Ping.cpp">
+      <Filter>Message</Filter>
+    </ClCompile>
+    <ClCompile Include="GameMsg_System_Slot.cpp">
+      <Filter>Message</Filter>
+    </ClCompile>
+    <ClCompile Include="GameMsg_Processor.cpp">
+      <Filter>MssageFrameWork</Filter>
+    </ClCompile>
+    <ClCompile Include="conv.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="DefaultProcessorObjGet.cpp">
+      <Filter>MssageFrameWork</Filter>
+    </ClCompile>
+    <ClCompile Include="GameMsg_Map.cpp">
+      <Filter>MssageFrameWork</Filter>
+    </ClCompile>
+    <ClCompile Include="GameMsg_Map_Entry.cpp">
+      <Filter>MssageFrameWork</Filter>
+    </ClCompile>
+    <ClCompile Include="GameMsg_Processor_Entry.cpp">
+      <Filter>MssageFrameWork</Filter>
+    </ClCompile>
+    <ClCompile Include="Formatter.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Query.cpp">
+      <Filter>DBFrameWork</Filter>
+    </ClCompile>
+    <ClCompile Include="json\json_reader.cpp">
+      <Filter>Json</Filter>
+    </ClCompile>
+    <ClCompile Include="json\json_value.cpp">
+      <Filter>Json</Filter>
+    </ClCompile>
+    <ClCompile Include="json\json_writer.cpp">
+      <Filter>Json</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="json\json_internalarray.inl">
+      <Filter>Json</Filter>
+    </None>
+    <None Include="json\json_internalmap.inl">
+      <Filter>Json</Filter>
+    </None>
+    <None Include="json\json_valueiterator.inl">
+      <Filter>Json</Filter>
+    </None>
+  </ItemGroup>
+</Project>

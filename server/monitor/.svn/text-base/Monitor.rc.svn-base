@@ -1,0 +1,595 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\Monitor.rc2""  // 非 Microsoft Visual C++ 编辑资源\r\n"
+    "#include ""afxres.rc""         // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Monitor.ico"
+IDR_MonitorTYPE         ICON                    "res\\MonitorDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDB_LIST_IMAGE          BITMAP                  "res\\ListImage.bmp"
+IDB_BITMAP2             BITMAP                  "res\\bitmap2.bmp"
+IDB_SPLASH              BITMAP                  "res\\splash.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "退出(&X)",                      ID_APP_EXIT
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                     ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                     ID_VIEW_STATUS_BAR
+        MENUITEM "拆分(&P)",                      ID_WINDOW_SPLIT
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 Monitor(&A)...",           ID_APP_ABOUT
+    END
+    POPUP "控制"
+    BEGIN
+        POPUP "Agent"
+        BEGIN
+            MENUITEM "连接",                          IDM_AGENT_CONNECT
+            MENUITEM "断开",                          IDM_AGENT_DISCONNECT
+            MENUITEM "重启",                          32822
+            MENUITEM SEPARATOR
+            MENUITEM "设置",                          32823
+            MENUITEM "关闭自动重启服务",                    ID_AGENT_StopKeep
+            MENUITEM "恢复自动重启服务",                    ID_AGENT_RestoreKeep
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "倒计时停机",                       IDM_SHUTDOWNINTIME
+        MENUITEM "全部倒计时停机",                     IDM_SHUTDOWNALL
+        MENUITEM "全部恢复",                        IDM_RESTOREALL
+        MENUITEM SEPARATOR
+        POPUP "关闭服务"
+        BEGIN
+            MENUITEM "游戏服务",                        ID_CLOSESEVER_LOGICSERVER
+            MENUITEM "游戏服务2",                       ID_CLOSESEVER_LOGICSERVER2
+            MENUITEM "游戏服务3",                       ID_CLOSESEVER_LOGICSERVER3
+            MENUITEM "游戏服务4",                       ID_CLOSESEVER_LOGICSERVER4
+            MENUITEM "组控服务",                        ID_CLOSESERVER_WORLDHOST
+            MENUITEM "登录服务",                        ID_CLOSESEVER_LOGINSERVER
+            MENUITEM SEPARATOR
+            MENUITEM "所有服务",                        ID_CLOSESEVER_ALL
+        END
+        POPUP "开启服务"
+        BEGIN
+            MENUITEM "游戏服务器",                       ID_STARTSERVER_LOGICSERVER
+            MENUITEM "游戏服务器2",                      ID_STARTSERVER_LOGICSERVER2
+            MENUITEM "游戏服务器3",                      ID_STARTSERVER_LOGICSERVER3
+            MENUITEM "游戏服务器4",                      ID_STARTSERVER_LOGICSERVER4
+            MENUITEM "组控服务器",                       ID_STARTSERVER_WORLDHOST
+            MENUITEM "登录服务器",                       ID_STARTSERVER_LOGINSERVER
+            MENUITEM SEPARATOR
+            MENUITEM "所有服务器",                       ID_STARTSERVER_ALL
+        END
+        MENUITEM SEPARATOR
+        POPUP "强制关闭服务"
+        BEGIN
+            MENUITEM "游戏服务",                        IDM_KILL_GAMESERVER
+            MENUITEM "游戏服务2",                       IDM_KILL_GAMESERVER2
+            MENUITEM "游戏服务3",                       IDM_KILL_GAMESERVER3
+            MENUITEM "游戏服务4",                       IDM_KILL_GAMESERVER4
+            MENUITEM "组控服务",                        IDM_KILL_GROUPSERVER
+            MENUITEM "登录服务",                        IDM_KILL_ACCOUNTSERVER
+            MENUITEM SEPARATOR
+            MENUITEM "所有服务",                        IDM_KILL_ALL
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "远程执行指令",                      ID_CONTROL_EXECUTE
+        MENUITEM "发布公告",                        ID_CONTROL_ANNOUNCE
+        POPUP "充值送礼控制"
+        BEGIN
+            MENUITEM "开启",                          ID_SENDGIFT_OPEN
+            MENUITEM "关闭",                          ID_SENDGIFT_CLOSE
+        END
+    END
+    POPUP "选项"
+    BEGIN
+        MENUITEM "有错误时发声",                      ID_OPTION_BEEPONERROR, CHECKED
+        MENUITEM "操作确认",                        IDM_COMFIRM, CHECKED
+        POPUP "更新速度"
+        BEGIN
+            POPUP "服务器状态更新速度"
+            BEGIN
+                MENUITEM "高",                           ID_SERVERSTATEUPDATE_HIGH
+                MENUITEM "中",                           ID_SERVERSTATEUPDATE_NORMAL
+                MENUITEM "被动更新",                        ID_SERVERSTATEUPDATE_PASSIVE
+            END
+            POPUP "系统状况更新速度"
+            BEGIN
+                MENUITEM "高",                           ID_SYSTEMSTATEUPDATESPEED_HIGH
+                MENUITEM "中",                           ID_SYSTEMSTATEUPDATESPEED_NORMAL
+                MENUITEM "被动更新",                        ID_SYSTEMSTATEUPDATESPEED_PASSIVE
+            END
+        END
+        POPUP "停机倒计时"
+        BEGIN
+            MENUITEM "60分钟",                        IDM_SHUTDOWN60
+            MENUITEM "30分钟",                        IDM_SHUTDOWN30
+            MENUITEM "15分钟",                        IDM_SHUTDOWN15, CHECKED
+            MENUITEM "10分钟",                        IDM_SHUTDOWN10
+        END
+    END
+    POPUP "查看"
+    BEGIN
+        MENUITEM "服务器在线状况图",                    IDM_VIEW_ONLINECOUNT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Monitor"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Monitor Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2004",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_SETAGENT DIALOGEX 0, 0, 227, 125
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Set Agent"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,127,7,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,128,23,40,14,ES_AUTOHSCROLL
+    CONTROL         "GameServer",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,47,68,10
+    CONTROL         "GameServer2",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,127,47,68,10
+    CONTROL         "GameServer3",IDC_CHECK8,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,65,68,10
+    CONTROL         "GameServer4",IDC_CHECK9,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,127,65,68,10
+    CONTROL         "GroupServer",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,83,68,10
+    CONTROL         "AccountServer",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,127,83,68,10
+    PUSHBUTTON      "Restore",IDC_BUTTON1,43,104,50,14
+    DEFPUSHBUTTON   "Set",IDOK,107,104,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,170,104,50,14
+    LTEXT           "Check service interval",IDC_STATIC,7,7,91,14
+    LTEXT           "Report sysinfo interval",IDC_STATIC,7,26,91,14
+END
+
+IDD_EXECUTE DIALOGEX 0, 0, 266, 73
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Execute command"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,7,25,252,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,153,52,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,209,52,50,14
+    LTEXT           "Execute command on the machine as root",IDC_STATIC,7,7,252,16
+END
+
+IDD_ANNOUNCE DIALOGEX 0, 0, 270, 78
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Announce"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMBO1,7,30,256,95,CBS_DROPDOWN | CBS_AUTOHSCROLL | CBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,157,57,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,213,57,50,14
+    LTEXT           "Announce to all player on the machine",IDC_STATIC,7,7,256,17
+END
+
+IDD_ONLINECOUNT DIALOGEX 0, 0, 463, 297
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "在线状况图"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_SLIDER1,"msctls_trackbar32",TBS_AUTOTICKS | WS_BORDER | WS_TABSTOP,7,7,100,15
+END
+
+IDD_SPLASH DIALOGEX 0, 0, 160, 196
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         138,IDC_STATIC,"Static",SS_BITMAP,0,0,333,231
+END
+
+IDD_TREE_LIST_VIEW DIALOG  0, 0, 30, 20
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "",IDC_TREELIST,0,0,30,20,WS_BORDER
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Monitor.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "Monitor.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "翻译", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_SETAGENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 220
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 106
+    END
+
+    IDD_EXECUTE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 259
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 66
+    END
+
+    IDD_ANNOUNCE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 71
+    END
+
+    IDD_ONLINECOUNT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 456
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 290
+    END
+
+    IDD_SPLASH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "Monitor\n\nMonitor\n\n\nMonitor.Document\nMonitor.Document"
+    IDS_AGENT_NOTUNDERCONTROL "机器 %s 不在控制之下，请尝试用　［控制］＞［连接］"
+    IDS_AGENT_SURECLOSE     "确定要关闭 %s 上的指定服务吗？"
+    IDS_AGENT_SURESTART     "确定要启动 %s 上的指定服务吗？"
+    IDS_AGENT_SUREKILL      "确定要强制关闭 %s 上的指定服务吗？"
+    IDS_AGENT_SURERESTART   "确定要重启 %s 上agent ？"
+    IDS_AGENT_SURESHUTDOWN  "确定要让 %s 倒计时停机？"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "恋舞天使服务器监控"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+    ID_INDICATOR_TOTAL      "总在线人数"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回上一个窗格\n上一窗格"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "将活动窗口拆分为多个窗格\n拆分"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "清除选定内容\n清除"
+    ID_EDIT_CLEAR_ALL       "清除全部内容\n全部清除"
+    ID_EDIT_COPY            "复制选定内容并将其放到剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切选定内容并将其放到剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的文本\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一操作\n重复"
+    ID_EDIT_REPLACE         "用其他文本替换特定的文本\n替换"
+    ID_EDIT_SELECT_ALL      "选定整个文档\n全选"
+    ID_EDIT_UNDO            "撤消上一操作\n撤消"
+    ID_EDIT_REDO            "恢复上次撤消的操作\n重做"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n切换工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n切换状态栏"
+    ID_VIEW_AUTOARRANGE     "以网格方式排列图标。"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "更改窗口大小"
+    AFX_IDS_SCMOVE          "更改窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小为图标"
+    AFX_IDS_SCMAXIMIZE      "使窗口最大化显示"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到前一个文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动窗口并提示保存文档"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "将窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务列表"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_SMALLICON       "使用小图标显示各项。\n小图标"
+    ID_VIEW_LARGEICON       "使用大图标显示各项。\n大图标"
+    ID_VIEW_LIST            "以列表方式显示各项。\n列表"
+    ID_VIEW_DETAILS         "显示窗口中每一项的相关详细信息。\n详细信息"
+    ID_VIEW_LINEUP          "以网格方式排列图标。"
+    ID_VIEW_BYNAME          "按字母顺序对图标排序。"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_CLOSESEVER_ALL       "Close all game service on the machine selected.\nClose all game service on the machine selected."
+    ID_CLOSESEVER_LOGINSERVER 
+                            "Close AccountServer on the machine selected.\nClose AccountServer on the machine selected."
+    ID_CLOSESEVER_LOGICSERVER "Close Game server\nClose game Server"
+    ID_CLOSESEVER_LINKSERVER "Close Link Server\nClose Link Server"
+    ID_SERVERSTATEUPDATE_HIGH "Update once pre one second"
+    ID_SERVERSTATEUPDATE_NORMAL "once pre two seconds"
+    ID_SERVERSTATEUPDATE_PASSIVE "Update by the agent"
+    ID_SYSTEMSTATEUPDATESPEED_HIGH "once pre one second"
+    ID_SYSTEMSTATEUPDATESPEED_NORMAL "once pre tow seconds"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_CLOSESEVER_LOGICSERVER2 "Close Game server2\nClose game Server2"
+    ID_CLOSESEVER_LOGICSERVER3 "Close Game server3\nClose game Server3"
+    ID_CLOSESEVER_LOGICSERVER4 "Close Game server4\nClose game Server4"
+    ID_STARTSERVER_LOGICSERVER2 "start the GameServer2"
+    ID_STARTSERVER_LOGICSERVER3 "start the GameServer3"
+    ID_STARTSERVER_LOGICSERVER4 "start the GameServer4"
+    IDM_KILL_GAMESERVER2    "强制关闭游戏服务器2"
+    IDM_KILL_GAMESERVER3    "强制关闭游戏服务器3"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_SYSTEMSTATEUPDATESPEED_PASSIVE "update by the agent"
+    ID_CONTROL_CONNECT      "Connect to the agent"
+    ID_CONTROL_DISCONNECT   "Disconnect the agent"
+    ID_STARTSERVER_LOGINSERVER "Start the AccountServer"
+    ID_STARTSERVER_LOGICSERVER "start the GameServer"
+    ID_STARTSERVER_ALL      "start all server"
+    ID_CONTROL_SETAGENT     "Modify the agent's settings"
+    ID_CONTROL_EXECUTE      "Execute command as root"
+    ID_CONTROL_ANNOUNCE     "Announce to all client"
+    ID_CLOSESERVER_WORLDHOST "Close the GroupServer"
+    ID_STARTSERVER_WORLDHOST "start the GroupServer"
+END
+
+STRINGTABLE 
+BEGIN
+    IDM_VIEW_ONLINECOUNT    "查看各服务器在线情况图表"
+    IDM_KILL_GAMESERVER     "强制关闭游戏服务器"
+    IDM_KILL_GROUPSERVER    "强制关闭组控服务器"
+    IDM_KILL_ACCOUNTSERVER  "强制关闭登录服务器"
+    IDM_KILL_ALL            "强制关闭所有服务器"
+END
+
+STRINGTABLE 
+BEGIN
+    IDM_KILL_GAMESERVER4    "强制关闭游戏服务器4"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息、版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "用新名称保存活动文档\n另存为"
+END
+
+STRINGTABLE 
+BEGIN
+    IDM_AGENT_CONNECT       "连接agent"
+    IDM_AGENT_DISCONNECT    "断开和agent的连接"
+    IDM_AGENT_RESTART       "重新启动agent"
+    IDM_AGENT_SETTING       "修改agent的设置"
+END
+
+STRINGTABLE 
+BEGIN
+    IDM_SHUTDOWNINTIME      "在一定时间内停机并自动公告"
+    IDM_SHUTDOWNALL         "倒计时关闭所有服务器上的所有服务并且不会自动重启"
+    IDM_RESTOREALL          "恢复所有服务器到原始设置"
+    ID_AGENT_32843          "关闭自动重启的功能"
+    ID_AGENT_32844          "恢复自动重启的功能"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\Monitor.rc2"  // 非 Microsoft Visual C++ 编辑资源
+#include "afxres.rc"         // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

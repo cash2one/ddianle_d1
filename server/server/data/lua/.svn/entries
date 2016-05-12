@@ -1,0 +1,355 @@
+10
+
+dir
+90047
+svn://172.16.1.237/SmartPhone/server/server/data/lua
+svn://172.16.1.237
+
+
+
+2016-04-29T02:02:17.566027Z
+89100
+liguanghao
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3a8338ae-16cc-44ee-88b1-e500a617239b
+
+MonthCard
+dir
+
+Chat
+dir
+
+PlayerCache
+dir
+
+Music
+dir
+
+timeegg
+dir
+
+SystemSetting
+dir
+
+mall
+dir
+
+notification
+dir
+
+PhotoRoom
+dir
+
+anti-addiction
+dir
+
+couple
+dir
+
+Pet
+dir
+
+Rank
+dir
+
+activity
+dir
+
+DynamicBox
+dir
+
+SocialShare
+dir
+
+Guide
+dir
+
+VIP
+dir
+
+accouonConfigs
+dir
+
+Buff.lua
+file
+
+
+
+
+2016-05-12T09:22:10.207964Z
+f32bb73f374014d3a72cd5747afdc2b6
+2015-06-12T04:20:57.802728Z
+56508
+xieshaobin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2046
+
+friend
+dir
+
+amuse
+dir
+
+room
+dir
+
+check
+dir
+
+Item.lua
+file
+
+
+
+
+2016-05-12T09:22:10.208966Z
+418d43aeebea6da37845c6dd8a313483
+2016-02-03T06:26:09.759244Z
+81654
+yangzhifu
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3856
+
+Medal
+dir
+
+external
+dir
+
+Config.lua
+file
+
+
+
+
+2016-05-12T09:22:10.208966Z
+4f84c2e4dc1c0b843391998a4a020cab
+2015-06-12T04:20:57.802728Z
+56508
+xieshaobin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2358
+
+SpecialMall
+dir
+
+money
+dir
+
+DanceGroup
+dir
+
+CommFunc.lua
+file
+
+
+
+
+2016-05-12T09:22:10.208966Z
+252bbec017f164fd34d26fbcc16ec993
+2014-12-22T07:53:04.365001Z
+41054
+chengzhongnan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+909
+
+box
+dir
+
+Bag
+dir
+
+BigMama
+dir
+
+item
+dir
+
+Gene.lua
+file
+
+
+
+
+2016-05-12T09:22:10.209964Z
+cc9b4a540419e60fcfc6ac5e3d3975e2
+2015-08-13T07:43:23.145591Z
+63342
+yangzhifu
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1523
+
+Dungeon
+dir
+
+quest
+dir
+
+BeckoningMode
+dir
+
+activeness
+dir
+
+BGM
+dir
+
+announce
+dir
+
+security
+dir
+
+Exp.lua
+file
+
+
+
+
+2016-05-12T09:22:10.208966Z
+6cb816f3b25f20c65ef50a735fb88b5c
+2015-07-06T08:20:17.724094Z
+58667
+xieshaobin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1749
+
+payment
+dir
+
+gene
+dir
+

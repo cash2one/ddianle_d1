@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4674F998-303C-480C-817C-ED88645F1559}</ProjectGuid>
+    <RootNamespace>Monitor</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/wd4996 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_ADMINISTATOR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>socket.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../socket/debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_ADMINISTATOR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>socket.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>./monitor.exe</OutputFile>
+      <AdditionalLibraryDirectories>../socket/release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Newheaderctrl.cpp" />
+    <ClCompile Include="Newtreelistctrl.cpp" />
+    <ClCompile Include="Tlframe.cpp" />
+    <ClCompile Include="Treelistview.cpp" />
+    <ClCompile Include="AnnounceDlg.cpp" />
+    <ClCompile Include="DlgOnlineCount.cpp" />
+    <ClCompile Include="ExecuteDlg.cpp" />
+    <ClCompile Include="Monitor.cpp" />
+    <ClCompile Include="MonitorDoc.cpp" />
+    <ClCompile Include="MonitorMainFrm.cpp" />
+    <ClCompile Include="MonitorView.cpp" />
+    <ClCompile Include="SetAgentDlg.cpp" />
+    <ClCompile Include="SplashDlg.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="..\server\AgentMsg_Announce.cpp" />
+    <ClCompile Include="..\server\AgentMsg_Close.cpp" />
+    <ClCompile Include="..\server\AgentMsg_Execute.cpp" />
+    <ClCompile Include="..\server\AgentMsg_Exit.cpp" />
+    <ClCompile Include="..\server\AgentMsg_Kill.cpp" />
+    <ClCompile Include="..\server\AgentMsg_SendGift_Control.cpp" />
+    <ClCompile Include="..\server\AgentMsg_Setting.cpp" />
+    <ClCompile Include="..\server\AgentMsg_ShutdownInTime.cpp" />
+    <ClCompile Include="..\server\AgentMsg_Start.cpp" />
+    <ClCompile Include="..\server\AgentMsg_Stat.cpp" />
+    <ClCompile Include="..\server\AgentMsg_SysInfo.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Newheaderctrl.h" />
+    <ClInclude Include="Newtreelistctrl.h" />
+    <ClInclude Include="Tlframe.h" />
+    <ClInclude Include="Treelistview.h" />
+    <ClInclude Include="AnnounceDlg.h" />
+    <ClInclude Include="DlgOnlineCount.h" />
+    <ClInclude Include="ExecuteDlg.h" />
+    <ClInclude Include="Monitor.h" />
+    <ClInclude Include="MonitorDoc.h" />
+    <ClInclude Include="MonitorMainFrm.h" />
+    <ClInclude Include="MonitorView.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SetAgentDlg.h" />
+    <ClInclude Include="SplashDlg.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="..\server\AgentMsg_Announce.h" />
+    <ClInclude Include="..\server\AgentMsg_Close.h" />
+    <ClInclude Include="..\server\AgentMsg_Execute.h" />
+    <ClInclude Include="..\server\AgentMsg_Exit.h" />
+    <ClInclude Include="..\server\AgentMsg_Kill.h" />
+    <ClInclude Include="..\server\AgentMsg_SendGift_Control.h" />
+    <ClInclude Include="..\server\AgentMsg_Setting.h" />
+    <ClInclude Include="..\server\AgentMsg_ShutdownInTime.h" />
+    <ClInclude Include="..\server\AgentMsg_Start.h" />
+    <ClInclude Include="..\server\AgentMsg_Stat.h" />
+    <ClInclude Include="..\server\AgentMsg_SysInfo.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\bitmap2.bmp" />
+    <None Include="res\ListImage.bmp" />
+    <None Include="res\Monitor.ico" />
+    <None Include="res\MonitorDoc.ico" />
+    <None Include="res\splash.bmp" />
+    <None Include="res\Toolbar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Monitor.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="Monitor.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

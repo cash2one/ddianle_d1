@@ -1,0 +1,12 @@
+[Section]
+Count=1
+
+[Section00]
+Name=²âÊÔÇø
+SvrCnt=3
+Svr00=117.135.139.51
+Port00=6313
+Svr01=117.135.139.52
+Port01=6313
+Svr02=117.135.139.53
+Port02=6313

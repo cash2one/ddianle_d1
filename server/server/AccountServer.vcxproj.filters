@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Message">
+      <UniqueIdentifier>{80cc8146-6815-437d-9459-ba60b57f2a26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lua">
+      <UniqueIdentifier>{ee87bdc4-cac7-446d-a17b-ad5c758f6edb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Currency">
+      <UniqueIdentifier>{f8a5c10c-e40d-4d76-9e63-566f841a412b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ServerFrame">
+      <UniqueIdentifier>{cdfb30b1-8f03-4358-b9bf-ef42618a032c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PlayerCache">
+      <UniqueIdentifier>{ef0fcd48-f6b7-4098-b171-3668f308b97c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="account\GameMsg_Account_BillingState.cpp">
+      <Filter>Message</Filter>
+    </ClCompile>
+    <ClCompile Include="account\GameMsg_Account_CheckActivate.cpp">
+      <Filter>Message</Filter>
+    </ClCompile>
+    <ClCompile Include="account\GameMsg_Account_CheckActivateResult.cpp">
+      <Filter>Message</Filter>
+    </ClCompile>
+    <ClCompile Include="account\GameMsg_Account_CreateAccount.cpp">
+      <Filter>Message</Filter>
+    </ClCompile>
+    <ClCompile Include="account\GameMsg_Account_CreateAccountResult.cpp">
+      <Filter>Message</Filter>
+    </ClCompile>
+    <ClCompile Include="account\GameMsg_Account_GetGameServersInfo.cpp">
+      <Filter>Message</Filter>
+    </ClCompile>
+    <ClCompile Include="account\GameMsg_Account_Login.cpp">
+      <Filter>Message</Filter>
+    </ClCompile>
+    <ClCompile Include="account\GameMsg_Account_LoginResult.cpp">
+      <Filter>Message</Filter>
+    </ClCompile>
+    <ClCompile Include="account\GameMsg_Account_NotActivated.cpp">
+      <Filter>Message</Filter>
+    </ClCompile>
+    <ClCompile Include="account\GameMsg_Account_QuickCreateAccount.cpp">
+      <Filter>Message</Filter>
+    </ClCompile>
+    <ClCompile Include="account\GameMsg_Account_QuickCreateAccountResult.cpp">
+      <Filter>Message</Filter>
+    </ClCompile>
+    <ClCompile Include="account\GameMsg_Account_ServerState.cpp">
+      <Filter>Message</Filter>
+    </ClCompile>
+    <ClCompile Include="account\GameMsg_Currency.cpp">
+      <Filter>Message</Filter>
+    </ClCompile>
+    <ClCompile Include="account\GameMsg_Server_State.cpp">
+      <Filter>Message</Filter>
+    </ClCompile>
+    <ClCompile Include="account\LoginCirculator.cpp">
+      <Filter>ServerFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="account\LoginMain.cpp">
+      <Filter>ServerFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="account\CurrencyTable.cpp">
+      <Filter>Currency</Filter>
+    </ClCompile>
+    <ClCompile Include="lua\luaAccountServerFunction.cpp">
+      <Filter>lua</Filter>
+    </ClCompile>
+    <ClCompile Include="account\GameMsg_Account_RebindAccount.cpp">
+      <Filter>Message</Filter>
+    </ClCompile>
+    <ClCompile Include="account\PlayerCacheManager.cpp">
+      <Filter>PlayerCache</Filter>
+    </ClCompile>
+    <ClCompile Include="account\PlayerCacheData.cpp">
+      <Filter>PlayerCache</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="account\GameMsg_Account_BillingState.h">
+      <Filter>Message</Filter>
+    </ClInclude>
+    <ClInclude Include="account\GameMsg_Account_CheckActivate.h">
+      <Filter>Message</Filter>
+    </ClInclude>
+    <ClInclude Include="account\GameMsg_Account_CheckActivateResult.h">
+      <Filter>Message</Filter>
+    </ClInclude>
+    <ClInclude Include="account\GameMsg_Account_CreateAccount.h">
+      <Filter>Message</Filter>
+    </ClInclude>
+    <ClInclude Include="account\GameMsg_Account_CreateAccountResult.h">
+      <Filter>Message</Filter>
+    </ClInclude>
+    <ClInclude Include="account\GameMsg_Account_GetGameServersInfo.h">
+      <Filter>Message</Filter>
+    </ClInclude>
+    <ClInclude Include="account\GameMsg_Account_Login.h">
+      <Filter>Message</Filter>
+    </ClInclude>
+    <ClInclude Include="account\GameMsg_Account_LoginResult.h">
+      <Filter>Message</Filter>
+    </ClInclude>
+    <ClInclude Include="account\GameMsg_Account_NotActivated.h">
+      <Filter>Message</Filter>
+    </ClInclude>
+    <ClInclude Include="account\GameMsg_Account_QuickCreateAccount.h">
+      <Filter>Message</Filter>
+    </ClInclude>
+    <ClInclude Include="account\GameMsg_Account_QuickCreateAccountResult.h">
+      <Filter>Message</Filter>
+    </ClInclude>
+    <ClInclude Include="account\GameMsg_Account_ServerState.h">
+      <Filter>Message</Filter>
+    </ClInclude>
+    <ClInclude Include="account\GameMsg_Currency.h">
+      <Filter>Message</Filter>
+    </ClInclude>
+    <ClInclude Include="account\GameMsg_Server_State.h">
+      <Filter>Message</Filter>
+    </ClInclude>
+    <ClInclude Include="account\LoginCirculator.h">
+      <Filter>ServerFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="account\CurrencyTable.h">
+      <Filter>Currency</Filter>
+    </ClInclude>
+    <ClInclude Include="account\GameMsg_Account_RebindAccount.h">
+      <Filter>Message</Filter>
+    </ClInclude>
+    <ClInclude Include="account\PlayerCacheManager.h">
+      <Filter>PlayerCache</Filter>
+    </ClInclude>
+    <ClInclude Include="account\PlayerCacheData.h">
+      <Filter>PlayerCache</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

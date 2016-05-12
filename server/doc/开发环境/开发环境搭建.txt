@@ -1,0 +1,132 @@
+﻿开发环境搭建
+
+1. 软件安装
+===============================================================================
+必装软件：
+Visual Studio 2010：服务器开发用
+Unity3D 4.0.0f7：客户端开发用
+SVN：版本管理
+
+推荐安装：
+Visual Studio 插件：
+（1）	Visual Assistant X：VS开发助手
+（2）	AnkhSvn：svn插件，方便比对代码
+（3）	IncreBuild：多核编译
+
+Eclipse + JDK：Java开发环境，我们的gate服务器是由Java开发的
+Decoda：Lua调试器
+Navicat：MySQL可视化工具
+SecureCRT：ssh终端连接工具
+Beyond Compare：代码比对工具
+MySQL：数据库服务器，使用5.0以上版本
+
+其它：
+Notepad++：开源文本编辑器
+FileZilla：FTP工具，服务器人员可能会用到
+Android sdk：客户端人员会用到
+
+以上软件可到内网机192.168.0.128\share\install目录找到。
+
+一些设置：
+-------------------------------------------------------------
+Unity启动设置：
+在Unity可执行文件或者快捷方式上右击，选择属性，然后在目标输入框中的最后，补写 -ProjectPath，示例如下：
+D:\Unity4.0\Editor\Unity.exe -ProjectPath
+-ProjectPath参数让在启动时，弹出工程选择对话框。
+
+Java环境配置：
+安装好JDK和JRE后，需要设置JAVA_HOME,PATH和classpath三个环境变量，以我的安装为例。我的Java安装在 C:\Program Files (x86)\Java\下。
+右击我的电脑，选择属性->高级系统设置->点击环境变量按钮，新建用户变量.
+变量名：JAVA_HOME，变量值：C:\Program Files (x86)\Java\jdk1.7.0_07
+变量名：PATH，变量值：C:\Program Files (x86)\Java\jdk1.7.0_07\bin;C:\Program Files (x86)\Java\jdk1.7.0_07\jre\bin;C:\Program Files (x86)\Java\jre7\bin;.;..
+变量名：classpath，变量值：C:\Program Files (x86)\Java\jre7\lib\;.;..;C:\Program Files (x86)\Java\jdk1.7.0_07\lib\dt.jar
+
+说明：
+Windows环境变量类似PATH之类的值之间以;.;号分开，可以指定多个目录。
+JAVA_HOME指定Java环境的主目录，一般是bin和lib目录的上层目录，我这里设置的是jdk的目录，eclipse需要使用此变量。
+PATH用于指定可执行文件的目录，这样我们在命令行中输入命令时，系统会自动搜索PATH指定的目录，如果找得到输入的命令，即可执行相应命令。
+classpath是JRE运行时会用到的变量，用来搜索Java库（.jar包）的。
+
+
+2. 相关账号
+===============================================================================
+（1）svn账号，找自己的主管要账号，账号为自己的姓名拼音，密码为：拼音首字母 + “!@#”。
+     svn访问地址：svn://192.168.0.128/svndata
+（2）redmine账号，redmine是我们用的bug跟踪系统，找自己的主管要账号。
+     分配成功后，账号为自己的姓名拼音，密码为4个1。
+	 redmine访问地址：http://192.168.0.128:3000
+（3）数据库账号，我们的数据库是MySQL数据库，
+     服务器程序使用的DB账号：nsytdbuser/nsytdbpassword@192.168.0.128:3306
+	 开发人员一般连接的是：root/meijian8399@192.168.0.128:3306
+（4）Linux机器账号：账号：root密码：wsj402yk$)@mjh，机器：192.168.0.128
+
+3. checkout代码
+===============================================================================
+（1）恋舞项目
+先签出开发分支，正确配置开发分支，使得客户端和服务器正常启动运行后，再签出其它分支，其它分支的配置类似。
+
+服务器开发分支：svn://192.168.0.128/svndata/SmartPhone/server
+服务器签出后，用Visual Studio 2005即可打开所有工程(打开solution文件)，设置solution属性，启动三个工程：
+AccountServer、GameServer和GroupServer，Rebuild整个solution，然后即可启动服务器。
+
+本地数据库服务器部署方法：
+（1）.启动Mysql，默认初始用户root，密码为空或root
+（2）.打开Navicat for Mysql，建立一个本地的连接，连接名，主机，端口，用户名使用默认即可，如果mysql设置了密码，输入密码，点击测试连接，如果连接成功，点击确定即可，否则检查mysql配置。
+（3）.双击localhost连接，右键单击后选择“运行sql文件”菜单，在打开的对话框中依次选择运行sqlscript目录下nsytaccount.sql ，nsytrole.sql ，mall.sql，nsytgm.sql这几个sql文件。
+（4）.修改\server\etc目录下两个文件
+  （a）global.conf修改[dbAccount]下user为root，密码为空或mysql密码，[dbRole]下user为root，密码为空或mysql密码。
+  （b）section-0.conf修改[group0]下所有ip地址为127.0.0.1或本机ip地址。
+
+网关服务器开发分支：svn://192.168.0.128/svndata/SmartPhone/source/gate
+网关服务器.jar包发布目录：svn://192.168.0.128/svndata/branch/SmartPhone_P1/third/gate，只需要签出这里面最新日期的目录即可。
+
+网关服务器运行的目录是：svn://192.168.0.128/svndata/SmartPhone/source/gate/gate/RWServer/execute，
+在开发分支中应该已经签出，签出后，把从jar包发布目录中签出的最新Gate.jar文件复制到这个运行目录中，如果已经配置好jre环境，
+即可双击runserver.bat启动网关服务器了。
+
+
+客户端开发分支：svn://192.168.0.128/svndata/SmartPhone/client
+客户端开发和测试使用的资源目录：svn://192.168.0.128/svndata/branch/Resource_N1/Res
+客户端开发分支工程配置：svn://192.168.0.128/svndata/SmartPhone/client_setting/ProjectSettings
+客户端开发分支运行配置：svn://192.168.0.128/svndata/SmartPhone/publish/config
+以上4个客户端目录，签出后，需要放置到同一个目录，假设这个目录为LoveDance_D1，客户端的目录结构就必须如下所示：
+
+LoveDance_D1
+├─client 
+├─config
+├─ProjectSettings
+└─Res
+
+组织好这个目录结构后，需要重命名client目录为Assets，这是Unity3D的工程目录要求。之后的目录结构如下：
+
+LoveDance_D1
+├─Assets
+├─config
+├─ProjectSettings
+└─Res
+
+注意修改config目录下的Server.ini中的serverIp配置，改为自己机器的IP地址。
+
+这时，打开已经安装好的Unity3D 4.0，打开LoveDance_D1目录即可打开客户端工程。
+打开工程后，选择Resource Generator菜单->Generate Resource,依次编译生成Bones到All Materials的所有资源（这个过程可能耗时3小时以上）。
+客户端编译完成后，可以在Unity的Project视图中，找到Scenes/GameStart场景，双击这个场景打开它，在Game视图中，点击Play按钮（三角号），运行游戏。
+
+
+恋舞的其它一些分支：
+这些分支直接包含客户端、服务器、网关、编辑器等。
+测试分支（N1）：svn://192.168.0.128/svndata/branch/SmartPhone_N1/
+产品分支（国服Android）（P1）：svn://192.168.0.128/svndata/branch/SmartPhone_P1/
+iOS审核分支（IOS_Pre）：svn://192.168.0.128/svndata/branch/SmartPhone_P1_IOS_Pre/
+iOS产品分支（国服iOS）（IOS_P1）：svn://192.168.0.128/svndata/branch/SmartPhone_P1_IOS，这个分支开发人员一般不会用到。
+
+资源是单独的目录（包括客户端和服务器）：
+测试分支（N1）：svn://192.168.0.128/svndata/branch/Resource_N1
+产品分支（国服Android）（P1）：svn://192.168.0.128/svndata/Word/staticdata/开发资源发布
+iOS审核分支（IOS_Pre）：svn://192.168.0.128/svndata/branch/Resource_P1_IOS_Pre
+iOS产品分支（国服iOS）（IOS_P1）：svn://192.168.0.128/svndata/branch/Resource_P1_IOS
+
+4、几点说明
+(1)、所有P1分支没有各自主管的同意，切勿轻易签入数据。
+(2)、程序一般都在对应项目的Dev版本开发，在N1上送测（具体送测规则问下各自主管）。
+(3)、SVN上客户端的Res目录下Animations、Materials、bones.res没有特殊说明都适用于在android手机运行，手机运行游戏需要配置version.xml（可以找各自主管寻求帮助）。
+(4)、假若需要搭建手机运行环境，需要安装android sdk，在Unity Editor->Preferences->External Tools->Android sdk Location 中指定路径。

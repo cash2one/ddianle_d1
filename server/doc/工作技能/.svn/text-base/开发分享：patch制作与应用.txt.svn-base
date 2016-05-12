@@ -1,0 +1,27 @@
+﻿开发分享：
+
+patch制作与应用（For Windows）
+===============================================================================
+
+需求：
+有时开发时，需要将同学A的修改后的代码Source-Modified复制到同学B的机器上运行，
+此时同学B只有同学A修改前的代码Source-Original。而整个代码/资源库如果非常巨大，
+复制全部内容耗时过长，所以只想复制发生变更的部分。
+
+patch可以解决以上问题。
+
+方案：
+使用patch对修改后的代码做制作patch文件，并将patch文件应用到修改前的代码上即可。
+
+具体步骤：
+
+以SVN提供的patch工具为例：
+1. 同学A在修改后的代码Source-Modified上右击，选择svn菜单->Create Patch(创建补丁)
+2. 选择需要打包的变更文件，点击OK，保存patch文件(mypatch.patch)
+3. 将patch文件（mypatch.patch）复制到同学B的机器上
+4. 同学B在修改前的代码Source-Original上右击，选择svn菜单->Apply Patch（应用补丁）
+5. 选择patch文件（mypatch.patch）和需要应用修改的文件，确认选中的条目即可
+
+
+注意：
+Source-Modified和Source-Original都是指本地的SVN代码库目录，不是修改的文件。

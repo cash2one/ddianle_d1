@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="WorldChat">
+      <UniqueIdentifier>{e12e3aec-974a-494f-9f43-10629569798b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WorldFriend">
+      <UniqueIdentifier>{746ff631-aa82-4783-bb2a-49c5d1000815}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WorldAttribute">
+      <UniqueIdentifier>{fd8462bc-778b-4b21-954a-31ec6224f1da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WorldMail">
+      <UniqueIdentifier>{c884219d-d7c4-4b58-9163-95a4ddb2777f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DanceGroup">
+      <UniqueIdentifier>{f34aab8d-e549-4140-9ed5-181b055bd829}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lua">
+      <UniqueIdentifier>{26fbf124-253b-4e68-b820-0f0179f4a294}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External">
+      <UniqueIdentifier>{fceeab8a-9776-4427-81f2-760407e2e653}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Couple">
+      <UniqueIdentifier>{617de1ba-d38b-4a6d-a809-df30926436e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Compensation">
+      <UniqueIdentifier>{a41a8eb3-ca5b-4bf3-8234-0c7f78e97955}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LiveRoom">
+      <UniqueIdentifier>{7c63c823-e376-4675-bcbe-b7776c1c8433}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="timeegg">
+      <UniqueIdentifier>{a9c31d6e-81d9-49a8-8760-1929407d317b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WorldDungeon">
+      <UniqueIdentifier>{115d3b13-52d2-4487-87ec-6176cde468cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SpecialMall">
+      <UniqueIdentifier>{1511b855-fae6-4486-832e-23f6e75499c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rank">
+      <UniqueIdentifier>{d7bb0d07-bee6-4b09-ac3e-38928a9901fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LBS">
+      <UniqueIdentifier>{b712ec2a-55af-448b-b14e-11e7a1429f19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ServerFrame">
+      <UniqueIdentifier>{fc82a2c3-dc96-40c9-b580-676f35bbf5a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Activity">
+      <UniqueIdentifier>{1fa5345e-df69-4ff8-a6b0-7a41b5457f3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InfoCenter">
+      <UniqueIdentifier>{e98878c7-4782-4f08-afaa-40fd5b00d51b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Handbook">
+      <UniqueIdentifier>{5067ad86-b06b-414f-aa10-4470f08af167}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Room">
+      <UniqueIdentifier>{f7451ae6-595f-4aa8-aa40-8edcaeeb9fba}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="lua\LuaGroupServerFunction.cpp">
+      <Filter>lua</Filter>
+    </ClCompile>
+    <ClCompile Include="group\Global.cpp">
+      <Filter>ServerFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="group\GroupSystemSetting.cpp">
+      <Filter>ServerFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\ActivityManager.cpp">
+      <Filter>Activity</Filter>
+    </ClCompile>
+    <ClCompile Include="compensation\CompensationProcessor.cpp">
+      <Filter>Compensation</Filter>
+    </ClCompile>
+    <ClCompile Include="Couple\CoupleManager.cpp">
+      <Filter>Couple</Filter>
+    </ClCompile>
+    <ClCompile Include="Couple\CoupleProcessor.cpp">
+      <Filter>Couple</Filter>
+    </ClCompile>
+    <ClCompile Include="CeremonyRoom\CeremonyBriefManager.cpp">
+      <Filter>DanceGroup</Filter>
+    </ClCompile>
+    <ClCompile Include="dancegroup\DanceGroupProcessor.cpp">
+      <Filter>DanceGroup</Filter>
+    </ClCompile>
+    <ClCompile Include="Rank\GlobalRankListManager.cpp">
+      <Filter>Rank</Filter>
+    </ClCompile>
+    <ClCompile Include="Rank\LiveRoomRankManager.cpp">
+      <Filter>LiveRoom</Filter>
+    </ClCompile>
+    <ClCompile Include="Rank\DungeonRankMgr.cpp">
+      <Filter>WorldDungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="InfoCenter\InfoCenterManager.cpp">
+      <Filter>InfoCenter</Filter>
+    </ClCompile>
+    <ClCompile Include="mail\WordMailManager.cpp">
+      <Filter>WorldMail</Filter>
+    </ClCompile>
+    <ClCompile Include="mail\MailGiftSystem.cpp">
+      <Filter>External</Filter>
+    </ClCompile>
+    <ClCompile Include="mall\TimeEggMgr.cpp">
+      <Filter>timeegg</Filter>
+    </ClCompile>
+    <ClCompile Include="friend\WFriendManager.cpp">
+      <Filter>WorldFriend</Filter>
+    </ClCompile>
+    <ClCompile Include="specialMallGrp\Auction.cpp">
+      <Filter>SpecialMall</Filter>
+    </ClCompile>
+    <ClCompile Include="specialMallGrp\LimitedSales.cpp">
+      <Filter>SpecialMall</Filter>
+    </ClCompile>
+    <ClCompile Include="specialMallGrp\SpecialMallProcessor.cpp">
+      <Filter>SpecialMall</Filter>
+    </ClCompile>
+    <ClCompile Include="specialMallGrp\TimeMgr.cpp">
+      <Filter>SpecialMall</Filter>
+    </ClCompile>
+    <ClCompile Include="chatGrp\GroupAdminChat.cpp">
+      <Filter>WorldChat</Filter>
+    </ClCompile>
+    <ClCompile Include="chatGrp\GroupDanceGroupChat.cpp">
+      <Filter>WorldChat</Filter>
+    </ClCompile>
+    <ClCompile Include="chatGrp\GroupPrivateChat.cpp">
+      <Filter>WorldChat</Filter>
+    </ClCompile>
+    <ClCompile Include="chatGrp\GroupWorldChat.cpp">
+      <Filter>WorldChat</Filter>
+    </ClCompile>
+    <ClCompile Include="chatGrp\WChat.cpp">
+      <Filter>WorldChat</Filter>
+    </ClCompile>
+    <ClCompile Include="attribute\WAttributeManager.cpp">
+      <Filter>WorldAttribute</Filter>
+    </ClCompile>
+    <ClCompile Include="group\LBS.cpp">
+      <Filter>LBS</Filter>
+    </ClCompile>
+    <ClCompile Include="group\GroupServerCirculator.cpp">
+      <Filter>ServerFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="group\GroupServerMain.cpp">
+      <Filter>ServerFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="group\WorldHost.cpp">
+      <Filter>ServerFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="Handbook\HandbookGlobalMgr.cpp">
+      <Filter>Handbook</Filter>
+    </ClCompile>
+    <ClCompile Include="dancegroup\DanceGroupChallengeProcessor.cpp">
+      <Filter>DanceGroup</Filter>
+    </ClCompile>
+    <ClCompile Include="dancegroup\BigMamaGroup.cpp">
+      <Filter>DanceGroup</Filter>
+    </ClCompile>
+    <ClCompile Include="Rank\RankDataMgr.cpp">
+      <Filter>Rank</Filter>
+    </ClCompile>
+    <ClCompile Include="room\GroupRoomPrecessor.cpp">
+      <Filter>Room</Filter>
+    </ClCompile>
+    <ClCompile Include="room\RoomGroupCommon.cpp">
+      <Filter>Room</Filter>
+    </ClCompile>
+    <ClCompile Include="room\GroupFairyLandRoom.cpp">
+      <Filter>Room</Filter>
+    </ClCompile>
+    <ClCompile Include="room\GroupFairyLandRoomManager.cpp">
+      <Filter>Room</Filter>
+    </ClCompile>
+    <ClCompile Include="DanceGroupFairyLand\DanceGroupFairyLandProcessor.cpp">
+      <Filter>DanceGroup</Filter>
+    </ClCompile>
+    <ClCompile Include="DanceGroupFairyLand\DanceGroupFairyLandTimeManager.cpp">
+      <Filter>DanceGroup</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="group\Global.h">
+      <Filter>ServerFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="group\GroupSystemSetting.h">
+      <Filter>ServerFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\ActivityManager.h">
+      <Filter>Activity</Filter>
+    </ClInclude>
+    <ClInclude Include="compensation\CompensationProcessor.h">
+      <Filter>Compensation</Filter>
+    </ClInclude>
+    <ClInclude Include="Couple\CoupleManager.h">
+      <Filter>Couple</Filter>
+    </ClInclude>
+    <ClInclude Include="Couple\CoupleProcessor.h">
+      <Filter>Couple</Filter>
+    </ClInclude>
+    <ClInclude Include="CeremonyRoom\CeremonyBriefManager.h">
+      <Filter>DanceGroup</Filter>
+    </ClInclude>
+    <ClInclude Include="dancegroup\DanceGroupProcessor.h">
+      <Filter>DanceGroup</Filter>
+    </ClInclude>
+    <ClInclude Include="Rank\GlobalRankListManager.h">
+      <Filter>Rank</Filter>
+    </ClInclude>
+    <ClInclude Include="Rank\LiveRoomRankManager.h">
+      <Filter>LiveRoom</Filter>
+    </ClInclude>
+    <ClInclude Include="Rank\DungeonRankMgr.h">
+      <Filter>WorldDungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="InfoCenter\InfoCenterManager.h">
+      <Filter>InfoCenter</Filter>
+    </ClInclude>
+    <ClInclude Include="mail\WordMailManager.h">
+      <Filter>WorldMail</Filter>
+    </ClInclude>
+    <ClInclude Include="mail\MailGiftSystem.h">
+      <Filter>External</Filter>
+    </ClInclude>
+    <ClInclude Include="mall\TimeEggMgr.h">
+      <Filter>timeegg</Filter>
+    </ClInclude>
+    <ClInclude Include="friend\WFriendManager.h">
+      <Filter>WorldFriend</Filter>
+    </ClInclude>
+    <ClInclude Include="specialMallGrp\Auction.h">
+      <Filter>SpecialMall</Filter>
+    </ClInclude>
+    <ClInclude Include="specialMallGrp\LimitedSales.h">
+      <Filter>SpecialMall</Filter>
+    </ClInclude>
+    <ClInclude Include="specialMallGrp\SpecialMallProcessor.h">
+      <Filter>SpecialMall</Filter>
+    </ClInclude>
+    <ClInclude Include="specialMallGrp\SpecialMallSettings.h">
+      <Filter>SpecialMall</Filter>
+    </ClInclude>
+    <ClInclude Include="specialMallGrp\TimeMgr.h">
+      <Filter>SpecialMall</Filter>
+    </ClInclude>
+    <ClInclude Include="chatGrp\GroupAdminChat.h">
+      <Filter>WorldChat</Filter>
+    </ClInclude>
+    <ClInclude Include="chatGrp\GroupDanceGroupChat.h">
+      <Filter>WorldChat</Filter>
+    </ClInclude>
+    <ClInclude Include="chatGrp\GroupPrivateChat.h">
+      <Filter>WorldChat</Filter>
+    </ClInclude>
+    <ClInclude Include="chatGrp\GroupWorldChat.h">
+      <Filter>WorldChat</Filter>
+    </ClInclude>
+    <ClInclude Include="chatGrp\IGroupChat.h">
+      <Filter>WorldChat</Filter>
+    </ClInclude>
+    <ClInclude Include="chatGrp\WChat.h">
+      <Filter>WorldChat</Filter>
+    </ClInclude>
+    <ClInclude Include="attribute\WAttributeManager.h">
+      <Filter>WorldAttribute</Filter>
+    </ClInclude>
+    <ClInclude Include="group\LBS.h">
+      <Filter>LBS</Filter>
+    </ClInclude>
+    <ClInclude Include="group\GroupServerCirculator.h">
+      <Filter>ServerFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="group\WorldHost.h">
+      <Filter>ServerFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="Handbook\HandbookGlobalMgr.h">
+      <Filter>Handbook</Filter>
+    </ClInclude>
+    <ClInclude Include="dancegroup\DanceGroupChallengeProcessor.h">
+      <Filter>DanceGroup</Filter>
+    </ClInclude>
+    <ClInclude Include="dancegroup\BigMamaGroup.h">
+      <Filter>DanceGroup</Filter>
+    </ClInclude>
+    <ClInclude Include="Rank\RankDataMgr.h">
+      <Filter>Rank</Filter>
+    </ClInclude>
+    <ClInclude Include="room\GroupRoomPrecessor.h">
+      <Filter>Room</Filter>
+    </ClInclude>
+    <ClInclude Include="room\RoomGroupCommon.h">
+      <Filter>Room</Filter>
+    </ClInclude>
+    <ClInclude Include="room\GroupFairyLandRoom.h">
+      <Filter>Room</Filter>
+    </ClInclude>
+    <ClInclude Include="room\GroupFairyLandRoomManager.h">
+      <Filter>Room</Filter>
+    </ClInclude>
+    <ClInclude Include="DanceGroupFairyLand\DanceGroupFairyLandProcessor.h">
+      <Filter>DanceGroup</Filter>
+    </ClInclude>
+    <ClInclude Include="DanceGroupFairyLand\DanceGroupFairyLandTimeManager.h">
+      <Filter>DanceGroup</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

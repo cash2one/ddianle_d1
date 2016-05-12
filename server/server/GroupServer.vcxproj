@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{234882F0-86B3-49B3-A4C9-8D031604209A}</ProjectGuid>
+    <RootNamespace>GroupServer</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\debug\groupserver\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ForceConformanceInForLoopScope>false</ForceConformanceInForLoopScope>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4350;4365;4514;4710;4820;4640;4100;4127;4996</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>lua5.1.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>./$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>../lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>./$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>lua5.1.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>./$(ProjectName).exe</OutputFile>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="activity\ActivityManager.cpp" />
+    <ClCompile Include="attribute\WAttributeManager.cpp" />
+    <ClCompile Include="CeremonyRoom\CeremonyBriefManager.cpp" />
+    <ClCompile Include="chatGrp\GroupAdminChat.cpp" />
+    <ClCompile Include="chatGrp\GroupDanceGroupChat.cpp" />
+    <ClCompile Include="chatGrp\GroupPrivateChat.cpp" />
+    <ClCompile Include="chatGrp\GroupWorldChat.cpp" />
+    <ClCompile Include="chatGrp\WChat.cpp" />
+    <ClCompile Include="compensation\CompensationProcessor.cpp" />
+    <ClCompile Include="Couple\CoupleManager.cpp" />
+    <ClCompile Include="Couple\CoupleProcessor.cpp" />
+    <ClCompile Include="DanceGroupFairyLand\DanceGroupFairyLandProcessor.cpp" />
+    <ClCompile Include="DanceGroupFairyLand\DanceGroupFairyLandTimeManager.cpp" />
+    <ClCompile Include="dancegroup\BigMamaGroup.cpp" />
+    <ClCompile Include="dancegroup\DanceGroupChallengeProcessor.cpp" />
+    <ClCompile Include="dancegroup\DanceGroupProcessor.cpp" />
+    <ClCompile Include="friend\WFriendManager.cpp" />
+    <ClCompile Include="group\GroupServerCirculator.cpp" />
+    <ClCompile Include="group\GroupServerMain.cpp" />
+    <ClCompile Include="group\GroupSystemSetting.cpp" />
+    <ClCompile Include="group\LBS.cpp" />
+    <ClCompile Include="group\WorldHost.cpp" />
+    <ClCompile Include="Handbook\HandbookGlobalMgr.cpp" />
+    <ClCompile Include="InfoCenter\InfoCenterManager.cpp" />
+    <ClCompile Include="lua\LuaGroupServerFunction.cpp" />
+    <ClCompile Include="group\Global.cpp" />
+    <ClCompile Include="mail\MailGiftSystem.cpp" />
+    <ClCompile Include="mail\WordMailManager.cpp" />
+    <ClCompile Include="mall\TimeEggMgr.cpp" />
+    <ClCompile Include="Rank\DungeonRankMgr.cpp" />
+    <ClCompile Include="Rank\GlobalRankListManager.cpp" />
+    <ClCompile Include="Rank\LiveRoomRankManager.cpp" />
+    <ClCompile Include="Rank\RankDataMgr.cpp" />
+    <ClCompile Include="room\GroupFairyLandRoom.cpp" />
+    <ClCompile Include="room\GroupFairyLandRoomManager.cpp" />
+    <ClCompile Include="room\GroupRoomPrecessor.cpp" />
+    <ClCompile Include="room\RoomGroupCommon.cpp" />
+    <ClCompile Include="specialMallGrp\Auction.cpp" />
+    <ClCompile Include="specialMallGrp\LimitedSales.cpp" />
+    <ClCompile Include="specialMallGrp\SpecialMallProcessor.cpp" />
+    <ClCompile Include="specialMallGrp\TimeMgr.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="activity\ActivityManager.h" />
+    <ClInclude Include="attribute\WAttributeManager.h" />
+    <ClInclude Include="CeremonyRoom\CeremonyBriefManager.h" />
+    <ClInclude Include="chatGrp\GroupAdminChat.h" />
+    <ClInclude Include="chatGrp\GroupDanceGroupChat.h" />
+    <ClInclude Include="chatGrp\GroupPrivateChat.h" />
+    <ClInclude Include="chatGrp\GroupWorldChat.h" />
+    <ClInclude Include="chatGrp\IGroupChat.h" />
+    <ClInclude Include="chatGrp\WChat.h" />
+    <ClInclude Include="compensation\CompensationProcessor.h" />
+    <ClInclude Include="Couple\CoupleManager.h" />
+    <ClInclude Include="Couple\CoupleProcessor.h" />
+    <ClInclude Include="DanceGroupFairyLand\DanceGroupFairyLandProcessor.h" />
+    <ClInclude Include="DanceGroupFairyLand\DanceGroupFairyLandTimeManager.h" />
+    <ClInclude Include="dancegroup\BigMamaGroup.h" />
+    <ClInclude Include="dancegroup\DanceGroupChallengeProcessor.h" />
+    <ClInclude Include="dancegroup\DanceGroupProcessor.h" />
+    <ClInclude Include="friend\WFriendManager.h" />
+    <ClInclude Include="group\GroupServerCirculator.h" />
+    <ClInclude Include="group\GroupSystemSetting.h" />
+    <ClInclude Include="group\Global.h" />
+    <ClInclude Include="group\LBS.h" />
+    <ClInclude Include="group\WorldHost.h" />
+    <ClInclude Include="Handbook\HandbookGlobalMgr.h" />
+    <ClInclude Include="InfoCenter\InfoCenterManager.h" />
+    <ClInclude Include="mail\MailGiftSystem.h" />
+    <ClInclude Include="mail\WordMailManager.h" />
+    <ClInclude Include="mall\TimeEggMgr.h" />
+    <ClInclude Include="Rank\DungeonRankMgr.h" />
+    <ClInclude Include="Rank\GlobalRankListManager.h" />
+    <ClInclude Include="Rank\LiveRoomRankManager.h" />
+    <ClInclude Include="Rank\RankDataMgr.h" />
+    <ClInclude Include="room\GroupFairyLandRoom.h" />
+    <ClInclude Include="room\GroupFairyLandRoomManager.h" />
+    <ClInclude Include="room\GroupRoomPrecessor.h" />
+    <ClInclude Include="room\RoomGroupCommon.h" />
+    <ClInclude Include="specialMallGrp\Auction.h" />
+    <ClInclude Include="specialMallGrp\LimitedSales.h" />
+    <ClInclude Include="specialMallGrp\SpecialMallProcessor.h" />
+    <ClInclude Include="specialMallGrp\SpecialMallSettings.h" />
+    <ClInclude Include="specialMallGrp\TimeMgr.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\datainfor\DataInfor.vcxproj">
+      <Project>{008312de-31d3-4b3a-9cc6-9457d79048b9}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\libserverframe\LibServerFrame.vcxproj">
+      <Project>{e362b72a-91ca-408d-8d85-530793f9448c}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\socket\Socket.vcxproj">
+      <Project>{a2db3988-232b-4d45-92ed-113d367d19f6}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

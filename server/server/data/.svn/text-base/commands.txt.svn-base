@@ -1,0 +1,10 @@
+command0notuse 		1 2
+account			1 2
+roleid			1 2
+sethot
+pre
+setpriv
+setmoney
+levelup
+setlevel
+setonlinetime

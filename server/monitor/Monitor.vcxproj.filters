@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="treelist">
+      <UniqueIdentifier>{db67a8f8-2b0e-411d-a6ef-79156426fb4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="head">
+      <UniqueIdentifier>{e80adb45-608a-42ec-a8b1-7b122379fdad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{547694dc-32a4-4296-863f-9d521d04f688}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tresource">
+      <UniqueIdentifier>{8011f849-1e7b-48cf-86ad-05de4db5a1ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="agent">
+      <UniqueIdentifier>{37c9b899-60ef-43ad-abeb-42bdb09a4f8e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Newheaderctrl.cpp">
+      <Filter>treelist</Filter>
+    </ClCompile>
+    <ClCompile Include="Newtreelistctrl.cpp">
+      <Filter>treelist</Filter>
+    </ClCompile>
+    <ClCompile Include="Tlframe.cpp">
+      <Filter>treelist</Filter>
+    </ClCompile>
+    <ClCompile Include="Treelistview.cpp">
+      <Filter>treelist</Filter>
+    </ClCompile>
+    <ClCompile Include="AnnounceDlg.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgOnlineCount.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="ExecuteDlg.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="Monitor.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="MonitorDoc.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="MonitorMainFrm.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="MonitorView.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="SetAgentDlg.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="SplashDlg.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\AgentMsg_Announce.cpp">
+      <Filter>agent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\AgentMsg_Close.cpp">
+      <Filter>agent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\AgentMsg_Execute.cpp">
+      <Filter>agent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\AgentMsg_Exit.cpp">
+      <Filter>agent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\AgentMsg_Kill.cpp">
+      <Filter>agent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\AgentMsg_SendGift_Control.cpp">
+      <Filter>agent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\AgentMsg_Setting.cpp">
+      <Filter>agent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\AgentMsg_ShutdownInTime.cpp">
+      <Filter>agent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\AgentMsg_Start.cpp">
+      <Filter>agent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\AgentMsg_Stat.cpp">
+      <Filter>agent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\AgentMsg_SysInfo.cpp">
+      <Filter>agent</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Newheaderctrl.h">
+      <Filter>treelist</Filter>
+    </ClInclude>
+    <ClInclude Include="Newtreelistctrl.h">
+      <Filter>treelist</Filter>
+    </ClInclude>
+    <ClInclude Include="Tlframe.h">
+      <Filter>treelist</Filter>
+    </ClInclude>
+    <ClInclude Include="Treelistview.h">
+      <Filter>treelist</Filter>
+    </ClInclude>
+    <ClInclude Include="AnnounceDlg.h">
+      <Filter>head</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgOnlineCount.h">
+      <Filter>head</Filter>
+    </ClInclude>
+    <ClInclude Include="ExecuteDlg.h">
+      <Filter>head</Filter>
+    </ClInclude>
+    <ClInclude Include="Monitor.h">
+      <Filter>head</Filter>
+    </ClInclude>
+    <ClInclude Include="MonitorDoc.h">
+      <Filter>head</Filter>
+    </ClInclude>
+    <ClInclude Include="MonitorMainFrm.h">
+      <Filter>head</Filter>
+    </ClInclude>
+    <ClInclude Include="MonitorView.h">
+      <Filter>head</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>head</Filter>
+    </ClInclude>
+    <ClInclude Include="SetAgentDlg.h">
+      <Filter>head</Filter>
+    </ClInclude>
+    <ClInclude Include="SplashDlg.h">
+      <Filter>head</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>head</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\AgentMsg_Announce.h">
+      <Filter>agent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\AgentMsg_Close.h">
+      <Filter>agent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\AgentMsg_Execute.h">
+      <Filter>agent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\AgentMsg_Exit.h">
+      <Filter>agent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\AgentMsg_Kill.h">
+      <Filter>agent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\AgentMsg_SendGift_Control.h">
+      <Filter>agent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\AgentMsg_Setting.h">
+      <Filter>agent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\AgentMsg_ShutdownInTime.h">
+      <Filter>agent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\AgentMsg_Start.h">
+      <Filter>agent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\AgentMsg_Stat.h">
+      <Filter>agent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\AgentMsg_SysInfo.h">
+      <Filter>agent</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\bitmap2.bmp">
+      <Filter>tresource</Filter>
+    </Image>
+    <Image Include="res\ListImage.bmp">
+      <Filter>tresource</Filter>
+    </Image>
+    <Image Include="res\Monitor.ico">
+      <Filter>tresource</Filter>
+    </Image>
+    <Image Include="res\MonitorDoc.ico">
+      <Filter>tresource</Filter>
+    </Image>
+    <Image Include="res\splash.bmp">
+      <Filter>tresource</Filter>
+    </Image>
+    <Image Include="res\Toolbar.bmp">
+      <Filter>tresource</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Monitor.rc">
+      <Filter>tresource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

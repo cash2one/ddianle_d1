@@ -1,0 +1,1341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{8c91e110-af74-47b2-b3cf-6db22f486bdc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message">
+      <UniqueIdentifier>{7d7e84d7-cf21-4cb1-806c-535dae77b130}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message\Agent">
+      <UniqueIdentifier>{da5c66b4-9faf-439b-a958-1abaa0971e09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message\MessageDef">
+      <UniqueIdentifier>{d3348a30-374d-4d9b-bb07-1ca47c55c826}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message\DanceGroup">
+      <UniqueIdentifier>{17018f4a-a2cf-4e80-ba1d-6b16e6350a54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message\External">
+      <UniqueIdentifier>{ac3dc15b-9919-4ea4-9d21-82bbcca1fe82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message\Marriage">
+      <UniqueIdentifier>{275f92b6-0ed8-4deb-b2b1-44bf1575a128}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message\Activity">
+      <UniqueIdentifier>{50a11357-a34d-44a5-a906-9c67065dd93d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message\LiveRoom">
+      <UniqueIdentifier>{aa907e36-c269-463b-8c80-7d36bf9fd555}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lua">
+      <UniqueIdentifier>{36744096-3620-4fbd-b213-cbb4e86a3b17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message\SpecialMall">
+      <UniqueIdentifier>{1fdd4a0f-c2f4-47a6-921b-5aae02ff8972}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message\Rank">
+      <UniqueIdentifier>{0ec02b39-ad43-43b5-9164-0842a230e78a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message\Command">
+      <UniqueIdentifier>{a1f7e725-90f0-494b-8a12-143bc660e390}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message\Chat">
+      <UniqueIdentifier>{6bdf920d-0105-4a6a-823f-7f2eedd291b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message\Dungeon">
+      <UniqueIdentifier>{2041eb24-a12c-4124-90c8-4142b439ddbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message\System">
+      <UniqueIdentifier>{35221411-905d-4980-b7d9-6ba3c7a7eb07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message\TimeEgg">
+      <UniqueIdentifier>{59bf6db1-9483-4ae1-8684-bf8fdde6d741}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message\PlayerInfo">
+      <UniqueIdentifier>{716a1c59-ed65-4426-a4cb-3946ba462dd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message\Mail">
+      <UniqueIdentifier>{792e7270-86dd-4e84-98a2-77493d4b2a12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message\Mall">
+      <UniqueIdentifier>{70e98042-4772-4b72-9596-566fa9d3d718}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message\VIP">
+      <UniqueIdentifier>{1c657ffa-e2cd-4eb9-9619-5f3628823f1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message\Login">
+      <UniqueIdentifier>{78e6f177-2f10-44da-891c-bbb1790923db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message\Charge">
+      <UniqueIdentifier>{d2701b10-ce27-44cf-a866-160cf129edbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message\GM">
+      <UniqueIdentifier>{d1090dfd-0197-4d34-982a-a1269ec4fba9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message\LBS">
+      <UniqueIdentifier>{0277bf15-b691-41c2-bf44-2cf81ec3883d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message\Forward">
+      <UniqueIdentifier>{9c5d149f-3a9e-4471-93ec-97c48a058b5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pattern">
+      <UniqueIdentifier>{72be4cf3-3302-4617-a24a-47c21902550b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DatasStructure">
+      <UniqueIdentifier>{c59a6071-90ae-4527-8caf-b212160a117b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ServerFrame">
+      <UniqueIdentifier>{382c2c86-e879-47e7-a6d0-f5db209e62c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util">
+      <UniqueIdentifier>{c5454521-bb92-4649-b8a1-ffc58be5b937}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Macros">
+      <UniqueIdentifier>{8c1e78f7-e2fe-4e6f-b02f-d4f910281527}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pet">
+      <UniqueIdentifier>{2af788e1-bcfa-4fff-8cc8-943f5e8bf184}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Medal">
+      <UniqueIdentifier>{ff06d9c6-3e0d-4974-ba93-6a4c9ccfd948}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message\Friend">
+      <UniqueIdentifier>{36afdce0-0ae2-4db0-90d2-d2374c769fbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Handbook">
+      <UniqueIdentifier>{e8893268-6f54-47c0-a43d-df40b1e07932}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Activity">
+      <UniqueIdentifier>{b87639f9-8db2-44e3-8755-ba26ab714d81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Activity\RedEnvelope">
+      <UniqueIdentifier>{805cdc6e-d88d-41c3-ae74-e69ac28f4128}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message\CacheMsg">
+      <UniqueIdentifier>{2a39f5d2-9ea1-49d9-aca0-adc07a2c1f5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RoomLib">
+      <UniqueIdentifier>{cc615d06-0b9f-4475-9165-b7b79caf5f48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RoomLib\Music">
+      <UniqueIdentifier>{44fb7b0a-275c-4971-a605-85a964664f4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RoomLib\Grade">
+      <UniqueIdentifier>{12d46f74-8e82-479d-90ac-1dd50310a670}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RoomLib\Message">
+      <UniqueIdentifier>{7dbe5779-c028-4776-ba76-8b96ec43a505}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DanceGroupFairyLand">
+      <UniqueIdentifier>{3d6f7978-07aa-4261-b3cf-738185e8e96b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VIPData">
+      <UniqueIdentifier>{8375f0bb-c153-4973-a515-2ec0d8d08330}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\server\mail\GameMsg_Mail.h">
+      <Filter>Message\Mail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\mall\GameMsg_Mall.h">
+      <Filter>Message\Mall</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\lua\InitLua.h">
+      <Filter>lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\lua\LauxLib.h">
+      <Filter>lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\lua\Lua.h">
+      <Filter>lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\lua\LuaConf.h">
+      <Filter>lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\lua\LuaLib.h">
+      <Filter>lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\mall\GameMsg_SpecialMall.h">
+      <Filter>Message\SpecialMall</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\datainfor\ServerConfig.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\Rank\RankDefine.h">
+      <Filter>Message\Rank</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\lua\LuaCallback.h">
+      <Filter>lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\Pattern\Observer.h">
+      <Filter>Pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\Pattern\Param.h">
+      <Filter>Pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\DataStruct_SpecialMall.h">
+      <Filter>DatasStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\DanceGroupDataMgr.h">
+      <Filter>DatasStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\DanceGroupInfoDef.h">
+      <Filter>DatasStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\DataStruct_Agent.h">
+      <Filter>DatasStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\DataStruct_Base.h">
+      <Filter>DatasStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\DataStruct_Couple.h">
+      <Filter>DatasStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\DataStruct_DanceGroup.h">
+      <Filter>DatasStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\DataStruct_DB.h">
+      <Filter>DatasStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\DataStruct_Rank.h">
+      <Filter>DatasStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\datainfor\GMDataInfo.h">
+      <Filter>DatasStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\LogStructDef.h">
+      <Filter>DatasStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\payment\PaymentInfoMgr.h">
+      <Filter>DatasStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\FriendDataManager.h">
+      <Filter>DatasStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\Pattern\Service.h">
+      <Filter>Pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\Macros\Macros.h">
+      <Filter>Macros</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\Pet\Pet.h">
+      <Filter>Pet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\Pet\PetEgg.h">
+      <Filter>Pet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\mall\Currency.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\Pet\PetConfig\PetBaseInfo.h">
+      <Filter>Pet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\Pet\PetConfig\PetConfigManager.h">
+      <Filter>Pet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\Pet\PetConfig\PetEvolutionInfo.h">
+      <Filter>Pet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\Pet\PetConfig\PetExchangeInfo.h">
+      <Filter>Pet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\Pet\PetConfig\PetQualityInfo.h">
+      <Filter>Pet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\Pet\PetConfig\PetSkillConfig.h">
+      <Filter>Pet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\CeremonyRoom\ceremonyRoomHead.h">
+      <Filter>Message\DanceGroup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\Medal\MedalCondition.h">
+      <Filter>Medal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\Medal\MedalConditionFactory.h">
+      <Filter>Medal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\Medal\MedalConditionImp.h">
+      <Filter>Medal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\Medal\MedalCfg.h">
+      <Filter>Medal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\Medal\MedalCfgMgr.h">
+      <Filter>Medal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\Medal\GameMsg_Gm_medal.h">
+      <Filter>Medal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\chat\ChatMsgDef.h">
+      <Filter>Message\Chat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\chat\GameMsg_S2G_Chat.h">
+      <Filter>Message\Chat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\chat\GameMsg_G2S_AdminChat.h">
+      <Filter>Message\Chat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\chat\GameMsg_G2S_Chat.h">
+      <Filter>Message\Chat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\chat\GameMsg_G2S_Chat_Admin.h">
+      <Filter>Message\Chat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\chat\GameMsg_G2S_ChatWindow.h">
+      <Filter>Message\Chat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\chat\GameMsg_G2S_WorldChat.h">
+      <Filter>Message\Chat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\agent\AgentMsg_SysInfo.h">
+      <Filter>Message\Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\agent\AgentMsg_Announce.h">
+      <Filter>Message\Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\agent\AgentMsg_Close.h">
+      <Filter>Message\Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\agent\AgentMsg_Execute.h">
+      <Filter>Message\Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\agent\AgentMsg_Exit.h">
+      <Filter>Message\Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\agent\AgentMsg_Kill.h">
+      <Filter>Message\Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\agent\AgentMsg_Setting.h">
+      <Filter>Message\Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\agent\AgentMsg_ShutdownInTime.h">
+      <Filter>Message\Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\agent\AgentMsg_Start.h">
+      <Filter>Message\Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\agent\AgentMsg_Stat.h">
+      <Filter>Message\Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\dancegroup\GameMsg_C2S_DanceGroup.h">
+      <Filter>Message\DanceGroup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\dancegroup\GameMsg_S2C_DanceGroup.h">
+      <Filter>Message\DanceGroup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\activity\GameMsg_S2S_Activities.h">
+      <Filter>Message\Activity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\CeremonyRoom\GameMsg_CeremonyRoom.h">
+      <Filter>Message\DanceGroup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\dancegroup\GameMsg_G2S_DanceGroup.h">
+      <Filter>Message\DanceGroup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\dancegroup\GameMsg_S2G_DanceGroup.h">
+      <Filter>Message\DanceGroup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\Dungeon\GameMsg_G2S_Dungeon.h">
+      <Filter>Message\Dungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\Dungeon\GameMsg_S2G_Dungeon.h">
+      <Filter>Message\Dungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\mail\GameMsg_External.h">
+      <Filter>Message\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\friend\GameMsg_G2S_BecomeFriends.h">
+      <Filter>Message\Friend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\friend\GameMsg_G2S_FindPlayerFromID.h">
+      <Filter>Message\Friend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\friend\GameMsg_G2S_FriendApplicationBack2Sender.h">
+      <Filter>Message\Friend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\friend\GameMsg_G2S_FriendApplicationForward2Receiver.h">
+      <Filter>Message\Friend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\friend\GameMsg_G2S_FriendLogin.h">
+      <Filter>Message\Friend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\friend\GameMsg_G2S_GetBlackListOnlineInfo.h">
+      <Filter>Message\Friend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\friend\GameMsg_G2S_GetFriendOnlineInfoResult.h">
+      <Filter>Message\Friend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\friend\GameMsg_G2S_GetTempListOnlineInfo.h">
+      <Filter>Message\Friend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\friend\GameMsg_G2S_NotifyGameHasBeenDeletedBlacklist.h">
+      <Filter>Message\Friend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\friend\GameMsg_G2S_NotifyGameHasBeenDeletedFriend.h">
+      <Filter>Message\Friend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\friend\GameMsg_G2S_NotifyGameRemoveFollowedFriend.h">
+      <Filter>Message\Friend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\friend\GameMsg_G2S_NotifyGameRemoveFriend.h">
+      <Filter>Message\Friend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\friend\GameMsg_G2S_NotifyHasBeenAccepted.h">
+      <Filter>Message\Friend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\friend\GameMsg_G2S_PushOnlineInfoToAllFriends.h">
+      <Filter>Message\Friend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\friend\GameMsg_G2S_UpdateAttributeToAllFriend.h">
+      <Filter>Message\Friend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\friend\GameMsg_S2G_AddBlackFriend.h">
+      <Filter>Message\Friend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\friend\GameMsg_S2G_AddBlackList.h">
+      <Filter>Message\Friend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\friend\GameMsg_S2G_AddMuteFriend.h">
+      <Filter>Message\Friend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\friend\GameMsg_S2G_AddMuteList.h">
+      <Filter>Message\Friend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\friend\GameMsg_S2G_BecomeFriends.h">
+      <Filter>Message\Friend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\friend\GameMsg_S2G_FindPlayerFromID.h">
+      <Filter>Message\Friend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\friend\GameMsg_S2G_FriendApplication.h">
+      <Filter>Message\Friend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\friend\GameMsg_S2G_FriendLogin.h">
+      <Filter>Message\Friend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\friend\GameMsg_S2G_GetBlackListOnlineInfo.h">
+      <Filter>Message\Friend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\friend\GameMsg_S2G_GetFriendOnlineInfo.h">
+      <Filter>Message\Friend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\friend\GameMsg_S2G_GetTempListOnlineInfo.h">
+      <Filter>Message\Friend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\friend\GameMsg_S2G_NotifyGameHasBeenDeletedBlacklist.h">
+      <Filter>Message\Friend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\friend\GameMsg_S2G_NotifyGameHasBeenDeletedFriend.h">
+      <Filter>Message\Friend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\friend\GameMsg_S2G_NotifyGameRemoveFollowedFriend.h">
+      <Filter>Message\Friend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\friend\GameMsg_S2G_NotifyGameRemoveFriend.h">
+      <Filter>Message\Friend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\friend\GameMsg_S2G_NotifyHasBeenAccepted.h">
+      <Filter>Message\Friend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\friend\GameMsg_S2G_NotifyHasBeenDeletedFriend.h">
+      <Filter>Message\Friend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\friend\GameMsg_S2G_PushOnlineInfoToAllFriends.h">
+      <Filter>Message\Friend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\friend\GameMsg_S2G_RemoveBlackList.h">
+      <Filter>Message\Friend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\friend\GameMsg_S2G_RemoveFriend.h">
+      <Filter>Message\Friend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\friend\GameMsg_S2G_RemoveMuteList.h">
+      <Filter>Message\Friend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\friend\GameMsg_S2G_RequestFriendOnlineInfo.h">
+      <Filter>Message\Friend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\friend\GameMsg_S2G_UpdateAttributeToAllFriend.h">
+      <Filter>Message\Friend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\GM\GameMsg_G2S_Announce.h">
+      <Filter>Message\GM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\GM\GameMsg_G2S_GetRoomListByGM.h">
+      <Filter>Message\GM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\GM\GameMsg_G2S_NewCompensation.h">
+      <Filter>Message\GM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\GM\GameMsg_S2A_LockOrUnLockAccountByGm.h">
+      <Filter>Message\GM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\GM\GameMsg_GM_share.h">
+      <Filter>Message\GM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\room\GameMsg_LiveRoom.h">
+      <Filter>Message\LiveRoom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\login\GameMsg_Server_AccountLogin.h">
+      <Filter>Message\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\login\GameMsg_Server_AccountLogout.h">
+      <Filter>Message\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\login\GameMsg_Server_DropClient.h">
+      <Filter>Message\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\login\GameMsg_Server_Login.h">
+      <Filter>Message\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\login\GameMsg_Server_LoginInfo.h">
+      <Filter>Message\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\login\GameMsg_Server_LoginResult.h">
+      <Filter>Message\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\login\GameMsg_Player_SwitchLine.h">
+      <Filter>Message\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\login\GameMsg_S2G_Login.h">
+      <Filter>Message\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\login\GameMsg_S2G_Logout.h">
+      <Filter>Message\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\Couple\GameMsg_G2S_Couple.h">
+      <Filter>Message\Marriage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\Couple\GameMsg_S2G_Couple.h">
+      <Filter>Message\Marriage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\Couple\CoupleMsgDef.h">
+      <Filter>Message\MessageDef</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\dancegroup\DanceGroupMsgDef.h">
+      <Filter>Message\MessageDef</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\PhotoRoom\PhotoRoomMsgDef.h">
+      <Filter>Message\MessageDef</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\player\GameMsg_G2S_PlayerInfo.h">
+      <Filter>Message\PlayerInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\player\GameMsg_S2G_PlayerInfo.h">
+      <Filter>Message\PlayerInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\player\GameMsg_S2G_UpdateAttrInfo.h">
+      <Filter>Message\PlayerInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\player\GameMsg_S2G_UpdateRoomInfo.h">
+      <Filter>Message\PlayerInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\Rank\GameMsg_Rank_SG.h">
+      <Filter>Message\Rank</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\vip\GameMsg_S2G_VIP.h">
+      <Filter>Message\VIP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\mall\GameMsg_G2S_TimeEgg.h">
+      <Filter>Message\TimeEgg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\mall\GameMsg_S2G_TimeEgg.h">
+      <Filter>Message\TimeEgg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\share\GameMsg_G2S_GameServerInfoResult.h">
+      <Filter>Message\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\share\GameMsg_G2S_LockOrUnLockAccountByGm.h">
+      <Filter>Message\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\share\GameMsg_S2G_GameServerClosed.h">
+      <Filter>Message\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\share\GameMsg_S2G_GameServerInfo.h">
+      <Filter>Message\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\share\GameMsg_LinkCount.h">
+      <Filter>Message\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\share\GameMsg_LinkInfo.h">
+      <Filter>Message\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\share\GameMsg_Server_Connected.h">
+      <Filter>Message\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\compensation\CompensationManager.h">
+      <Filter>DatasStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\Rank\RankMgr.h">
+      <Filter>DatasStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\util\CommonFunc.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\util\Crontab.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\util\GameStringTipsDef.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\util\IDCreater.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\util\ITimer.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\util\linuxfunc.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\util\NameDeny.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\util\Split.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\util\TimerMgr.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\dancegroup\DanceGroupRankMgr.h">
+      <Filter>DatasStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\share\GameMsg_Forward.h">
+      <Filter>Message\Forward</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\share\GameMsg_Cmd.h">
+      <Filter>Message\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\share\GameMsg_CmdRes.h">
+      <Filter>Message\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\group\GameMsg_LBS.h">
+      <Filter>Message\LBS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\share\GameMsg_ChargeOnline.h">
+      <Filter>Message\Charge</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\share\GameMsg_G2S_AddMCoinByGm.h">
+      <Filter>Message\Charge</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\share\GameMsg_S2A_AddMCoinByCmd.h">
+      <Filter>Message\Charge</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\share\GameMsg_SyncSetting.h">
+      <Filter>Message\Charge</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\libServerFrame\Console.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\libServerFrame\DBInterface.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\libServerFrame\QueryManager.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\libServerFrame\Circulator.h">
+      <Filter>ServerFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\libServerFrame\CirculatorBase.h">
+      <Filter>ServerFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\libServerFrame\Main.h">
+      <Filter>ServerFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\account\AccountMsgDef.h">
+      <Filter>Message\MessageDef</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\logic\HostMsgDef.h">
+      <Filter>Message\MessageDef</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\share\CommonMsgDef.h">
+      <Filter>Message\MessageDef</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\share\ServerMsgDef.h">
+      <Filter>Message\MessageDef</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\share\ServerDataStruct.h">
+      <Filter>DatasStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\Handbook\GameMsg_Handbook.h">
+      <Filter>Handbook</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\Handbook\HandbookStruct.h">
+      <Filter>Handbook</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\dancegroup\GameMsg_S2G_DanceGroupChallenge.h">
+      <Filter>Message\DanceGroup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\dancegroup\GameMsg_G2S_DanceGroupChallenge.h">
+      <Filter>Message\DanceGroup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\share\GameMsg_GameServerLinkInfo.h">
+      <Filter>Message\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\share\LinkingInfos.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\share\GameServerLinkInfo.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\activity\RedEnvelope\GameMsg_GS_RedEnvelope.h">
+      <Filter>Message\Activity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\activity\RedEnvelope\RedEnvelope.h">
+      <Filter>Activity\RedEnvelope</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\activity\RedEnvelope\RedEnvelopeConfigManager.h">
+      <Filter>Activity\RedEnvelope</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\libServerFrame\GameMsgCacheEnt.h">
+      <Filter>Message\CacheMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\dancegroup\DataStruct_BigMama.h">
+      <Filter>DatasStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\dancegroup\GameMsg_BigMamaServer.h">
+      <Filter>Message\DanceGroup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\chatGrp\GroupChatHistory.h">
+      <Filter>Message\Chat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\login\GameMsg_Server_VerifyAccount.h">
+      <Filter>Message\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\roomLib\RoomLibBase.h">
+      <Filter>RoomLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\roomLib\RoomDanceInfo.h">
+      <Filter>RoomLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\roomLib\RoomMarkCalculator.h">
+      <Filter>RoomLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\roomLib\RoomMarkInfo.h">
+      <Filter>RoomLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\roomLib\RoomCheckDataMgr.h">
+      <Filter>RoomLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\roomLib\RoomDataStruct.h">
+      <Filter>RoomLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\music\BGMMgr.h">
+      <Filter>RoomLib\Music</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\music\MusicBoardMgr.h">
+      <Filter>RoomLib\Music</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\music\MusicStageFileManager.h">
+      <Filter>RoomLib\Music</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\grade\GradeInfoMgr.h">
+      <Filter>RoomLib\Grade</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\roomLib\RoomPosManager.h">
+      <Filter>RoomLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\roomLib\GameMsg_C2S_RoomMsg.h">
+      <Filter>RoomLib\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\roomLib\GameMsg_S2C_RoomMsg.h">
+      <Filter>RoomLib\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\ImageData.h">
+      <Filter>DatasStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\roomLib\GameMsgNewRoom.h">
+      <Filter>RoomLib\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\roomLib\RoomSettingMgr.h">
+      <Filter>RoomLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\roomLib\GameMsgRoomBroadcast.h">
+      <Filter>RoomLib\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\DanceGroupFairyLand\GameMsg_FairyLand.h">
+      <Filter>DanceGroupFairyLand</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\vip\VIPDataMgr.h">
+      <Filter>VIPData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\vip\VIPStruct.h">
+      <Filter>VIPData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\player\GameMsg_PlayerSetting.h">
+      <Filter>RoomLib\Message</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\server\mail\GameMsg_Mail.cpp">
+      <Filter>Message\Mail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\mall\GameMsg_Mall.cpp">
+      <Filter>Message\Mall</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\lua\InitLua.cpp">
+      <Filter>lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\mall\GameMsg_SpecialMall.cpp">
+      <Filter>Message\SpecialMall</Filter>
+    </ClCompile>
+    <ClCompile Include="..\datastructure\datainfor\ServerConfig.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\Rank\RankDefine.cpp">
+      <Filter>Message\Rank</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\Pattern\Observer.cpp">
+      <Filter>Pattern</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\Pattern\Param.cpp">
+      <Filter>Pattern</Filter>
+    </ClCompile>
+    <ClCompile Include="..\datastructure\DanceGroupDataMgr.cpp">
+      <Filter>DatasStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="..\datastructure\DataStruct_Base.cpp">
+      <Filter>DatasStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="..\datastructure\DataStruct_Couple.cpp">
+      <Filter>DatasStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="..\datastructure\DataStruct_DanceGroup.cpp">
+      <Filter>DatasStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="..\datastructure\DataStruct_DB.cpp">
+      <Filter>DatasStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="..\datastructure\DataStruct_Rank.cpp">
+      <Filter>DatasStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="..\datastructure\DataStruct_SpecialMall.cpp">
+      <Filter>DatasStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="..\datastructure\datainfor\GMDataInfo.cpp">
+      <Filter>DatasStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="..\datastructure\LogStructDef.cpp">
+      <Filter>DatasStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\payment\PaymentInfoMgr.cpp">
+      <Filter>DatasStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="..\datastructure\FriendDataManager.cpp">
+      <Filter>DatasStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\Pattern\Service.cpp">
+      <Filter>Pattern</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\Pet\Pet.cpp">
+      <Filter>Pet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\Pet\PetEgg.cpp">
+      <Filter>Pet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\mall\Currency.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\Pet\PetConfig\PetBaseInfo.cpp">
+      <Filter>Pet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\Pet\PetConfig\PetConfigManager.cpp">
+      <Filter>Pet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\Pet\PetConfig\PetEvolutionInfo.cpp">
+      <Filter>Pet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\Pet\PetConfig\PetExchangeInfo.cpp">
+      <Filter>Pet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\Pet\PetConfig\PetQualityInfo.cpp">
+      <Filter>Pet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\Pet\PetConfig\PetSkillConfig.cpp">
+      <Filter>Pet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\CeremonyRoom\ceremonyRoomHead.cpp">
+      <Filter>Message\DanceGroup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\Medal\MedalCondition.cpp">
+      <Filter>Medal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\Medal\MedalConditionFactory.cpp">
+      <Filter>Medal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\Medal\MedalConditionImp.cpp">
+      <Filter>Medal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\Medal\MedalCfg.cpp">
+      <Filter>Medal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\Medal\MedalCfgMgr.cpp">
+      <Filter>Medal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\Medal\GameMsg_Gm_medal.cpp">
+      <Filter>Medal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\chat\GameMsg_G2S_AdminChat.cpp">
+      <Filter>Message\Chat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\chat\GameMsg_G2S_Chat.cpp">
+      <Filter>Message\Chat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\chat\GameMsg_G2S_Chat_Admin.cpp">
+      <Filter>Message\Chat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\chat\GameMsg_G2S_ChatWindow.cpp">
+      <Filter>Message\Chat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\chat\GameMsg_G2S_WorldChat.cpp">
+      <Filter>Message\Chat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\chat\GameMsg_S2G_Chat.cpp">
+      <Filter>Message\Chat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\agent\AgentMsg_Announce.cpp">
+      <Filter>Message\Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\agent\AgentMsg_Close.cpp">
+      <Filter>Message\Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\agent\AgentMsg_Execute.cpp">
+      <Filter>Message\Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\agent\AgentMsg_Exit.cpp">
+      <Filter>Message\Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\agent\AgentMsg_Kill.cpp">
+      <Filter>Message\Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\agent\AgentMsg_Setting.cpp">
+      <Filter>Message\Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\agent\AgentMsg_ShutdownInTime.cpp">
+      <Filter>Message\Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\agent\AgentMsg_Start.cpp">
+      <Filter>Message\Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\agent\AgentMsg_Stat.cpp">
+      <Filter>Message\Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\agent\AgentMsg_SysInfo.cpp">
+      <Filter>Message\Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\dancegroup\GameMsg_C2S_DanceGroup.cpp">
+      <Filter>Message\DanceGroup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\dancegroup\GameMsg_S2C_DanceGroup.cpp">
+      <Filter>Message\DanceGroup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\activity\GameMsg_S2S_Activities.cpp">
+      <Filter>Message\Activity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\CeremonyRoom\GameMsg_CeremonyRoom.cpp">
+      <Filter>Message\DanceGroup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\dancegroup\GameMsg_G2S_DanceGroup.cpp">
+      <Filter>Message\DanceGroup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\dancegroup\GameMsg_S2G_DanceGroup.cpp">
+      <Filter>Message\DanceGroup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\Dungeon\GameMsg_G2S_Dungeon.cpp">
+      <Filter>Message\Dungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\Dungeon\GameMsg_S2G_Dungeon.cpp">
+      <Filter>Message\Dungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\mail\GameMsg_External.cpp">
+      <Filter>Message\External</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\friend\GameMsg_G2S_BecomeFriends.cpp">
+      <Filter>Message\Friend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\friend\GameMsg_G2S_FindPlayerFromID.cpp">
+      <Filter>Message\Friend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\friend\GameMsg_G2S_FriendApplicationBack2Sender.cpp">
+      <Filter>Message\Friend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\friend\GameMsg_G2S_FriendApplicationForward2Receiver.cpp">
+      <Filter>Message\Friend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\friend\GameMsg_G2S_FriendLogin.cpp">
+      <Filter>Message\Friend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\friend\GameMsg_G2S_GetBlackListOnlineInfo.cpp">
+      <Filter>Message\Friend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\friend\GameMsg_G2S_GetFriendOnlineInfoResult.cpp">
+      <Filter>Message\Friend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\friend\GameMsg_G2S_GetTempListOnlineInfo.cpp">
+      <Filter>Message\Friend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\friend\GameMsg_G2S_NotifyGameHasBeenDeletedBlacklist.cpp">
+      <Filter>Message\Friend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\friend\GameMsg_G2S_NotifyGameHasBeenDeletedFriend.cpp">
+      <Filter>Message\Friend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\friend\GameMsg_G2S_NotifyGameRemoveFollowedFriend.cpp">
+      <Filter>Message\Friend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\friend\GameMsg_G2S_NotifyGameRemoveFriend.cpp">
+      <Filter>Message\Friend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\friend\GameMsg_G2S_NotifyHasBeenAccepted.cpp">
+      <Filter>Message\Friend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\friend\GameMsg_G2S_PushOnlineInfoToAllFriends.cpp">
+      <Filter>Message\Friend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\friend\GameMsg_G2S_UpdateAttributeToAllFriend.cpp">
+      <Filter>Message\Friend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\friend\GameMsg_S2G_AddBlackFriend.cpp">
+      <Filter>Message\Friend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\friend\GameMsg_S2G_AddBlackList.cpp">
+      <Filter>Message\Friend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\friend\GameMsg_S2G_AddMuteFriend.cpp">
+      <Filter>Message\Friend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\friend\GameMsg_S2G_AddMuteList.cpp">
+      <Filter>Message\Friend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\friend\GameMsg_S2G_BecomeFriends.cpp">
+      <Filter>Message\Friend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\friend\GameMsg_S2G_FindPlayerFromID.cpp">
+      <Filter>Message\Friend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\friend\GameMsg_S2G_FriendApplication.cpp">
+      <Filter>Message\Friend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\friend\GameMsg_S2G_FriendLogin.cpp">
+      <Filter>Message\Friend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\friend\GameMsg_S2G_GetBlackListOnlineInfo.cpp">
+      <Filter>Message\Friend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\friend\GameMsg_S2G_GetFriendOnlineInfo.cpp">
+      <Filter>Message\Friend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\friend\GameMsg_S2G_GetTempListOnlineInfo.cpp">
+      <Filter>Message\Friend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\friend\GameMsg_S2G_NotifyGameHasBeenDeletedBlacklist.cpp">
+      <Filter>Message\Friend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\friend\GameMsg_S2G_NotifyGameHasBeenDeletedFriend.cpp">
+      <Filter>Message\Friend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\friend\GameMsg_S2G_NotifyGameRemoveFollowedFriend.cpp">
+      <Filter>Message\Friend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\friend\GameMsg_S2G_NotifyGameRemoveFriend.cpp">
+      <Filter>Message\Friend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\friend\GameMsg_S2G_NotifyHasBeenAccepted.cpp">
+      <Filter>Message\Friend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\friend\GameMsg_S2G_NotifyHasBeenDeletedFriend.cpp">
+      <Filter>Message\Friend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\friend\GameMsg_S2G_PushOnlineInfoToAllFriends.cpp">
+      <Filter>Message\Friend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\friend\GameMsg_S2G_RemoveBlackList.cpp">
+      <Filter>Message\Friend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\friend\GameMsg_S2G_RemoveFriend.cpp">
+      <Filter>Message\Friend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\friend\GameMsg_S2G_RemoveMuteList.cpp">
+      <Filter>Message\Friend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\friend\GameMsg_S2G_RequestFriendOnlineInfo.cpp">
+      <Filter>Message\Friend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\friend\GameMsg_S2G_UpdateAttributeToAllFriend.cpp">
+      <Filter>Message\Friend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\GM\GameMsg_G2S_Announce.cpp">
+      <Filter>Message\GM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\GM\GameMsg_G2S_GetRoomListByGM.cpp">
+      <Filter>Message\GM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\GM\GameMsg_G2S_NewCompensation.cpp">
+      <Filter>Message\GM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\GM\GameMsg_S2A_LockOrUnLockAccountByGm.cpp">
+      <Filter>Message\GM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\GM\GameMsg_GM_share.cpp">
+      <Filter>Message\GM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\room\GameMsg_LiveRoom.cpp">
+      <Filter>Message\LiveRoom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\login\GameMsg_Server_AccountLogin.cpp">
+      <Filter>Message\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\login\GameMsg_Server_AccountLogout.cpp">
+      <Filter>Message\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\login\GameMsg_Server_DropClient.cpp">
+      <Filter>Message\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\login\GameMsg_Server_Login.cpp">
+      <Filter>Message\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\login\GameMsg_Server_LoginInfo.cpp">
+      <Filter>Message\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\login\GameMsg_Server_LoginResult.cpp">
+      <Filter>Message\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\login\GameMsg_Player_SwitchLine.cpp">
+      <Filter>Message\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\login\GameMsg_S2G_Login.cpp">
+      <Filter>Message\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\login\GameMsg_S2G_Logout.cpp">
+      <Filter>Message\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\Couple\GameMsg_G2S_Couple.cpp">
+      <Filter>Message\Marriage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\Couple\GameMsg_S2G_Couple.cpp">
+      <Filter>Message\Marriage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\player\GameMsg_G2S_PlayerInfo.cpp">
+      <Filter>Message\PlayerInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\player\GameMsg_S2G_PlayerInfo.cpp">
+      <Filter>Message\PlayerInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\player\GameMsg_S2G_UpdateAttrInfo.cpp">
+      <Filter>Message\PlayerInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\player\GameMsg_S2G_UpdateRoomInfo.cpp">
+      <Filter>Message\PlayerInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\Rank\GameMsg_Rank_SG.cpp">
+      <Filter>Message\Rank</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\vip\GameMsg_S2G_VIP.cpp">
+      <Filter>Message\VIP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\mall\GameMsg_G2S_TimeEgg.cpp">
+      <Filter>Message\TimeEgg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\mall\GameMsg_S2G_TimeEgg.cpp">
+      <Filter>Message\TimeEgg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\share\GameMsg_G2S_GameServerInfoResult.cpp">
+      <Filter>Message\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\share\GameMsg_G2S_LockOrUnLockAccountByGm.cpp">
+      <Filter>Message\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\share\GameMsg_S2G_GameServerClosed.cpp">
+      <Filter>Message\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\share\GameMsg_S2G_GameServerInfo.cpp">
+      <Filter>Message\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\share\GameMsg_LinkCount.cpp">
+      <Filter>Message\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\share\GameMsg_LinkInfo.cpp">
+      <Filter>Message\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\share\GameMsg_Server_Connected.cpp">
+      <Filter>Message\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\compensation\CompensationManager.cpp">
+      <Filter>DatasStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\Rank\RankMgr.cpp">
+      <Filter>DatasStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\util\CommonFunc.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\util\Crontab.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\util\IDCreater.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\util\linuxfunc.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\util\NameDeny.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\util\TimerMgr.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\dancegroup\DanceGroupRankMgr.cpp">
+      <Filter>DatasStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\share\GameMsg_Forward.cpp">
+      <Filter>Message\Forward</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\share\GameMsg_Cmd.cpp">
+      <Filter>Message\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\share\GameMsg_CmdRes.cpp">
+      <Filter>Message\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\group\GameMsg_LBS.cpp">
+      <Filter>Message\LBS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\share\GameMsg_ChargeOnline.cpp">
+      <Filter>Message\Charge</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\share\GameMsg_G2S_AddMCoinByGm.cpp">
+      <Filter>Message\Charge</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\share\GameMsg_S2A_AddMCoinByCmd.cpp">
+      <Filter>Message\Charge</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\share\GameMsg_SyncSetting.cpp">
+      <Filter>Message\Charge</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\libServerFrame\Console.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\libServerFrame\DBInterface.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\libServerFrame\QueryManager.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\libServerFrame\Circulator.cpp">
+      <Filter>ServerFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\libServerFrame\CirculatorBase.cpp">
+      <Filter>ServerFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\libServerFrame\Main.cpp">
+      <Filter>ServerFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\Handbook\GameMsg_Handbook.cpp">
+      <Filter>Handbook</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\Handbook\HandbookStruct.cpp">
+      <Filter>Handbook</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\dancegroup\GameMsg_S2G_DanceGroupChallenge.cpp">
+      <Filter>Message\DanceGroup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\dancegroup\GameMsg_G2S_DanceGroupChallenge.cpp">
+      <Filter>Message\DanceGroup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\share\GameMsg_GameServerLinkInfo.cpp">
+      <Filter>Message\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\share\LinkingInfos.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\share\GameServerLinkInfo.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\activity\RedEnvelope\GameMsg_GS_RedEnvelope.cpp">
+      <Filter>Message\Activity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\activity\RedEnvelope\RedEnvelope.cpp">
+      <Filter>Activity\RedEnvelope</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\activity\RedEnvelope\RedEnvelopeConfigManager.cpp">
+      <Filter>Activity\RedEnvelope</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\libServerFrame\GameMsgCacheEnt.cpp">
+      <Filter>Message\CacheMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\dancegroup\DataStruct_BigMama.cpp">
+      <Filter>DatasStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\dancegroup\GameMsg_BigMamaServer.cpp">
+      <Filter>Message\DanceGroup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\chatGrp\GroupChatHistory.cpp">
+      <Filter>Message\Chat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\login\GameMsg_Server_VerifyAccount.cpp">
+      <Filter>Message\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\roomLib\RoomLibBase.cpp">
+      <Filter>RoomLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\roomLib\RoomDanceInfo.cpp">
+      <Filter>RoomLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\roomLib\RoomMarkCalculator.cpp">
+      <Filter>RoomLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\roomLib\RoomMarkInfo.cpp">
+      <Filter>RoomLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\roomLib\RoomCheckDataMgr.cpp">
+      <Filter>RoomLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\roomLib\RoomDataStruct.cpp">
+      <Filter>RoomLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\music\BGMMgr.cpp">
+      <Filter>RoomLib\Music</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\music\MusicBoardMgr.cpp">
+      <Filter>RoomLib\Music</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\music\MusicStageFileManager.cpp">
+      <Filter>RoomLib\Music</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\grade\GradeInfoMgr.cpp">
+      <Filter>RoomLib\Grade</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\roomLib\RoomPosManager.cpp">
+      <Filter>RoomLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\roomLib\GameMsg_C2S_RoomMsg.cpp">
+      <Filter>RoomLib\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\roomLib\GameMsg_S2C_RoomMsg.cpp">
+      <Filter>RoomLib\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="..\datastructure\ImageData.cpp">
+      <Filter>DatasStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\roomLib\GameMsgNewRoom.cpp">
+      <Filter>RoomLib\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\roomLib\RoomSettingMgr.cpp">
+      <Filter>RoomLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\roomLib\GameMsgRoomBroadcast.cpp">
+      <Filter>RoomLib\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\DanceGroupFairyLand\GameMsg_FairyLand.cpp">
+      <Filter>DanceGroupFairyLand</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\vip\VIPDataMgr.cpp">
+      <Filter>VIPData</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\vip\VIPStruct.cpp">
+      <Filter>VIPData</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\player\GameMsg_PlayerSetting.cpp">
+      <Filter>RoomLib\Message</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A2DB3988-232B-4D45-92ED-113D367D19F6}</ProjectGuid>
+    <RootNamespace>socket</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4350;4365;4514;4710;4820;4640;4100;4127;4996</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>debug/socket.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>release/socket.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="conv.h" />
+    <ClInclude Include="Deletor.h" />
+    <ClInclude Include="Formatter.h" />
+    <ClInclude Include="Ini.h" />
+    <ClInclude Include="json\autolink.h" />
+    <ClInclude Include="json\config.h" />
+    <ClInclude Include="json\features.h" />
+    <ClInclude Include="json\forwards.h" />
+    <ClInclude Include="json\json.h" />
+    <ClInclude Include="json\json_batchallocator.h" />
+    <ClInclude Include="json\reader.h" />
+    <ClInclude Include="json\value.h" />
+    <ClInclude Include="json\writer.h" />
+    <ClInclude Include="Log.h" />
+    <ClInclude Include="MemPool.h" />
+    <ClInclude Include="Query.h" />
+    <ClInclude Include="SharedPtr.h" />
+    <ClInclude Include="Utility.h" />
+    <ClInclude Include="Windefine.h" />
+    <ClInclude Include="AddrMgr.h" />
+    <ClInclude Include="ClientSocketMgr.h" />
+    <ClInclude Include="Crypt.h" />
+    <ClInclude Include="MsgBaseStruct.h" />
+    <ClInclude Include="ParamPool.h" />
+    <ClInclude Include="Slot.h" />
+    <ClInclude Include="SlotPeer.h" />
+    <ClInclude Include="SocketDef.h" />
+    <ClInclude Include="SocketMgr.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="WinsockErrCode.h" />
+    <ClInclude Include="DBIMysql.h" />
+    <ClInclude Include="DBQuery_Map.h" />
+    <ClInclude Include="DBQuery_Map_Entry.h" />
+    <ClInclude Include="DBQuery_Processor_Entry.h" />
+    <ClInclude Include="DefaultQueryProcessorObjGet.h" />
+    <ClInclude Include="IQueryProcessorObjGet.h" />
+    <ClInclude Include="QueryManagerBase.h" />
+    <ClInclude Include="Crc.h" />
+    <ClInclude Include="Md5.h" />
+    <ClInclude Include="GameMsg_Base.h" />
+    <ClInclude Include="GameMsg_System_Connect.h" />
+    <ClInclude Include="GameMsg_System_Disconnect.h" />
+    <ClInclude Include="GameMsg_System_Invalid.h" />
+    <ClInclude Include="GameMsg_System_Packet.h" />
+    <ClInclude Include="GameMsg_System_Ping.h" />
+    <ClInclude Include="GameMsg_System_Slot.h" />
+    <ClInclude Include="DefaultProcessorObjGet.h" />
+    <ClInclude Include="GameMsg_Map.h" />
+    <ClInclude Include="GameMsg_Map_Entry.h" />
+    <ClInclude Include="GameMsg_Processor_Entry.h" />
+    <ClInclude Include="IProcessorObjGet.h" />
+    <ClInclude Include="GameMsg_Processor.h" />
+    <ClInclude Include="inc\SocketLib.h" />
+    <ClInclude Include="SocketLibCommonDef.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="conv.cpp" />
+    <ClCompile Include="Formatter.cpp" />
+    <ClCompile Include="Ini.cpp" />
+    <ClCompile Include="json\json_reader.cpp" />
+    <ClCompile Include="json\json_value.cpp" />
+    <ClCompile Include="json\json_writer.cpp" />
+    <ClCompile Include="Log.cpp" />
+    <ClCompile Include="MemPool.cpp" />
+    <ClCompile Include="Query.cpp" />
+    <ClCompile Include="Utility.cpp" />
+    <ClCompile Include="AddrMgr.cpp" />
+    <ClCompile Include="CheckValid.cpp" />
+    <ClCompile Include="ClientSocketMgr.cpp" />
+    <ClCompile Include="Crypt.cpp" />
+    <ClCompile Include="KeyFileMaker.cpp" />
+    <ClCompile Include="MsgBaseStruct.cpp" />
+    <ClCompile Include="ParamPool.cpp" />
+    <ClCompile Include="Slot.cpp" />
+    <ClCompile Include="SlotPeer.cpp" />
+    <ClCompile Include="SocketMgr.cpp" />
+    <ClCompile Include="ValidClient.cpp" />
+    <ClCompile Include="DBIMysql.cpp" />
+    <ClCompile Include="DBQuery_Map.cpp" />
+    <ClCompile Include="DBQuery_Map_Entry.cpp" />
+    <ClCompile Include="DBQuery_Processor_Entry.cpp" />
+    <ClCompile Include="DefaultQueryProcessorObjGet.cpp" />
+    <ClCompile Include="QueryManagerBase.cpp" />
+    <ClCompile Include="Crc.cpp" />
+    <ClCompile Include="Md5.cpp" />
+    <ClCompile Include="GameMsg_Base.cpp" />
+    <ClCompile Include="GameMsg_System_Connect.cpp" />
+    <ClCompile Include="GameMsg_System_Disconnect.cpp" />
+    <ClCompile Include="GameMsg_System_Invalid.cpp" />
+    <ClCompile Include="GameMsg_System_Packet.cpp" />
+    <ClCompile Include="GameMsg_System_Ping.cpp" />
+    <ClCompile Include="GameMsg_System_Slot.cpp" />
+    <ClCompile Include="DefaultProcessorObjGet.cpp" />
+    <ClCompile Include="GameMsg_Map.cpp" />
+    <ClCompile Include="GameMsg_Map_Entry.cpp" />
+    <ClCompile Include="GameMsg_Processor_Entry.cpp" />
+    <ClCompile Include="GameMsg_Processor.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="json\json_internalarray.inl" />
+    <None Include="json\json_internalmap.inl" />
+    <None Include="json\json_valueiterator.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

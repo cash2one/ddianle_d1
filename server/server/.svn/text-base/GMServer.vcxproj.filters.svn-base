@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Message">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="GMEntity">
+      <UniqueIdentifier>{1017431f-ab75-4cc7-af16-a0a88730ab04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{723cef5e-03c6-474d-a698-b904517678c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lua">
+      <UniqueIdentifier>{b101b4e3-b094-4c44-8138-8196b74d9f44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Priv">
+      <UniqueIdentifier>{c5b0755c-c0ef-469a-a71d-ed79b0e23c32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Announce">
+      <UniqueIdentifier>{b0324547-f7b0-422a-9907-f0360b93e453}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Timer">
+      <UniqueIdentifier>{8a9fc13a-3d6f-43bd-b71d-65f0d2c931bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DB">
+      <UniqueIdentifier>{8c608377-f82c-4ae2-bb13-128a4465d9c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InfoCenter">
+      <UniqueIdentifier>{d89e33bc-a40e-45c4-b151-5a1d405f7891}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ServerFrame">
+      <UniqueIdentifier>{5c545294-f71c-4eef-830a-a981521be56a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GM\GameMsg_GM.cpp">
+      <Filter>Message</Filter>
+    </ClCompile>
+    <ClCompile Include="GM\GMEntity.cpp">
+      <Filter>GMEntity</Filter>
+    </ClCompile>
+    <ClCompile Include="GM\GMEntityMgr.cpp">
+      <Filter>GMEntity</Filter>
+    </ClCompile>
+    <ClCompile Include="GM\GMDataStruct.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="GM\GMDBInterface.cpp">
+      <Filter>DB</Filter>
+    </ClCompile>
+    <ClCompile Include="GM\GMQuery.cpp">
+      <Filter>DB</Filter>
+    </ClCompile>
+    <ClCompile Include="GM\LuaGMFuction.cpp">
+      <Filter>lua</Filter>
+    </ClCompile>
+    <ClCompile Include="GM\LuaServerConfigFuction.cpp">
+      <Filter>lua</Filter>
+    </ClCompile>
+    <ClCompile Include="GM\priv\PrivMgr.cpp">
+      <Filter>Priv</Filter>
+    </ClCompile>
+    <ClCompile Include="GM\AnnounceMgr.cpp">
+      <Filter>Announce</Filter>
+    </ClCompile>
+    <ClCompile Include="GM\AnnounceTimer.cpp">
+      <Filter>Announce</Filter>
+    </ClCompile>
+    <ClCompile Include="GM\InfoCenterMgr.cpp">
+      <Filter>InfoCenter</Filter>
+    </ClCompile>
+    <ClCompile Include="GM\TimerMgrGm.cpp">
+      <Filter>Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="GM\GMCirculator.cpp">
+      <Filter>ServerFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="GM\GMMain.cpp">
+      <Filter>ServerFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="GM\JsonLog.cpp">
+      <Filter>ServerFrame</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GM\GameMsg_GM.h">
+      <Filter>Message</Filter>
+    </ClInclude>
+    <ClInclude Include="GM\GMMsgDef.h">
+      <Filter>Message</Filter>
+    </ClInclude>
+    <ClInclude Include="GM\GMEntity.h">
+      <Filter>GMEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="GM\GMEntityMgr.h">
+      <Filter>GMEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="GM\GMDataStruct.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="GM\GMDefine.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="GM\priv\PrivCmdMacroDef.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="GM\TipMsgDef.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="GM\GMDBInterface.h">
+      <Filter>DB</Filter>
+    </ClInclude>
+    <ClInclude Include="GM\GMQuery.h">
+      <Filter>DB</Filter>
+    </ClInclude>
+    <ClInclude Include="GM\GMQueryType.h">
+      <Filter>DB</Filter>
+    </ClInclude>
+    <ClInclude Include="GM\priv\PrivMgr.h">
+      <Filter>Priv</Filter>
+    </ClInclude>
+    <ClInclude Include="GM\AnnounceMgr.h">
+      <Filter>Announce</Filter>
+    </ClInclude>
+    <ClInclude Include="GM\AnnounceTimer.h">
+      <Filter>Announce</Filter>
+    </ClInclude>
+    <ClInclude Include="GM\InfoCenterMgr.h">
+      <Filter>InfoCenter</Filter>
+    </ClInclude>
+    <ClInclude Include="GM\ITimerGm.h">
+      <Filter>Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="GM\TimerMgrGm.h">
+      <Filter>Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="GM\GMCirculator.h">
+      <Filter>ServerFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="GM\JsonLog.h">
+      <Filter>ServerFrame</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

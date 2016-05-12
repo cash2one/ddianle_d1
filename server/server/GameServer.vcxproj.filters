@@ -1,0 +1,2232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ServerFrame">
+      <UniqueIdentifier>{77a37d12-a185-420c-9825-a2d3a92dcd22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager">
+      <UniqueIdentifier>{8b8d4ead-ac08-4109-a094-196e18d36da4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chat">
+      <UniqueIdentifier>{cc27fc7b-ea4c-4f9d-a96b-5ddb98c69b1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entity">
+      <UniqueIdentifier>{79b84a96-dac4-41ab-9af9-7eb823006860}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mall">
+      <UniqueIdentifier>{7382bfe8-dc6a-453e-9aac-b401b38bdb59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lua">
+      <UniqueIdentifier>{f216feff-2ab3-4a17-8ab1-43030e476def}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EntityNet">
+      <UniqueIdentifier>{809a2259-3b81-48a8-92c1-678ba9753f87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quest">
+      <UniqueIdentifier>{66664bae-b997-40cd-b556-50912294e0eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ComponentBase">
+      <UniqueIdentifier>{97dd85ee-281c-49c5-902e-b7fb69cf3b2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Attribute">
+      <UniqueIdentifier>{3d6985a9-4559-4762-8f98-6aadccdde1fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Item">
+      <UniqueIdentifier>{c10aed32-ad9e-4951-b8af-9df16129d691}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Friend">
+      <UniqueIdentifier>{bc23e1f4-cb88-4cd5-b0f0-354ae553f351}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player">
+      <UniqueIdentifier>{33a577de-0ab1-4207-9af5-39bbaa10707e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mail">
+      <UniqueIdentifier>{dea6fc79-510d-4ab2-9ffc-271addf964c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gene">
+      <UniqueIdentifier>{1064fefb-cac7-44ff-ab92-8c1747c0ebd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Achievement">
+      <UniqueIdentifier>{95cf0e1c-283d-473a-8fab-1f9526eb1e1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Achievement\Handler">
+      <UniqueIdentifier>{99a26d53-1c35-4da8-9bdc-1e60c204ca70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Room">
+      <UniqueIdentifier>{e07a04b8-c864-4bfb-98ef-35e8187edb5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CommandHandler">
+      <UniqueIdentifier>{7c919717-5cdf-4d95-9c8a-89859dc5ac02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Announcement">
+      <UniqueIdentifier>{3c0de485-a00d-4683-9919-6d359efc3b72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Location">
+      <UniqueIdentifier>{5348e38d-43ee-4faa-a161-9a7459124ff9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Money">
+      <UniqueIdentifier>{4e6fdb3b-82fa-4595-b549-1c54f04963a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Activity">
+      <UniqueIdentifier>{2ddf085a-0e13-43e3-924b-1906707d4c43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Activity\DataManager">
+      <UniqueIdentifier>{b43ac444-2006-40e0-823c-77c0d1e9a42c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Activity\Activity">
+      <UniqueIdentifier>{a44e4cfc-118c-4bf0-9aa8-06a7ddcf7088}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Activity\Framework">
+      <UniqueIdentifier>{8d61ad74-d816-4e9b-9819-2c9602b8484d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DanceGroup">
+      <UniqueIdentifier>{ac4df11e-b276-4f13-9fe5-5c497880cb06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Couple">
+      <UniqueIdentifier>{6265d539-f4db-4bb6-9892-23ffe998e8fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Box">
+      <UniqueIdentifier>{e854de13-a105-47ce-aab8-a37699990ad3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Bet">
+      <UniqueIdentifier>{6af1eda6-2df4-4b1c-8462-77a1637659b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PhotoRoom">
+      <UniqueIdentifier>{52d53f8d-11ad-4adb-a17c-38d92c59915b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Amuse">
+      <UniqueIdentifier>{40f7a04e-6f1e-4690-bd8c-1d5178ee3583}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Amuse\AmuseAction">
+      <UniqueIdentifier>{9943d61a-20c5-47aa-909d-10cd47321ae2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Amuse\AmuseEvent">
+      <UniqueIdentifier>{3dd4b5c1-c181-49e9-a662-02c582a2fdd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Compensation">
+      <UniqueIdentifier>{01cbd451-148a-48c4-8e20-2eb4b906c165}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AntiAddiction">
+      <UniqueIdentifier>{a5394c14-3a40-4cc2-a6e9-c704a562c97e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PlatformPrivilege">
+      <UniqueIdentifier>{e9f320d5-6e72-460d-aa16-255ff0a2fd75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PlatformPrivilege\UCVIP">
+      <UniqueIdentifier>{f675028b-7805-4bc9-b546-d5cb3bb91c9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SpecialQuest">
+      <UniqueIdentifier>{3e949ea7-8358-48df-81b2-98db55468af4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dungeon">
+      <UniqueIdentifier>{d0bc415c-b74d-475c-8727-1bd16a42b69c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MonthCard">
+      <UniqueIdentifier>{01917ff7-75de-4256-9f7f-a473cfc97b95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rank">
+      <UniqueIdentifier>{0d09e1b7-8796-47f6-901f-ff94bb5a740f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Activity\Message">
+      <UniqueIdentifier>{fb83aae0-eaf3-4cc5-a245-602011326a51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Amuse\Message">
+      <UniqueIdentifier>{e6dbed5d-b48b-45b2-94b7-18ed98754e39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Attribute\Message">
+      <UniqueIdentifier>{0bd4b2dd-ab25-4b48-a35c-0fcf373e89d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Item\Message">
+      <UniqueIdentifier>{6aa87b6e-9d1d-4541-b84f-cfe3121c17cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CheckIn">
+      <UniqueIdentifier>{9479f6cd-bf43-41c2-9b68-6cfe223d0e38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CheckIn\Message">
+      <UniqueIdentifier>{3f419c43-5147-44d7-91be-a33d2789dcb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player\Message">
+      <UniqueIdentifier>{86825e4e-624b-402d-a078-0cefff1c9fb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quest\Message">
+      <UniqueIdentifier>{9074ad07-0498-4060-a317-871889ad1a62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Room\Message">
+      <UniqueIdentifier>{db4df282-c382-4a26-a7a0-43bbffec3439}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Amuse\TimeEgg">
+      <UniqueIdentifier>{e19f623e-be22-482a-957b-116594600b56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VIP">
+      <UniqueIdentifier>{d00769fc-c2ea-4e7b-bae0-dabc7089a950}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Login">
+      <UniqueIdentifier>{f68a5391-9913-455d-9736-89ae0a27fafe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Security">
+      <UniqueIdentifier>{1d2943e0-0712-474f-b309-4a8f65a5d976}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Notification">
+      <UniqueIdentifier>{8219ca52-e9f3-4701-895f-b09752474c5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Timer">
+      <UniqueIdentifier>{4796070e-184d-4ca2-b320-e48097923702}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{61ed0e0d-a8ef-42b7-a805-139b2c54ffe0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Amuse\ConstellationMatch">
+      <UniqueIdentifier>{46f3ee66-851a-473b-9c65-8b08fab24234}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Activeness">
+      <UniqueIdentifier>{2f60a84d-b868-4dc0-be96-35ee01d8bc7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pet">
+      <UniqueIdentifier>{b05779ba-7a20-4d2d-be70-229b86cf5170}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pet\PetConfig">
+      <UniqueIdentifier>{878f0b04-d9b4-483a-94eb-09bbca1838f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pet\PetEggConfig">
+      <UniqueIdentifier>{6f848e8d-458b-4b77-adaf-03ca976420e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CeremonyRoom">
+      <UniqueIdentifier>{2f2961fb-0e83-4022-b861-dbea8f3c35ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Medal">
+      <UniqueIdentifier>{845b1cd2-4d08-457f-87fc-830bee692115}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Handbook">
+      <UniqueIdentifier>{f972172d-ad1c-4fcc-9ddf-ab31e1c01047}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Horse">
+      <UniqueIdentifier>{74ccee54-3568-434a-9f23-1a17531b4089}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Horse\Msg">
+      <UniqueIdentifier>{b8c9c0b4-b3f4-4457-83f8-9ff6437785ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Bet\MagicArray">
+      <UniqueIdentifier>{2eafe8de-154c-4f4c-b993-d2b063008db2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SystemSetting">
+      <UniqueIdentifier>{9122b0ca-f7b0-4a1f-94fe-786f117e4145}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\datastructure\LogicInitData.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\PlayerManager.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\SrvManagerBase.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="chat\AdminChat.cpp">
+      <Filter>Chat</Filter>
+    </ClCompile>
+    <ClCompile Include="chat\ChatManager.cpp">
+      <Filter>Chat</Filter>
+    </ClCompile>
+    <ClCompile Include="chat\CurrentChat.cpp">
+      <Filter>Chat</Filter>
+    </ClCompile>
+    <ClCompile Include="chat\DanceGroupChat.cpp">
+      <Filter>Chat</Filter>
+    </ClCompile>
+    <ClCompile Include="chat\EntityChatComponent.cpp">
+      <Filter>Chat</Filter>
+    </ClCompile>
+    <ClCompile Include="chat\GlobalChat.cpp">
+      <Filter>Chat</Filter>
+    </ClCompile>
+    <ClCompile Include="chat\IChat.cpp">
+      <Filter>Chat</Filter>
+    </ClCompile>
+    <ClCompile Include="chat\PrivateChat.cpp">
+      <Filter>Chat</Filter>
+    </ClCompile>
+    <ClCompile Include="chat\SystemChat.cpp">
+      <Filter>Chat</Filter>
+    </ClCompile>
+    <ClCompile Include="chat\WorldChat.cpp">
+      <Filter>Chat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\datastructure\Entity.cpp">
+      <Filter>Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\datastructure\RoleEntity.cpp">
+      <Filter>Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="mall\EntityMallComponent.cpp">
+      <Filter>Mall</Filter>
+    </ClCompile>
+    <ClCompile Include="mall\Mall.cpp">
+      <Filter>Mall</Filter>
+    </ClCompile>
+    <ClCompile Include="mall\MallDataMgr.cpp">
+      <Filter>Mall</Filter>
+    </ClCompile>
+    <ClCompile Include="lua\LuaRoleFuction.cpp">
+      <Filter>Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="lua\LuaServerFunction.cpp">
+      <Filter>Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityNetComponent\EntityNetComponent.cpp">
+      <Filter>EntityNet</Filter>
+    </ClCompile>
+    <ClCompile Include="quest\EntityQuestComponent.cpp">
+      <Filter>Quest</Filter>
+    </ClCompile>
+    <ClCompile Include="quest\EntityQuestNewComponent.cpp">
+      <Filter>Quest</Filter>
+    </ClCompile>
+    <ClCompile Include="quest\QuestDataManager.cpp">
+      <Filter>Quest</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckIn\CheckInfoMgr.cpp">
+      <Filter>CheckIn</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckIn\EntityCheckInComponent.cpp">
+      <Filter>CheckIn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\datastructure\DataStruct_Game.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="friend\EntityFriendComponent.cpp">
+      <Filter>Friend</Filter>
+    </ClCompile>
+    <ClCompile Include="player\PlayerInfoComponent.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="mail\EntityMailComponent.cpp">
+      <Filter>Mail</Filter>
+    </ClCompile>
+    <ClCompile Include="mail\MailMgr.cpp">
+      <Filter>Mail</Filter>
+    </ClCompile>
+    <ClCompile Include="gene\EntityGeneComponent.cpp">
+      <Filter>Gene</Filter>
+    </ClCompile>
+    <ClCompile Include="achievement\EntityAchievementComponent.cpp">
+      <Filter>Achievement</Filter>
+    </ClCompile>
+    <ClCompile Include="achievement\IEntityAchivementComponent.cpp">
+      <Filter>Achievement</Filter>
+    </ClCompile>
+    <ClCompile Include="achievement\IRequirementHandler.cpp">
+      <Filter>Achievement</Filter>
+    </ClCompile>
+    <ClCompile Include="achievement\RequirementHandlerManager.cpp">
+      <Filter>Achievement</Filter>
+    </ClCompile>
+    <ClCompile Include="achievement\CheckInHandler.cpp">
+      <Filter>Achievement\Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="achievement\CompletedAllQuestHandler.cpp">
+      <Filter>Achievement\Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="achievement\ContinuousWinBetween2To4PersonsHandler.cpp">
+      <Filter>Achievement\Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="achievement\ContinuousWinIn4PersonsHandler.cpp">
+      <Filter>Achievement\Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="achievement\GrowQuestHandler.cpp">
+      <Filter>Achievement\Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="achievement\HistoryAutoMatchWithOppositeSexCountHandler.cpp">
+      <Filter>Achievement\Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="achievement\HistoryBadgeCountHandler.cpp">
+      <Filter>Achievement\Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="achievement\HistoryBigSpeakersUseInSevenDaysCountHandler.cpp">
+      <Filter>Achievement\Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="achievement\HistoryComboMusicCountHandler.cpp">
+      <Filter>Achievement\Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="achievement\HistoryCompletedAchievementCountHandler.cpp">
+      <Filter>Achievement\Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="achievement\HistoryGainClothCountHandler.cpp">
+      <Filter>Achievement\Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="achievement\HistoryGainWishItemCountHandler.cpp">
+      <Filter>Achievement\Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="achievement\HistoryHotValueHandler.cpp">
+      <Filter>Achievement\Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="achievement\HistorySendFlowersCountInSevenDays.cpp">
+      <Filter>Achievement\Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="achievement\HistorySmallSpeakersUseInSevenDaysCountHandler.cpp">
+      <Filter>Achievement\Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="achievement\HistoryTaikoComboCountHandler.cpp">
+      <Filter>Achievement\Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="achievement\HistoryTitleCountHandler.cpp">
+      <Filter>Achievement\Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="achievement\HistoryTotalScoreHandler.cpp">
+      <Filter>Achievement\Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="achievement\HistoryUseBouquetCountHandler.cpp">
+      <Filter>Achievement\Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="achievement\HistoryWishItemCountHandler.cpp">
+      <Filter>Achievement\Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="achievement\LevelHandler.cpp">
+      <Filter>Achievement\Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="achievement\OnlineTimeHandler.cpp">
+      <Filter>Achievement\Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="room\LiveRoomDataMgr.cpp">
+      <Filter>Room</Filter>
+    </ClCompile>
+    <ClCompile Include="room\LiveRoomManager.cpp">
+      <Filter>Room</Filter>
+    </ClCompile>
+    <ClCompile Include="room\Room.cpp">
+      <Filter>Room</Filter>
+    </ClCompile>
+    <ClCompile Include="room\RoomComponent.cpp">
+      <Filter>Room</Filter>
+    </ClCompile>
+    <ClCompile Include="room\RoomManager.cpp">
+      <Filter>Room</Filter>
+    </ClCompile>
+    <ClCompile Include="room\RoomRewardDataMgr.cpp">
+      <Filter>Room</Filter>
+    </ClCompile>
+    <ClCompile Include="room\RoomTimer.cpp">
+      <Filter>Room</Filter>
+    </ClCompile>
+    <ClCompile Include="Command\CommandHandler.cpp">
+      <Filter>CommandHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="Command\CommandHandlerManager.cpp">
+      <Filter>CommandHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="announcement\AnnouncementMgr.cpp">
+      <Filter>Announcement</Filter>
+    </ClCompile>
+    <ClCompile Include="Location\LocationMgr.cpp">
+      <Filter>Location</Filter>
+    </ClCompile>
+    <ClCompile Include="Money\MoneyMgr.cpp">
+      <Filter>Money</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\ActivityDataStruct.cpp">
+      <Filter>Activity</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\EntityActivityComponent.cpp">
+      <Filter>Activity</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\AllActivitiesConfigMgr.cpp">
+      <Filter>Activity\DataManager</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\CumulativeRechargeMgr.cpp">
+      <Filter>Activity\DataManager</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\ExchangeItemInfoMgr.cpp">
+      <Filter>Activity\DataManager</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\ExtraActivityInfoMgr.cpp">
+      <Filter>Activity\DataManager</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\FestivalBlessActivityDataMgr.cpp">
+      <Filter>Activity\DataManager</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\FestivalWishDataMgr.cpp">
+      <Filter>Activity\DataManager</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\FresherActivityMgr.cpp">
+      <Filter>Activity\DataManager</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\GiftCodeInfoMgr.cpp">
+      <Filter>Activity\DataManager</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\GlobalActivityData.cpp">
+      <Filter>Activity\DataManager</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\InTimeOnlineInfoMgr.cpp">
+      <Filter>Activity\DataManager</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\InvitationActivityMgr.cpp">
+      <Filter>Activity\DataManager</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\LevelUpRewardInfoMgr.cpp">
+      <Filter>Activity\DataManager</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\MeetActivityMgr.cpp">
+      <Filter>Activity\DataManager</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\OnlineRewardInfoMgr.cpp">
+      <Filter>Activity\DataManager</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\PlainTextActivityInfoMg.cpp">
+      <Filter>Activity\DataManager</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\PlatformPrivilegeDataMgr.cpp">
+      <Filter>Activity\DataManager</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\PuzzleDataMgr.cpp">
+      <Filter>Activity\DataManager</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\XmasFreeRewardDataMgr.cpp">
+      <Filter>Activity\DataManager</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\CumulativeRechargeActivity.cpp">
+      <Filter>Activity\Activity</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\DanceGroupTimerActivity.cpp">
+      <Filter>Activity\Activity</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\ExchagneItemActivity.cpp">
+      <Filter>Activity\Activity</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\ExtraExpActivity.cpp">
+      <Filter>Activity\Activity</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\FestivalWishActivity.cpp">
+      <Filter>Activity\Activity</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\GiftCodeActivityShow.cpp">
+      <Filter>Activity\Activity</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\GiftSystem.cpp">
+      <Filter>Activity\Activity</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\InTimeOnlineActivity.cpp">
+      <Filter>Activity\Activity</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\InvitationActivity.cpp">
+      <Filter>Activity\Activity</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\MeetActivity.cpp">
+      <Filter>Activity\Activity</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\PlainTextActivity.cpp">
+      <Filter>Activity\Activity</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\PuzzleActivity.cpp">
+      <Filter>Activity\Activity</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\XmasFreeRewardActivity.cpp">
+      <Filter>Activity\Activity</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\SystemActivityManager.cpp">
+      <Filter>Activity\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\TimerActivity.cpp">
+      <Filter>Activity\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Couple\CoupleDataStructrue.cpp">
+      <Filter>Couple</Filter>
+    </ClCompile>
+    <ClCompile Include="Couple\EntityCoupleComponent.cpp">
+      <Filter>Couple</Filter>
+    </ClCompile>
+    <ClCompile Include="Couple\WeddingRoom.cpp">
+      <Filter>Couple</Filter>
+    </ClCompile>
+    <ClCompile Include="Couple\WeddingRoomManager.cpp">
+      <Filter>Couple</Filter>
+    </ClCompile>
+    <ClCompile Include="box\BoxInfoManager.cpp">
+      <Filter>Box</Filter>
+    </ClCompile>
+    <ClCompile Include="bet\BetComponent.cpp">
+      <Filter>Bet</Filter>
+    </ClCompile>
+    <ClCompile Include="PhotoRoom\EntityPhotoRoomComponent.cpp">
+      <Filter>PhotoRoom</Filter>
+    </ClCompile>
+    <ClCompile Include="PhotoRoom\PhotoRoom.cpp">
+      <Filter>PhotoRoom</Filter>
+    </ClCompile>
+    <ClCompile Include="PhotoRoom\PhotoRoomDataStruct.cpp">
+      <Filter>PhotoRoom</Filter>
+    </ClCompile>
+    <ClCompile Include="PhotoRoom\PhotoRoomLuaDataManager.cpp">
+      <Filter>PhotoRoom</Filter>
+    </ClCompile>
+    <ClCompile Include="PhotoRoom\PhotoRoomManager.cpp">
+      <Filter>PhotoRoom</Filter>
+    </ClCompile>
+    <ClCompile Include="AmuseRoom\AmuseParam.cpp">
+      <Filter>Amuse</Filter>
+    </ClCompile>
+    <ClCompile Include="AmuseRoom\AmuseRoom.cpp">
+      <Filter>Amuse</Filter>
+    </ClCompile>
+    <ClCompile Include="AmuseRoom\AmuseRoomComponent.cpp">
+      <Filter>Amuse</Filter>
+    </ClCompile>
+    <ClCompile Include="AmuseRoom\AmuseRoomDataManager.cpp">
+      <Filter>Amuse</Filter>
+    </ClCompile>
+    <ClCompile Include="AmuseRoom\AmuseRoomDevice.cpp">
+      <Filter>Amuse</Filter>
+    </ClCompile>
+    <ClCompile Include="AmuseRoom\AmuseRoomManager.cpp">
+      <Filter>Amuse</Filter>
+    </ClCompile>
+    <ClCompile Include="AmuseRoom\AmuseAction_CommitTimeEggInfo.cpp">
+      <Filter>Amuse\AmuseAction</Filter>
+    </ClCompile>
+    <ClCompile Include="AmuseRoom\AmuseAction_CreateTimeEgg.cpp">
+      <Filter>Amuse\AmuseAction</Filter>
+    </ClCompile>
+    <ClCompile Include="AmuseRoom\AmuseAction_GetTimeEggGiftList.cpp">
+      <Filter>Amuse\AmuseAction</Filter>
+    </ClCompile>
+    <ClCompile Include="AmuseRoom\AmuseAction_InviteDevice.cpp">
+      <Filter>Amuse\AmuseAction</Filter>
+    </ClCompile>
+    <ClCompile Include="AmuseRoom\AmuseAction_LeaveDevice.cpp">
+      <Filter>Amuse\AmuseAction</Filter>
+    </ClCompile>
+    <ClCompile Include="AmuseRoom\AmuseAction_LeavePose.cpp">
+      <Filter>Amuse\AmuseAction</Filter>
+    </ClCompile>
+    <ClCompile Include="AmuseRoom\AmuseAction_OpenTimeEgg.cpp">
+      <Filter>Amuse\AmuseAction</Filter>
+    </ClCompile>
+    <ClCompile Include="AmuseRoom\AmuseAction_ReponseDevice.cpp">
+      <Filter>Amuse\AmuseAction</Filter>
+    </ClCompile>
+    <ClCompile Include="AmuseRoom\AmuseAction_RequestDevice.cpp">
+      <Filter>Amuse\AmuseAction</Filter>
+    </ClCompile>
+    <ClCompile Include="AmuseRoom\AmuseAction_UseDevice.cpp">
+      <Filter>Amuse\AmuseAction</Filter>
+    </ClCompile>
+    <ClCompile Include="AmuseRoom\AmuseAction_UsePose.cpp">
+      <Filter>Amuse\AmuseAction</Filter>
+    </ClCompile>
+    <ClCompile Include="AmuseRoom\AmuseEvent_AddExp.cpp">
+      <Filter>Amuse\AmuseEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="AmuseRoom\AmuseEvent_PushSwing.cpp">
+      <Filter>Amuse\AmuseEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="AmuseRoom\AmuseEvent_StartBoat.cpp">
+      <Filter>Amuse\AmuseEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="AmuseRoom\AmuseEvent_StartCarrousel.cpp">
+      <Filter>Amuse\AmuseEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="AmuseRoom\AmuseEvent_StartSwing.cpp">
+      <Filter>Amuse\AmuseEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="anti-addiction\AntiAddictionDataMgr.cpp">
+      <Filter>AntiAddiction</Filter>
+    </ClCompile>
+    <ClCompile Include="anti-addiction\EntityAntiAddictionComponent.cpp">
+      <Filter>AntiAddiction</Filter>
+    </ClCompile>
+    <ClCompile Include="PlatformPrivilege\EntityPlatformPrivilegeComponent.cpp">
+      <Filter>PlatformPrivilege</Filter>
+    </ClCompile>
+    <ClCompile Include="PlatformPrivilege\UCVIP\UCVIP.cpp">
+      <Filter>PlatformPrivilege\UCVIP</Filter>
+    </ClCompile>
+    <ClCompile Include="Dungeon\Dungeon.cpp">
+      <Filter>Dungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="Dungeon\DungeonDataMgr.cpp">
+      <Filter>Dungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="Dungeon\DungeonMgr.cpp">
+      <Filter>Dungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="Dungeon\EntityDungeonComponent.cpp">
+      <Filter>Dungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\MallShareMgr.cpp">
+      <Filter>Activity</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\SocialShareActivity.cpp">
+      <Filter>Activity\Activity</Filter>
+    </ClCompile>
+    <ClCompile Include="box\DynamicBoxInfoManager.cpp">
+      <Filter>Box</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\TimeRanges.cpp">
+      <Filter>Activity\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\SocialShareMgr.cpp">
+      <Filter>Activity\DataManager</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\CumulativeSpendMgr.cpp">
+      <Filter>Activity\DataManager</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\CumulativeSpendActivity.cpp">
+      <Filter>Activity\Activity</Filter>
+    </ClCompile>
+    <ClCompile Include="MonthCard\MonthCardDataMgr.cpp">
+      <Filter>MonthCard</Filter>
+    </ClCompile>
+    <ClCompile Include="MonthCard\EntityMonthCardComponent.cpp">
+      <Filter>MonthCard</Filter>
+    </ClCompile>
+    <ClCompile Include="Couple\DivorceAgreement.cpp">
+      <Filter>Couple</Filter>
+    </ClCompile>
+    <ClCompile Include="dancegroup\EntityDanceGroupComponent.cpp">
+      <Filter>DanceGroup</Filter>
+    </ClCompile>
+    <ClCompile Include="Rank\RankComponent.cpp">
+      <Filter>Rank</Filter>
+    </ClCompile>
+    <ClCompile Include="Rank\RankConfigData.cpp">
+      <Filter>Rank</Filter>
+    </ClCompile>
+    <ClCompile Include="friend\RelationInfo.cpp">
+      <Filter>Friend</Filter>
+    </ClCompile>
+    <ClCompile Include="item\ItemMsgDefine.cpp">
+      <Filter>Item\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="Location\GameMsg_Location.cpp">
+      <Filter>Location</Filter>
+    </ClCompile>
+    <ClCompile Include="mail\MailMsgDefine.cpp">
+      <Filter>Mail</Filter>
+    </ClCompile>
+    <ClCompile Include="mall\MallMsgDefine.cpp">
+      <Filter>Mall</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\PlatformPrivilege\UCVIP\GameMsg_UCVIP.cpp">
+      <Filter>PlatformPrivilege</Filter>
+    </ClCompile>
+    <ClCompile Include="Notification\GameMsg_Notification.cpp">
+      <Filter>Notification</Filter>
+    </ClCompile>
+    <ClCompile Include="Notification\NotificationComponent.cpp">
+      <Filter>Notification</Filter>
+    </ClCompile>
+    <ClCompile Include="Notification\PushRatingDataManager.cpp">
+      <Filter>Notification</Filter>
+    </ClCompile>
+    <ClCompile Include="security\SecurityQuizDataManager.cpp">
+      <Filter>Security</Filter>
+    </ClCompile>
+    <ClCompile Include="security\SecurityQuiz.cpp">
+      <Filter>Security</Filter>
+    </ClCompile>
+    <ClCompile Include="security\SecurityComponent.cpp">
+      <Filter>Security</Filter>
+    </ClCompile>
+    <ClCompile Include="security\GameMsg_Security.cpp">
+      <Filter>Security</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\ProprietaryActivity.cpp">
+      <Filter>Activity\Activity</Filter>
+    </ClCompile>
+    <ClCompile Include="vip\EntityVIPComponent.cpp">
+      <Filter>VIP</Filter>
+    </ClCompile>
+    <ClCompile Include="AmuseRoom\ConstellationMatchDataManager.cpp">
+      <Filter>Amuse\ConstellationMatch</Filter>
+    </ClCompile>
+    <ClCompile Include="AmuseRoom\ConstellationMatchManager.cpp">
+      <Filter>Amuse\ConstellationMatch</Filter>
+    </ClCompile>
+    <ClCompile Include="AmuseRoom\GameMsg_ConstellationMatch.cpp">
+      <Filter>Amuse\ConstellationMatch</Filter>
+    </ClCompile>
+    <ClCompile Include="Dungeon\DungeonDefine.cpp">
+      <Filter>Dungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="activeness\ActivenessComponent.cpp">
+      <Filter>Activeness</Filter>
+    </ClCompile>
+    <ClCompile Include="activeness\ActivenessDataManager.cpp">
+      <Filter>Activeness</Filter>
+    </ClCompile>
+    <ClCompile Include="activeness\ActivenessService.cpp">
+      <Filter>Activeness</Filter>
+    </ClCompile>
+    <ClCompile Include="activeness\GameMsg_Activeness.cpp">
+      <Filter>Activeness</Filter>
+    </ClCompile>
+    <ClCompile Include="Pet\PetEggConfig\PetEggBaseInfo.cpp">
+      <Filter>Pet\PetEggConfig</Filter>
+    </ClCompile>
+    <ClCompile Include="Pet\PetEggConfig\RandomPetCollect.cpp">
+      <Filter>Pet\PetEggConfig</Filter>
+    </ClCompile>
+    <ClCompile Include="Pet\PetConfig\PetQualityInfo.cpp">
+      <Filter>Pet\PetConfig</Filter>
+    </ClCompile>
+    <ClCompile Include="Pet\PetConfig\PetEvolutionInfo.cpp">
+      <Filter>Pet\PetConfig</Filter>
+    </ClCompile>
+    <ClCompile Include="Pet\PetComponent.cpp">
+      <Filter>Pet</Filter>
+    </ClCompile>
+    <ClCompile Include="Pet\PetEggConfig\PetIncubatorInfo.cpp">
+      <Filter>Pet\PetEggConfig</Filter>
+    </ClCompile>
+    <ClCompile Include="Pet\GameMsg_Pet.cpp">
+      <Filter>Pet</Filter>
+    </ClCompile>
+    <ClCompile Include="Pet\PetEggService.cpp">
+      <Filter>Pet</Filter>
+    </ClCompile>
+    <ClCompile Include="Pet\PetService.cpp">
+      <Filter>Pet</Filter>
+    </ClCompile>
+    <ClCompile Include="Pet\PetConfig\PetBaseInfo.cpp">
+      <Filter>Pet\PetConfig</Filter>
+    </ClCompile>
+    <ClCompile Include="Pet\PetConfig\PetConfigManager.cpp">
+      <Filter>Pet\PetConfig</Filter>
+    </ClCompile>
+    <ClCompile Include="Pet\PetEggConfig\PetEggConfigManager.cpp">
+      <Filter>Pet\PetEggConfig</Filter>
+    </ClCompile>
+    <ClCompile Include="Pet\PetConfig\PetExchangeInfo.cpp">
+      <Filter>Pet\PetConfig</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\MainManager.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Pet\PetConfig\PetSkillConfig.cpp">
+      <Filter>Pet\PetConfig</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\LongactingCumulativeRechareMgr.cpp">
+      <Filter>Activity</Filter>
+    </ClCompile>
+    <ClCompile Include="CeremonyRoom\ceremonyRoom.cpp">
+      <Filter>CeremonyRoom</Filter>
+    </ClCompile>
+    <ClCompile Include="CeremonyRoom\ceremonyRoomManager.cpp">
+      <Filter>CeremonyRoom</Filter>
+    </ClCompile>
+    <ClCompile Include="Medal\MedalCfg.cpp">
+      <Filter>Medal</Filter>
+    </ClCompile>
+    <ClCompile Include="Medal\EntityMedalComponent.cpp">
+      <Filter>Medal</Filter>
+    </ClCompile>
+    <ClCompile Include="Medal\MedalCfgMgr.cpp">
+      <Filter>Medal</Filter>
+    </ClCompile>
+    <ClCompile Include="Medal\GameMsg_Medal.cpp">
+      <Filter>Medal</Filter>
+    </ClCompile>
+    <ClCompile Include="item\ClothEffect.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Medal\MedalConditionImp.cpp">
+      <Filter>Medal</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\BuyItemGotMedalMgr.cpp">
+      <Filter>Activity\DataManager</Filter>
+    </ClCompile>
+    <ClCompile Include="achievement\GameMsg_C2S_AchievementGetReward.cpp">
+      <Filter>Achievement</Filter>
+    </ClCompile>
+    <ClCompile Include="achievement\GameMsg_S2C_AchievementCompleted.cpp">
+      <Filter>Achievement</Filter>
+    </ClCompile>
+    <ClCompile Include="achievement\GameMsg_S2C_AchievementGetRewardResult.cpp">
+      <Filter>Achievement</Filter>
+    </ClCompile>
+    <ClCompile Include="achievement\GameMsg_C2S_GetAchievementList.cpp">
+      <Filter>Achievement</Filter>
+    </ClCompile>
+    <ClCompile Include="achievement\GameMsg_S2C_GetAchievementList.cpp">
+      <Filter>Achievement</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\GameMsg_Activity.cpp">
+      <Filter>Activity\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\GameMsg_C2S_GetGift.cpp">
+      <Filter>Activity\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\GameMsg_LevelUpReward.cpp">
+      <Filter>Activity\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\GameMsg_S2C_GetGiftResult.cpp">
+      <Filter>Activity\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\GameMsg_S2C_InTimeOnlineReward.cpp">
+      <Filter>Activity\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\GameMsg_S2C_SendGift.cpp">
+      <Filter>Activity\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\GameMsg_S2C_UpdateExtraExpActivityState.cpp">
+      <Filter>Activity\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\GameMsg_S2C_UpdateGiftInfo.cpp">
+      <Filter>Activity\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="AmuseRoom\GameMsg_C2S_AmuseMsg.cpp">
+      <Filter>Amuse\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="AmuseRoom\GameMsg_S2C_AmuseMsg.cpp">
+      <Filter>Amuse\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="AmuseRoom\GameMsg_TimeEggMsg.cpp">
+      <Filter>Amuse\TimeEgg</Filter>
+    </ClCompile>
+    <ClCompile Include="anti-addiction\GameMsg_S2C_AntiAddiction.cpp">
+      <Filter>AntiAddiction</Filter>
+    </ClCompile>
+    <ClCompile Include="CeremonyRoom\GameMsg_CeremonyRoomSC.cpp">
+      <Filter>CeremonyRoom</Filter>
+    </ClCompile>
+    <ClCompile Include="chat\GameMsg_C2S_Chat.cpp">
+      <Filter>Chat</Filter>
+    </ClCompile>
+    <ClCompile Include="chat\GameMsg_S2C_Chat.cpp">
+      <Filter>Chat</Filter>
+    </ClCompile>
+    <ClCompile Include="chat\GameMsg_S2C_Chat_Private2Self.cpp">
+      <Filter>Chat</Filter>
+    </ClCompile>
+    <ClCompile Include="Notification\NotificationManager.cpp">
+      <Filter>Notification</Filter>
+    </ClCompile>
+    <ClCompile Include="Handbook\EntityHandbookComponent.cpp">
+      <Filter>Handbook</Filter>
+    </ClCompile>
+    <ClCompile Include="Handbook\HandbookCfg.cpp">
+      <Filter>Handbook</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckIn\GameMsg_C2S_Check.cpp">
+      <Filter>CheckIn\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckIn\GameMsg_C2S_GetCheckInInfo.cpp">
+      <Filter>CheckIn\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckIn\GameMsg_S2C_CheckResult.cpp">
+      <Filter>CheckIn\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckIn\GameMsg_S2C_GetCheckInInfoResult.cpp">
+      <Filter>CheckIn\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="Couple\GameMsg_C2S_Couple.cpp">
+      <Filter>Couple</Filter>
+    </ClCompile>
+    <ClCompile Include="Couple\GameMsg_S2C_Couple.cpp">
+      <Filter>Couple</Filter>
+    </ClCompile>
+    <ClCompile Include="Dungeon\GameMsg_Dungeon.cpp">
+      <Filter>Dungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="friend\GameMsg_C2S_Friend.cpp">
+      <Filter>Friend</Filter>
+    </ClCompile>
+    <ClCompile Include="friend\GameMsg_S2C_Friend.cpp">
+      <Filter>Friend</Filter>
+    </ClCompile>
+    <ClCompile Include="item\GameMsg_C2S_AwardMsg.cpp">
+      <Filter>Item\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="item\GameMsg_S2C_AwardMsg.cpp">
+      <Filter>Item\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="item\EntityItemComponent.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="item\ItemProcess.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="login\GameMsg_Game2GatePlayerLogout.cpp">
+      <Filter>Login</Filter>
+    </ClCompile>
+    <ClCompile Include="login\GameMsg_Payment.cpp">
+      <Filter>Login</Filter>
+    </ClCompile>
+    <ClCompile Include="login\GameMsg_Player_CheckRoleName.cpp">
+      <Filter>Login</Filter>
+    </ClCompile>
+    <ClCompile Include="login\GameMsg_Player_CheckRoleNameResult.cpp">
+      <Filter>Login</Filter>
+    </ClCompile>
+    <ClCompile Include="login\GameMsg_Player_CreateRole.cpp">
+      <Filter>Login</Filter>
+    </ClCompile>
+    <ClCompile Include="login\GameMsg_Player_CreateRoleRes.cpp">
+      <Filter>Login</Filter>
+    </ClCompile>
+    <ClCompile Include="login\GameMsg_Player_Logout.cpp">
+      <Filter>Login</Filter>
+    </ClCompile>
+    <ClCompile Include="login\GameMsg_S2C_RequireCreateRole.cpp">
+      <Filter>Login</Filter>
+    </ClCompile>
+    <ClCompile Include="login\GameMsg_S2G_SwitchLineComplete.cpp">
+      <Filter>Login</Filter>
+    </ClCompile>
+    <ClCompile Include="MonthCard\GameMsg_C2S_MonthCard.cpp">
+      <Filter>MonthCard</Filter>
+    </ClCompile>
+    <ClCompile Include="MonthCard\GameMsg_S2C_MonthCard.cpp">
+      <Filter>MonthCard</Filter>
+    </ClCompile>
+    <ClCompile Include="PhotoRoom\GameMsg_C2S_PhotoRoom.cpp">
+      <Filter>PhotoRoom</Filter>
+    </ClCompile>
+    <ClCompile Include="PhotoRoom\GameMsg_S2C_PhotoRoom.cpp">
+      <Filter>PhotoRoom</Filter>
+    </ClCompile>
+    <ClCompile Include="player\GameMsg_Announcement.cpp">
+      <Filter>Player\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="player\GameMsg_Buff.cpp">
+      <Filter>Player\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="player\GameMsg_C2S_BugReport.cpp">
+      <Filter>Player\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="player\GameMsg_C2S_GetRoleInfo.cpp">
+      <Filter>Player\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="player\GameMsg_C2S_RealNameAuth.cpp">
+      <Filter>Player\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="player\GameMsg_S2C_GetRoleInfoResult.cpp">
+      <Filter>Player\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="quest\GameMsg_C2S_AcceptQuest.cpp">
+      <Filter>Quest\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="quest\GameMsg_C2S_GetQuestList.cpp">
+      <Filter>Quest\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="quest\GameMsg_C2S_GetQuestReward.cpp">
+      <Filter>Quest\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="quest\GameMsg_C2S_QuestRead.cpp">
+      <Filter>Quest\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="quest\GameMsg_S2C_AcceptQuestResult.cpp">
+      <Filter>Quest\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="quest\GameMsg_S2C_GetQuestListResult.cpp">
+      <Filter>Quest\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="quest\GameMsg_S2C_GetQuestRewardResult.cpp">
+      <Filter>Quest\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="quest\GameMsg_S2C_Quest.cpp">
+      <Filter>Quest\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="quest\GameMsg_S2C_QuestStateChange.cpp">
+      <Filter>Quest\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="quest\QuestListEntry.cpp">
+      <Filter>Quest\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="quest\QuestTargetSend.cpp">
+      <Filter>Quest\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="Rank\GameMsg_Rank_CS.cpp">
+      <Filter>Rank</Filter>
+    </ClCompile>
+    <ClCompile Include="room\GameMsg_C2S_LiveRoomMsg.cpp">
+      <Filter>Room\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="room\GameMsg_S2C_LiveRoomMsg.cpp">
+      <Filter>Room\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="vip\GameMsg_VIP.cpp">
+      <Filter>VIP</Filter>
+    </ClCompile>
+    <ClCompile Include="attribute\GameMsg_C2S_ChangeBirthday.cpp">
+      <Filter>Attribute\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="attribute\GameMsg_C2S_ChangeRoleName.cpp">
+      <Filter>Attribute\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="attribute\GameMsg_C2S_ChangeRoleSignature.cpp">
+      <Filter>Attribute\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="attribute\GameMsg_CompleteGuide.cpp">
+      <Filter>Attribute\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="attribute\GameMsg_S2C_ChangeBirthdayRes.cpp">
+      <Filter>Attribute\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="attribute\GameMsg_S2C_ChangeRoleNameResult.cpp">
+      <Filter>Attribute\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="attribute\GameMsg_S2C_ChangeRoleSignatureResult.cpp">
+      <Filter>Attribute\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="attribute\GameMsg_S2C_RoleAttrbuteChange.cpp">
+      <Filter>Attribute\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="attribute\EntityAttributeComponent.cpp">
+      <Filter>Attribute</Filter>
+    </ClCompile>
+    <ClCompile Include="attribute\guidereward.cpp">
+      <Filter>Attribute</Filter>
+    </ClCompile>
+    <ClCompile Include="compensation\CompensationComponent.cpp">
+      <Filter>Compensation</Filter>
+    </ClCompile>
+    <ClCompile Include="compensation\GameMsg_S2C_NewCompensation.cpp">
+      <Filter>Compensation</Filter>
+    </ClCompile>
+    <ClCompile Include="quest\SpecailQuestMgr.cpp">
+      <Filter>SpecialQuest</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CommandProcessor.cpp">
+      <Filter>ServerFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\LogicCirculator.cpp">
+      <Filter>ServerFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\LogicMain.cpp">
+      <Filter>ServerFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\EntityComponent.cpp">
+      <Filter>ComponentBase</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\GetRoleProcessorObj.cpp">
+      <Filter>ComponentBase</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\RoleComponentImpl.cpp">
+      <Filter>ComponentBase</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\EntityTimerComponent.cpp">
+      <Filter>Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="attribute\GameAttributeManager.cpp">
+      <Filter>Attribute</Filter>
+    </ClCompile>
+    <ClCompile Include="dancegroup\DanceGroupChallengeManager.cpp">
+      <Filter>DanceGroup</Filter>
+    </ClCompile>
+    <ClCompile Include="dancegroup\GameMsg_C2S_DanceGroupChallenge.cpp">
+      <Filter>DanceGroup</Filter>
+    </ClCompile>
+    <ClCompile Include="dancegroup\GameMsg_S2C_DanceGroupChallenge.cpp">
+      <Filter>DanceGroup</Filter>
+    </ClCompile>
+    <ClCompile Include="room\DanceRoom.cpp">
+      <Filter>Room</Filter>
+    </ClCompile>
+    <ClCompile Include="room\RoomBase.cpp">
+      <Filter>Room</Filter>
+    </ClCompile>
+    <ClCompile Include="room\DanceGroupArcadeRoom.cpp">
+      <Filter>Room</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\RedEnvelope\RedEnvelopeActivityManager.cpp">
+      <Filter>Activity</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\RedEnvelope\GameMsg_CS_RedEnvelope.cpp">
+      <Filter>Activity\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="quest\QuestRecord.cpp">
+      <Filter>Quest</Filter>
+    </ClCompile>
+    <ClCompile Include="Horse\EntityHorseComponent.cpp">
+      <Filter>Horse</Filter>
+    </ClCompile>
+    <ClCompile Include="Horse\HorseCfg.cpp">
+      <Filter>Horse</Filter>
+    </ClCompile>
+    <ClCompile Include="Horse\Msg\GameMsg_Horse.cpp">
+      <Filter>Horse\Msg</Filter>
+    </ClCompile>
+    <ClCompile Include="bet\MagicArray\GameMsg_CS_MagicLuckDraw.cpp">
+      <Filter>Bet\MagicArray</Filter>
+    </ClCompile>
+    <ClCompile Include="bet\MagicArray\MagicArrayDataManager.cpp">
+      <Filter>Bet\MagicArray</Filter>
+    </ClCompile>
+    <ClCompile Include="bet\MagicArray\MagicArrayManager.cpp">
+      <Filter>Bet\MagicArray</Filter>
+    </ClCompile>
+    <ClCompile Include="item\BagManager.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="item\EquipManager.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="item\ItemManager.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="item\BagConfigManager.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="mall\DesiredItem.cpp">
+      <Filter>Mall</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\PlayerLoginManager.cpp">
+      <Filter>ServerFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="dancegroup\EntityBigMama.cpp">
+      <Filter>DanceGroup</Filter>
+    </ClCompile>
+    <ClCompile Include="room\BigMamaRoom.cpp">
+      <Filter>Room</Filter>
+    </ClCompile>
+    <ClCompile Include="dancegroup\GameMsg_BigMama.cpp">
+      <Filter>DanceGroup</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemSetting\SystemSettingMgr.cpp">
+      <Filter>SystemSetting</Filter>
+    </ClCompile>
+    <ClCompile Include="room\NewRoomManager.cpp">
+      <Filter>Room</Filter>
+    </ClCompile>
+    <ClCompile Include="activity\EffectStoneExchange\EffectStoneExchangeManager.cpp">
+      <Filter>Activity</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\MsgDeliver.cpp">
+      <Filter>ServerFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="login\GameMsg_C2S_TouristSignInfo.cpp">
+      <Filter>Login</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\datastructure\LogicInitData.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\PlayerManager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\SrvManagerBase.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="chat\AdminChat.h">
+      <Filter>Chat</Filter>
+    </ClInclude>
+    <ClInclude Include="chat\ChatManager.h">
+      <Filter>Chat</Filter>
+    </ClInclude>
+    <ClInclude Include="chat\CurrentChat.h">
+      <Filter>Chat</Filter>
+    </ClInclude>
+    <ClInclude Include="chat\DanceGroupChat.h">
+      <Filter>Chat</Filter>
+    </ClInclude>
+    <ClInclude Include="chat\EntityChatComponent.h">
+      <Filter>Chat</Filter>
+    </ClInclude>
+    <ClInclude Include="chat\GlobalChat.h">
+      <Filter>Chat</Filter>
+    </ClInclude>
+    <ClInclude Include="chat\IChat.h">
+      <Filter>Chat</Filter>
+    </ClInclude>
+    <ClInclude Include="chat\PrivateChat.h">
+      <Filter>Chat</Filter>
+    </ClInclude>
+    <ClInclude Include="chat\SystemChat.h">
+      <Filter>Chat</Filter>
+    </ClInclude>
+    <ClInclude Include="chat\WorldChat.h">
+      <Filter>Chat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\Entity.h">
+      <Filter>Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\datainfor\EntityType.h">
+      <Filter>Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\IEntity.h">
+      <Filter>Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\RoleEntity.h">
+      <Filter>Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="mall\EntityMallComponent.h">
+      <Filter>Mall</Filter>
+    </ClInclude>
+    <ClInclude Include="mall\Mall.h">
+      <Filter>Mall</Filter>
+    </ClInclude>
+    <ClInclude Include="mall\MallDataMgr.h">
+      <Filter>Mall</Filter>
+    </ClInclude>
+    <ClInclude Include="mall\MallDefine.h">
+      <Filter>Mall</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityNetComponent\EntityNetComponent.h">
+      <Filter>EntityNet</Filter>
+    </ClInclude>
+    <ClInclude Include="quest\EntityQuestComponent.h">
+      <Filter>Quest</Filter>
+    </ClInclude>
+    <ClInclude Include="quest\EntityQuestNewComponent.h">
+      <Filter>Quest</Filter>
+    </ClInclude>
+    <ClInclude Include="quest\QuestDataManager.h">
+      <Filter>Quest</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckIn\CheckInfoMgr.h">
+      <Filter>CheckIn</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckIn\EntityCheckInComponent.h">
+      <Filter>CheckIn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\datainfor\ItemType.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\DataStruct_Game.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="friend\EntityFriendComponent.h">
+      <Filter>Friend</Filter>
+    </ClInclude>
+    <ClInclude Include="friend\FriendDefine.h">
+      <Filter>Friend</Filter>
+    </ClInclude>
+    <ClInclude Include="player\PlayerInfoComponent.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="player\PlayerSettingDefine.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="mail\EntityMailComponent.h">
+      <Filter>Mail</Filter>
+    </ClInclude>
+    <ClInclude Include="mail\MailDefine.h">
+      <Filter>Mail</Filter>
+    </ClInclude>
+    <ClInclude Include="mail\MailMgr.h">
+      <Filter>Mail</Filter>
+    </ClInclude>
+    <ClInclude Include="gene\EntityGeneComponent.h">
+      <Filter>Gene</Filter>
+    </ClInclude>
+    <ClInclude Include="achievement\EntityAchievementComponent.h">
+      <Filter>Achievement</Filter>
+    </ClInclude>
+    <ClInclude Include="achievement\IEntityAchivementComponent.h">
+      <Filter>Achievement</Filter>
+    </ClInclude>
+    <ClInclude Include="achievement\IRequirementHandler.h">
+      <Filter>Achievement</Filter>
+    </ClInclude>
+    <ClInclude Include="achievement\RequirementHandlerManager.h">
+      <Filter>Achievement</Filter>
+    </ClInclude>
+    <ClInclude Include="achievement\CheckInHandler.h">
+      <Filter>Achievement\Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="achievement\CompletedAllQuestHandler.h">
+      <Filter>Achievement\Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="achievement\ContinuousWinBetween2To4PersonsHandler.h">
+      <Filter>Achievement\Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="achievement\ContinuousWinIn4PersonsHandler.h">
+      <Filter>Achievement\Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="achievement\GrowQuestHandler.h">
+      <Filter>Achievement\Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="achievement\HistoryAutoMatchWithOppositeSexCountHandler.h">
+      <Filter>Achievement\Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="achievement\HistoryBadgeCountHandler.h">
+      <Filter>Achievement\Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="achievement\HistoryBigSpeakersUseInSevenDaysCountHandler.h">
+      <Filter>Achievement\Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="achievement\HistoryComboMusicCountHandler.h">
+      <Filter>Achievement\Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="achievement\HistoryCompletedAchievementCountHandler.h">
+      <Filter>Achievement\Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="achievement\HistoryGainClothCountHandler.h">
+      <Filter>Achievement\Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="achievement\HistoryGainWishItemCountHandler.h">
+      <Filter>Achievement\Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="achievement\HistoryHotValueHandler.h">
+      <Filter>Achievement\Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="achievement\HistorySendFlowersCountInSevenDays.h">
+      <Filter>Achievement\Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="achievement\HistorySmallSpeakersUseInSevenDaysCountHandler.h">
+      <Filter>Achievement\Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="achievement\HistoryTaikoComboCountHandler.h">
+      <Filter>Achievement\Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="achievement\HistoryTitleCountHandler.h">
+      <Filter>Achievement\Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="achievement\HistoryTotalScoreHandler.h">
+      <Filter>Achievement\Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="achievement\HistoryUseBouquetCountHandler.h">
+      <Filter>Achievement\Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="achievement\HistoryWishItemCountHandler.h">
+      <Filter>Achievement\Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="achievement\LevelHandler.h">
+      <Filter>Achievement\Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="achievement\OnlineTimeHandler.h">
+      <Filter>Achievement\Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="room\LiveRoomDataMgr.h">
+      <Filter>Room</Filter>
+    </ClInclude>
+    <ClInclude Include="room\LiveRoomManager.h">
+      <Filter>Room</Filter>
+    </ClInclude>
+    <ClInclude Include="room\Room.h">
+      <Filter>Room</Filter>
+    </ClInclude>
+    <ClInclude Include="room\RoomComponent.h">
+      <Filter>Room</Filter>
+    </ClInclude>
+    <ClInclude Include="room\RoomManager.h">
+      <Filter>Room</Filter>
+    </ClInclude>
+    <ClInclude Include="room\RoomRewardDataMgr.h">
+      <Filter>Room</Filter>
+    </ClInclude>
+    <ClInclude Include="room\RoomTimer.h">
+      <Filter>Room</Filter>
+    </ClInclude>
+    <ClInclude Include="Command\CommandHandler.h">
+      <Filter>CommandHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="Command\CommandHandlerManager.h">
+      <Filter>CommandHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="Command\ICommandHandler.h">
+      <Filter>CommandHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="announcement\AnnouncementMgr.h">
+      <Filter>Announcement</Filter>
+    </ClInclude>
+    <ClInclude Include="Location\LocationMgr.h">
+      <Filter>Location</Filter>
+    </ClInclude>
+    <ClInclude Include="Money\MoneyMgr.h">
+      <Filter>Money</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\ActivityDataStruct.h">
+      <Filter>Activity</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\EntityActivityComponent.h">
+      <Filter>Activity</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\AllActivitiesConfigMgr.h">
+      <Filter>Activity\DataManager</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\CumulativeRechargeMgr.h">
+      <Filter>Activity\DataManager</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\ExchangeItemInfoMgr.h">
+      <Filter>Activity\DataManager</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\ExtraActivityInfoMgr.h">
+      <Filter>Activity\DataManager</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\FestivalBlessActivityDataMgr.h">
+      <Filter>Activity\DataManager</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\FestivalWishDataMgr.h">
+      <Filter>Activity\DataManager</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\FresherActivityMgr.h">
+      <Filter>Activity\DataManager</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\GiftCodeInfoMgr.h">
+      <Filter>Activity\DataManager</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\GlobalActivityData.h">
+      <Filter>Activity\DataManager</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\InTimeOnlineInfoMgr.h">
+      <Filter>Activity\DataManager</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\InvitationActivityMgr.h">
+      <Filter>Activity\DataManager</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\LevelUpRewardInfoMgr.h">
+      <Filter>Activity\DataManager</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\MeetActivityMgr.h">
+      <Filter>Activity\DataManager</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\OnlineRewardInfoMgr.h">
+      <Filter>Activity\DataManager</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\PlainTextActivityInfoMgr.h">
+      <Filter>Activity\DataManager</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\PlatformPrivilegeDataMgr.h">
+      <Filter>Activity\DataManager</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\PuzzleDataMgr.h">
+      <Filter>Activity\DataManager</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\XmasFreeRewardDataMgr.h">
+      <Filter>Activity\DataManager</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\CumulativeRechargeActivity.h">
+      <Filter>Activity\Activity</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\DanceGroupTimerActivity.h">
+      <Filter>Activity\Activity</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\ExchangeItemActivity.h">
+      <Filter>Activity\Activity</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\ExtraExpActivity.h">
+      <Filter>Activity\Activity</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\FestivalWishActivity.h">
+      <Filter>Activity\Activity</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\GiftCodeActivityShow.h">
+      <Filter>Activity\Activity</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\GiftSystem.h">
+      <Filter>Activity\Activity</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\InTimeOnlineActivity.h">
+      <Filter>Activity\Activity</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\InvitationActivity.h">
+      <Filter>Activity\Activity</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\MeetActivity.h">
+      <Filter>Activity\Activity</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\PlainTextActivity.h">
+      <Filter>Activity\Activity</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\PuzzleActivity.h">
+      <Filter>Activity\Activity</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\XmasFreeRewardActivity.h">
+      <Filter>Activity\Activity</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\SystemActivityManager.h">
+      <Filter>Activity\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\TimerActivity.h">
+      <Filter>Activity\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Couple\CoupleDataStructrue.h">
+      <Filter>Couple</Filter>
+    </ClInclude>
+    <ClInclude Include="Couple\CoupleMacroDef.h">
+      <Filter>Couple</Filter>
+    </ClInclude>
+    <ClInclude Include="Couple\EntityCoupleComponent.h">
+      <Filter>Couple</Filter>
+    </ClInclude>
+    <ClInclude Include="Couple\WeddingRoom.h">
+      <Filter>Couple</Filter>
+    </ClInclude>
+    <ClInclude Include="Couple\WeddingRoomManager.h">
+      <Filter>Couple</Filter>
+    </ClInclude>
+    <ClInclude Include="box\BoxInfoManager.h">
+      <Filter>Box</Filter>
+    </ClInclude>
+    <ClInclude Include="bet\BetComponent.h">
+      <Filter>Bet</Filter>
+    </ClInclude>
+    <ClInclude Include="PhotoRoom\EntityPhotoRoomComponent.h">
+      <Filter>PhotoRoom</Filter>
+    </ClInclude>
+    <ClInclude Include="PhotoRoom\PhotoRoom.h">
+      <Filter>PhotoRoom</Filter>
+    </ClInclude>
+    <ClInclude Include="PhotoRoom\PhotoRoomDataStruct.h">
+      <Filter>PhotoRoom</Filter>
+    </ClInclude>
+    <ClInclude Include="PhotoRoom\PhotoRoomLuaDataManager.h">
+      <Filter>PhotoRoom</Filter>
+    </ClInclude>
+    <ClInclude Include="PhotoRoom\PhotoRoomMacroDefine.h">
+      <Filter>PhotoRoom</Filter>
+    </ClInclude>
+    <ClInclude Include="PhotoRoom\PhotoRoomManager.h">
+      <Filter>PhotoRoom</Filter>
+    </ClInclude>
+    <ClInclude Include="AmuseRoom\AmuseEnum.h">
+      <Filter>Amuse</Filter>
+    </ClInclude>
+    <ClInclude Include="AmuseRoom\AmuseParam.h">
+      <Filter>Amuse</Filter>
+    </ClInclude>
+    <ClInclude Include="AmuseRoom\AmuseRoom.h">
+      <Filter>Amuse</Filter>
+    </ClInclude>
+    <ClInclude Include="AmuseRoom\AmuseRoomComponent.h">
+      <Filter>Amuse</Filter>
+    </ClInclude>
+    <ClInclude Include="AmuseRoom\AmuseRoomDataManager.h">
+      <Filter>Amuse</Filter>
+    </ClInclude>
+    <ClInclude Include="AmuseRoom\AmuseRoomDevice.h">
+      <Filter>Amuse</Filter>
+    </ClInclude>
+    <ClInclude Include="AmuseRoom\AmuseRoomManager.h">
+      <Filter>Amuse</Filter>
+    </ClInclude>
+    <ClInclude Include="AmuseRoom\AmuseAction_CommitTimeEggInfo.h">
+      <Filter>Amuse\AmuseAction</Filter>
+    </ClInclude>
+    <ClInclude Include="AmuseRoom\AmuseAction_CreateTimeEgg.h">
+      <Filter>Amuse\AmuseAction</Filter>
+    </ClInclude>
+    <ClInclude Include="AmuseRoom\AmuseAction_GetTimeEggGiftList.h">
+      <Filter>Amuse\AmuseAction</Filter>
+    </ClInclude>
+    <ClInclude Include="AmuseRoom\AmuseAction_InviteDevice.h">
+      <Filter>Amuse\AmuseAction</Filter>
+    </ClInclude>
+    <ClInclude Include="AmuseRoom\AmuseAction_LeaveDevice.h">
+      <Filter>Amuse\AmuseAction</Filter>
+    </ClInclude>
+    <ClInclude Include="AmuseRoom\AmuseAction_LeavePose.h">
+      <Filter>Amuse\AmuseAction</Filter>
+    </ClInclude>
+    <ClInclude Include="AmuseRoom\AmuseAction_OpenTimeEgg.h">
+      <Filter>Amuse\AmuseAction</Filter>
+    </ClInclude>
+    <ClInclude Include="AmuseRoom\AmuseAction_ReponseDevice.h">
+      <Filter>Amuse\AmuseAction</Filter>
+    </ClInclude>
+    <ClInclude Include="AmuseRoom\AmuseAction_RequestDevice.h">
+      <Filter>Amuse\AmuseAction</Filter>
+    </ClInclude>
+    <ClInclude Include="AmuseRoom\AmuseAction_UseDevice.h">
+      <Filter>Amuse\AmuseAction</Filter>
+    </ClInclude>
+    <ClInclude Include="AmuseRoom\AmuseAction_UsePose.h">
+      <Filter>Amuse\AmuseAction</Filter>
+    </ClInclude>
+    <ClInclude Include="AmuseRoom\AmuseActionBase.h">
+      <Filter>Amuse\AmuseAction</Filter>
+    </ClInclude>
+    <ClInclude Include="AmuseRoom\AmuseEvent_AddExp.h">
+      <Filter>Amuse\AmuseEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="AmuseRoom\AmuseEvent_PushSwing.h">
+      <Filter>Amuse\AmuseEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="AmuseRoom\AmuseEvent_StartBoat.h">
+      <Filter>Amuse\AmuseEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="AmuseRoom\AmuseEvent_StartCarrousel.h">
+      <Filter>Amuse\AmuseEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="AmuseRoom\AmuseEvent_StartSwing.h">
+      <Filter>Amuse\AmuseEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="AmuseRoom\AmuseEventBase.h">
+      <Filter>Amuse\AmuseEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="anti-addiction\AntiAddictionDataMgr.h">
+      <Filter>AntiAddiction</Filter>
+    </ClInclude>
+    <ClInclude Include="anti-addiction\EntityAntiAddictionComponent.h">
+      <Filter>AntiAddiction</Filter>
+    </ClInclude>
+    <ClInclude Include="PlatformPrivilege\EntityPlatformPrivilegeComponent.h">
+      <Filter>PlatformPrivilege</Filter>
+    </ClInclude>
+    <ClInclude Include="PlatformPrivilege\UCVIP\UCVIP.h">
+      <Filter>PlatformPrivilege\UCVIP</Filter>
+    </ClInclude>
+    <ClInclude Include="Dungeon\Dungeon.h">
+      <Filter>Dungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="Dungeon\DungeonDataMgr.h">
+      <Filter>Dungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="Dungeon\DungeonDefine.h">
+      <Filter>Dungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="Dungeon\DungeonMgr.h">
+      <Filter>Dungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="Dungeon\EntityDungeonComponent.h">
+      <Filter>Dungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\MallShareMgr.h">
+      <Filter>Activity</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\SocialShareActivity.h">
+      <Filter>Activity\Activity</Filter>
+    </ClInclude>
+    <ClInclude Include="box\DynamciBoxInfoManager.h">
+      <Filter>Box</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\TimeRanges.h">
+      <Filter>Activity\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\SocialShareMgr.h">
+      <Filter>Activity\DataManager</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\CumulativeSpendMgr.h">
+      <Filter>Activity\DataManager</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\CumulativeSpendActivity.h">
+      <Filter>Activity\Activity</Filter>
+    </ClInclude>
+    <ClInclude Include="MonthCard\EntityMonthCardComponent.h">
+      <Filter>MonthCard</Filter>
+    </ClInclude>
+    <ClInclude Include="MonthCard\MonthCardDataMgr.h">
+      <Filter>MonthCard</Filter>
+    </ClInclude>
+    <ClInclude Include="Couple\DivorceAgreement.h">
+      <Filter>Couple</Filter>
+    </ClInclude>
+    <ClInclude Include="dancegroup\EntityDanceGroupComponent.h">
+      <Filter>DanceGroup</Filter>
+    </ClInclude>
+    <ClInclude Include="Rank\RankComponent.h">
+      <Filter>Rank</Filter>
+    </ClInclude>
+    <ClInclude Include="Rank\RankConfigData.h">
+      <Filter>Rank</Filter>
+    </ClInclude>
+    <ClInclude Include="friend\RelationInfo.h">
+      <Filter>Friend</Filter>
+    </ClInclude>
+    <ClInclude Include="item\ItemMsgDefine.h">
+      <Filter>Item\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="Location\GameMsg_Location.h">
+      <Filter>Location</Filter>
+    </ClInclude>
+    <ClInclude Include="mail\MailMsgDefine.h">
+      <Filter>Mail</Filter>
+    </ClInclude>
+    <ClInclude Include="mall\MallMsgDefine.h">
+      <Filter>Mall</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\PlatformPrivilege\UCVIP\GameMsg_UCVIP.h">
+      <Filter>PlatformPrivilege</Filter>
+    </ClInclude>
+    <ClInclude Include="Notification\GameMsg_Notification.h">
+      <Filter>Notification</Filter>
+    </ClInclude>
+    <ClInclude Include="Notification\NotificationComponent.h">
+      <Filter>Notification</Filter>
+    </ClInclude>
+    <ClInclude Include="Notification\NotificationEvent.h">
+      <Filter>Notification</Filter>
+    </ClInclude>
+    <ClInclude Include="Notification\PushRatingDataManager.h">
+      <Filter>Notification</Filter>
+    </ClInclude>
+    <ClInclude Include="security\SecurityQuizDataManager.h">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="security\SecurityQuiz.h">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="security\SecurityComponent.h">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="security\GameMsg_Security.h">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\ProprietaryActivity.h">
+      <Filter>Activity\Activity</Filter>
+    </ClInclude>
+    <ClInclude Include="vip\EntityVIPComponent.h">
+      <Filter>VIP</Filter>
+    </ClInclude>
+    <ClInclude Include="vip\VIPDefine.h">
+      <Filter>VIP</Filter>
+    </ClInclude>
+    <ClInclude Include="AmuseRoom\ConstellationMatchManager.h">
+      <Filter>Amuse\ConstellationMatch</Filter>
+    </ClInclude>
+    <ClInclude Include="AmuseRoom\ConstellationMatchDataManager.h">
+      <Filter>Amuse\ConstellationMatch</Filter>
+    </ClInclude>
+    <ClInclude Include="AmuseRoom\GameMsg_ConstellationMatch.h">
+      <Filter>Amuse\ConstellationMatch</Filter>
+    </ClInclude>
+    <ClInclude Include="activeness\ActivenessComponent.h">
+      <Filter>Activeness</Filter>
+    </ClInclude>
+    <ClInclude Include="activeness\ActivenessDataManager.h">
+      <Filter>Activeness</Filter>
+    </ClInclude>
+    <ClInclude Include="activeness\ActivenessService.h">
+      <Filter>Activeness</Filter>
+    </ClInclude>
+    <ClInclude Include="activeness\GameMsg_Activeness.h">
+      <Filter>Activeness</Filter>
+    </ClInclude>
+    <ClInclude Include="mall\CurrencyType.h">
+      <Filter>Mall</Filter>
+    </ClInclude>
+    <ClInclude Include="Pet\PetEggConfig\PetEggBaseInfo.h">
+      <Filter>Pet\PetEggConfig</Filter>
+    </ClInclude>
+    <ClInclude Include="Pet\PetEggConfig\RandomPetCollect.h">
+      <Filter>Pet\PetEggConfig</Filter>
+    </ClInclude>
+    <ClInclude Include="Pet\PetConfig\PetQualityInfo.h">
+      <Filter>Pet\PetConfig</Filter>
+    </ClInclude>
+    <ClInclude Include="Pet\PetConfig\PetEvolutionInfo.h">
+      <Filter>Pet\PetConfig</Filter>
+    </ClInclude>
+    <ClInclude Include="Pet\PetComponent.h">
+      <Filter>Pet</Filter>
+    </ClInclude>
+    <ClInclude Include="Pet\PetEggConfig\PetIncubatorInfo.h">
+      <Filter>Pet\PetEggConfig</Filter>
+    </ClInclude>
+    <ClInclude Include="Pet\GameMsg_Pet.h">
+      <Filter>Pet</Filter>
+    </ClInclude>
+    <ClInclude Include="Pet\PetEggService.h">
+      <Filter>Pet</Filter>
+    </ClInclude>
+    <ClInclude Include="Pet\PetService.h">
+      <Filter>Pet</Filter>
+    </ClInclude>
+    <ClInclude Include="Pet\PetConfig\PetBaseInfo.h">
+      <Filter>Pet\PetConfig</Filter>
+    </ClInclude>
+    <ClInclude Include="Pet\PetConfig\PetConfigManager.h">
+      <Filter>Pet\PetConfig</Filter>
+    </ClInclude>
+    <ClInclude Include="Pet\PetEggConfig\PetEggConfigManager.h">
+      <Filter>Pet\PetEggConfig</Filter>
+    </ClInclude>
+    <ClInclude Include="Pet\PetConfig\PetExchangeInfo.h">
+      <Filter>Pet\PetConfig</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\MainManager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Pet\PetConfig\PetSkillConfig.h">
+      <Filter>Pet\PetConfig</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\LongactingCumulativeRechareMgr.h">
+      <Filter>Activity</Filter>
+    </ClInclude>
+    <ClInclude Include="CeremonyRoom\ceremonyRoom.h">
+      <Filter>CeremonyRoom</Filter>
+    </ClInclude>
+    <ClInclude Include="CeremonyRoom\ceremonyRoomManager.h">
+      <Filter>CeremonyRoom</Filter>
+    </ClInclude>
+    <ClInclude Include="Medal\MedalCfg.h">
+      <Filter>Medal</Filter>
+    </ClInclude>
+    <ClInclude Include="Medal\EntityMedalComponent.h">
+      <Filter>Medal</Filter>
+    </ClInclude>
+    <ClInclude Include="Medal\MedalCfgMgr.h">
+      <Filter>Medal</Filter>
+    </ClInclude>
+    <ClInclude Include="Medal\GameMsg_Medal.h">
+      <Filter>Medal</Filter>
+    </ClInclude>
+    <ClInclude Include="item\ClothEffect.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Medal\MedalConditionImp.h">
+      <Filter>Medal</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\BuyItemGotMedalMgr.h">
+      <Filter>Activity\DataManager</Filter>
+    </ClInclude>
+    <ClInclude Include="achievement\GameMsg_C2S_AchievementGetReward.h">
+      <Filter>Achievement</Filter>
+    </ClInclude>
+    <ClInclude Include="achievement\GameMsg_S2C_AchievementCompleted.h">
+      <Filter>Achievement</Filter>
+    </ClInclude>
+    <ClInclude Include="achievement\GameMsg_S2C_AchievementGetRewardResult.h">
+      <Filter>Achievement</Filter>
+    </ClInclude>
+    <ClInclude Include="achievement\GameMsg_C2S_GetAchievementList.h">
+      <Filter>Achievement</Filter>
+    </ClInclude>
+    <ClInclude Include="achievement\GameMsg_S2C_GetAchievementList.h">
+      <Filter>Achievement</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\GameMsg_Activity.h">
+      <Filter>Activity\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\GameMsg_C2S_GetGift.h">
+      <Filter>Activity\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\GameMsg_LevelUpReward.h">
+      <Filter>Activity\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\GameMsg_S2C_GetGiftResult.h">
+      <Filter>Activity\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\GameMsg_S2C_InTimeOnlineReward.h">
+      <Filter>Activity\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\GameMsg_S2C_SendGift.h">
+      <Filter>Activity\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\GameMsg_S2C_UpdateExtraExpActivityState.h">
+      <Filter>Activity\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\GameMsg_S2C_UpdateGiftInfo.h">
+      <Filter>Activity\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="AmuseRoom\GameMsg_C2S_AmuseMsg.h">
+      <Filter>Amuse\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="AmuseRoom\GameMsg_S2C_AmuseMsg.h">
+      <Filter>Amuse\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="AmuseRoom\GameMsg_TimeEggMsg.h">
+      <Filter>Amuse\TimeEgg</Filter>
+    </ClInclude>
+    <ClInclude Include="anti-addiction\GameMsg_S2C_AntiAddiction.h">
+      <Filter>AntiAddiction</Filter>
+    </ClInclude>
+    <ClInclude Include="CeremonyRoom\GameMsg_CeremonyRoomSC.h">
+      <Filter>CeremonyRoom</Filter>
+    </ClInclude>
+    <ClInclude Include="chat\GameMsg_C2S_Chat.h">
+      <Filter>Chat</Filter>
+    </ClInclude>
+    <ClInclude Include="chat\GameMsg_S2C_Chat.h">
+      <Filter>Chat</Filter>
+    </ClInclude>
+    <ClInclude Include="chat\GameMsg_S2C_Chat_Private2Self.h">
+      <Filter>Chat</Filter>
+    </ClInclude>
+    <ClInclude Include="Notification\NotificationManager.h">
+      <Filter>Notification</Filter>
+    </ClInclude>
+    <ClInclude Include="Handbook\EntityHandbookComponent.h">
+      <Filter>Handbook</Filter>
+    </ClInclude>
+    <ClInclude Include="Handbook\HandbookCfg.h">
+      <Filter>Handbook</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckIn\GameMsg_C2S_Check.h">
+      <Filter>CheckIn\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckIn\GameMsg_C2S_GetCheckInInfo.h">
+      <Filter>CheckIn\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckIn\GameMsg_S2C_CheckResult.h">
+      <Filter>CheckIn\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckIn\GameMsg_S2C_GetCheckInInfoResult.h">
+      <Filter>CheckIn\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="Couple\GameMsg_C2S_Couple.h">
+      <Filter>Couple</Filter>
+    </ClInclude>
+    <ClInclude Include="Couple\GameMsg_S2C_Couple.h">
+      <Filter>Couple</Filter>
+    </ClInclude>
+    <ClInclude Include="Dungeon\GameMsg_Dungeon.h">
+      <Filter>Dungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="friend\GameMsg_C2S_Friend.h">
+      <Filter>Friend</Filter>
+    </ClInclude>
+    <ClInclude Include="friend\GameMsg_S2C_Friend.h">
+      <Filter>Friend</Filter>
+    </ClInclude>
+    <ClInclude Include="item\GameMsg_C2S_AwardMsg.h">
+      <Filter>Item\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="item\GameMsg_S2C_AwardMsg.h">
+      <Filter>Item\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="item\EntityItemComponent.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="item\ItemProcess.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="login\GameMsg_Game2GatePlayerLogout.h">
+      <Filter>Login</Filter>
+    </ClInclude>
+    <ClInclude Include="login\GameMsg_Payment.h">
+      <Filter>Login</Filter>
+    </ClInclude>
+    <ClInclude Include="login\GameMsg_Player_CheckRoleName.h">
+      <Filter>Login</Filter>
+    </ClInclude>
+    <ClInclude Include="login\GameMsg_Player_CheckRoleNameResult.h">
+      <Filter>Login</Filter>
+    </ClInclude>
+    <ClInclude Include="login\GameMsg_Player_CreateRole.h">
+      <Filter>Login</Filter>
+    </ClInclude>
+    <ClInclude Include="login\GameMsg_Player_CreateRoleRes.h">
+      <Filter>Login</Filter>
+    </ClInclude>
+    <ClInclude Include="login\GameMsg_Player_Logout.h">
+      <Filter>Login</Filter>
+    </ClInclude>
+    <ClInclude Include="login\GameMsg_S2C_RequireCreateRole.h">
+      <Filter>Login</Filter>
+    </ClInclude>
+    <ClInclude Include="login\GameMsg_S2G_SwitchLineComplete.h">
+      <Filter>Login</Filter>
+    </ClInclude>
+    <ClInclude Include="MonthCard\GameMsg_C2S_MonthCard.h">
+      <Filter>MonthCard</Filter>
+    </ClInclude>
+    <ClInclude Include="MonthCard\GameMsg_S2C_MonthCard.h">
+      <Filter>MonthCard</Filter>
+    </ClInclude>
+    <ClInclude Include="PhotoRoom\GameMsg_C2S_PhotoRoom.h">
+      <Filter>PhotoRoom</Filter>
+    </ClInclude>
+    <ClInclude Include="PhotoRoom\GameMsg_S2C_PhotoRoom.h">
+      <Filter>PhotoRoom</Filter>
+    </ClInclude>
+    <ClInclude Include="player\GameMsg_Announcement.h">
+      <Filter>Player\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="player\GameMsg_Buff.h">
+      <Filter>Player\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="player\GameMsg_C2S_BugReport.h">
+      <Filter>Player\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="player\GameMsg_C2S_GetRoleInfo.h">
+      <Filter>Player\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="player\GameMsg_C2S_RealNameAuth.h">
+      <Filter>Player\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="player\GameMsg_S2C_GetRoleInfoResult.h">
+      <Filter>Player\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="quest\GameMsg_C2S_AcceptQuest.h">
+      <Filter>Quest\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="quest\GameMsg_C2S_GetQuestList.h">
+      <Filter>Quest\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="quest\GameMsg_C2S_GetQuestReward.h">
+      <Filter>Quest\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="quest\GameMsg_C2S_QuestRead.h">
+      <Filter>Quest\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="quest\GameMsg_S2C_AcceptQuestResult.h">
+      <Filter>Quest\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="quest\GameMsg_S2C_GetQuestListResult.h">
+      <Filter>Quest\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="quest\GameMsg_S2C_GetQuestRewardResult.h">
+      <Filter>Quest\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="quest\GameMsg_S2C_Quest.h">
+      <Filter>Quest\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="quest\GameMsg_S2C_QuestStateChange.h">
+      <Filter>Quest\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="quest\QuestListEntry.h">
+      <Filter>Quest\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="quest\QuestTargetSend.h">
+      <Filter>Quest\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="Rank\GameMsg_Rank_CS.h">
+      <Filter>Rank</Filter>
+    </ClInclude>
+    <ClInclude Include="room\GameMsg_C2S_LiveRoomMsg.h">
+      <Filter>Room\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="room\GameMsg_S2C_LiveRoomMsg.h">
+      <Filter>Room\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="vip\GameMsg_VIP.h">
+      <Filter>VIP</Filter>
+    </ClInclude>
+    <ClInclude Include="attribute\GameMsg_C2S_ChangeBirthday.h">
+      <Filter>Attribute\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="attribute\GameMsg_C2S_ChangeRoleName.h">
+      <Filter>Attribute\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="attribute\GameMsg_C2S_ChangeRoleSignature.h">
+      <Filter>Attribute\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="attribute\GameMsg_CompleteGuide.h">
+      <Filter>Attribute\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="attribute\GameMsg_S2C_ChangeBirthdayRes.h">
+      <Filter>Attribute\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="attribute\GameMsg_S2C_ChangeRoleNameResult.h">
+      <Filter>Attribute\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="attribute\GameMsg_S2C_ChangeRoleSignatureResult.h">
+      <Filter>Attribute\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="attribute\GameMsg_S2C_RoleAttrbuteChange.h">
+      <Filter>Attribute\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="attribute\EntityAttributeComponent.h">
+      <Filter>Attribute</Filter>
+    </ClInclude>
+    <ClInclude Include="attribute\guidereward.h">
+      <Filter>Attribute</Filter>
+    </ClInclude>
+    <ClInclude Include="compensation\CompensationComponent.h">
+      <Filter>Compensation</Filter>
+    </ClInclude>
+    <ClInclude Include="compensation\GameMsg_S2C_NewCompensation.h">
+      <Filter>Compensation</Filter>
+    </ClInclude>
+    <ClInclude Include="quest\SpecailQuestMgr.h">
+      <Filter>SpecialQuest</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CommandProcessor.h">
+      <Filter>ServerFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\LogicCirculator.h">
+      <Filter>ServerFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\EntityComponent.h">
+      <Filter>ComponentBase</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\EntityComponentEventID.h">
+      <Filter>ComponentBase</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\GetRoleProcessorObj.h">
+      <Filter>ComponentBase</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\ISerializable.h">
+      <Filter>ComponentBase</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\RoleComponentImpl.h">
+      <Filter>ComponentBase</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\EntityTimerComponent.h">
+      <Filter>Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="attribute\GameAttributeManager.h">
+      <Filter>Attribute</Filter>
+    </ClInclude>
+    <ClInclude Include="dancegroup\DanceGroupChallengeManager.h">
+      <Filter>DanceGroup</Filter>
+    </ClInclude>
+    <ClInclude Include="dancegroup\GameMsg_C2S_DanceGroupChallenge.h">
+      <Filter>DanceGroup</Filter>
+    </ClInclude>
+    <ClInclude Include="dancegroup\GameMsg_S2C_DanceGroupChallenge.h">
+      <Filter>DanceGroup</Filter>
+    </ClInclude>
+    <ClInclude Include="room\DanceRoom.h">
+      <Filter>Room</Filter>
+    </ClInclude>
+    <ClInclude Include="room\RoomBase.h">
+      <Filter>Room</Filter>
+    </ClInclude>
+    <ClInclude Include="room\DanceGroupArcadeRoom.h">
+      <Filter>Room</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\RedEnvelope\RedEnvelopeActivityManager.h">
+      <Filter>Activity</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\RedEnvelope\GameMsg_CS_RedEnvelope.h">
+      <Filter>Activity\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="quest\QuestRecord.h">
+      <Filter>Quest</Filter>
+    </ClInclude>
+    <ClInclude Include="Horse\EntityHorseComponent.h">
+      <Filter>Horse</Filter>
+    </ClInclude>
+    <ClInclude Include="Horse\HorseCfg.h">
+      <Filter>Horse</Filter>
+    </ClInclude>
+    <ClInclude Include="Horse\Msg\GameMsg_Horse.h">
+      <Filter>Horse\Msg</Filter>
+    </ClInclude>
+    <ClInclude Include="bet\MagicArray\GameMsg_CS_MagicLuckDraw.h">
+      <Filter>Bet\MagicArray</Filter>
+    </ClInclude>
+    <ClInclude Include="bet\MagicArray\MagicArrayDataManager.h">
+      <Filter>Bet\MagicArray</Filter>
+    </ClInclude>
+    <ClInclude Include="bet\MagicArray\MagicArrayManager.h">
+      <Filter>Bet\MagicArray</Filter>
+    </ClInclude>
+    <ClInclude Include="item\BagManager.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="item\EquipManager.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="item\ItemManager.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="item\BagConfigManager.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="mall\DesiredItem.h">
+      <Filter>Mall</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\PlayerLoginManager.h">
+      <Filter>ServerFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="dancegroup\EntityBigMama.h">
+      <Filter>DanceGroup</Filter>
+    </ClInclude>
+    <ClInclude Include="dancegroup\GameMsg_BigMama.h">
+      <Filter>DanceGroup</Filter>
+    </ClInclude>
+    <ClInclude Include="room\BigMamaRoom.h">
+      <Filter>Room</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemSetting\SystemSettingMgr.h">
+      <Filter>SystemSetting</Filter>
+    </ClInclude>
+    <ClInclude Include="room\NewRoomManager.h">
+      <Filter>Room</Filter>
+    </ClInclude>
+    <ClInclude Include="activity\EffectStoneExchange\EffectStoneExchangeManager.h">
+      <Filter>Activity</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\MsgDeliver.h">
+      <Filter>ServerFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="login\GameMsg_C2S_TouristSignInfo.h">
+      <Filter>Login</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

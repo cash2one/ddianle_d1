@@ -1,0 +1,20 @@
+[Limit]
+MaxNameLength = 32
+MaxTitleLength = 32
+MaxFamilyLength = 32
+MaxFamilyNameLength = 32
+MaxWeddingRoomLimit = 32
+SignatureLength = 400
+DanceGroupNameLength = 32
+DanceGroupAnnouncementLength = 400
+DanceGroupSummary = 400
+DanceGroupTitleName = 32
+
+MaxMailTitleLength = 48
+MaxMailContentLength = 500
+MaxRoomNameLength = 40
+MaxAmuseRoomNameLength = 32
+MaxDanceGroupBaseMemberCount = 30
+MaxDanceGroupLevelUpAddition = 5
+MaxEggWordsLength = 500
+MaxPetNameLength = 24

@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{008312DE-31D3-4B3A-9CC6-9457D79048B9}</ProjectGuid>
+    <RootNamespace>DataInfor</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ForceConformanceInForLoopScope>false</ForceConformanceInForLoopScope>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4350;4365;4514;4710;4820;4640;4100;4127;4996</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>debug/datainfor.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>..\server\datainfor.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\datastructure\datainfor\AuctionGoodsInfo.h" />
+    <ClInclude Include="..\datastructure\datainfor\ConstellationConfig.h" />
+    <ClInclude Include="..\datastructure\datainfor\DataInfoDefine.h" />
+    <ClInclude Include="..\datastructure\datainfor\ConfigManager.h" />
+    <ClInclude Include="..\datastructure\datainfor\EffectConfigManager.h" />
+    <ClInclude Include="..\datastructure\datainfor\FileStream.h" />
+    <ClInclude Include="..\datastructure\datainfor\GoodsInfo.h" />
+    <ClInclude Include="..\datastructure\datainfor\LimitedGoodsInfo.h" />
+    <ClInclude Include="..\datastructure\datainfor\MagicArrayConfig.h" />
+    <ClInclude Include="..\datastructure\datainfor\MagicArrayConfigManager.h" />
+    <ClInclude Include="..\datastructure\datainfor\MagicLampConfig.h" />
+    <ClInclude Include="..\datastructure\datainfor\MagicLampConfigMgr.h" />
+    <ClInclude Include="..\datastructure\datainfor\PhotoRoomConfigManager.h" />
+    <ClInclude Include="..\datastructure\datainfor\ServerConfig.h" />
+    <ClInclude Include="..\datastructure\datainfor\WeddingRoomConfigMgr.h" />
+    <ClInclude Include="..\datastructure\datainfor\XQMap.h" />
+    <ClInclude Include="..\datastructure\ItemBase.h" />
+    <ClInclude Include="..\datastructure\Localization.h" />
+    <ClInclude Include="..\datastructure\Macro_Define.h" />
+    <ClInclude Include="..\datastructure\datainfor\ItemConfig.h" />
+    <ClInclude Include="..\datastructure\datainfor\ItemConfigManager.h" />
+    <ClInclude Include="..\datastructure\datainfor\ItemType.h" />
+    <ClInclude Include="..\datastructure\datainfor\AchievementConfig.h" />
+    <ClInclude Include="..\datastructure\datainfor\AchievementConfigManager.h" />
+    <ClInclude Include="..\datastructure\datainfor\EffectConfig.h" />
+    <ClInclude Include="..\datastructure\datainfor\ExpConfig.h" />
+    <ClInclude Include="..\datastructure\datainfor\ExpConfigManager.h" />
+    <ClInclude Include="..\datastructure\datainfor\WeddingRoomConfig.h" />
+    <ClInclude Include="..\datastructure\datainfor\PhotoRoomConfig.h" />
+    <ClInclude Include="..\datastructure\datainfor\AmuseRoomConfig.h" />
+    <ClInclude Include="..\datastructure\datainfor\AmuseRoomConfigManager.h" />
+    <ClInclude Include="..\datastructure\datainfor\ModeConfig.h" />
+    <ClInclude Include="..\datastructure\datainfor\MusicConfig.h" />
+    <ClInclude Include="..\datastructure\datainfor\MusicConfigManager.h" />
+    <ClInclude Include="..\datastructure\datainfor\MusicStageConfig.h" />
+    <ClInclude Include="..\datastructure\datainfor\MusicStageManager.h" />
+    <ClInclude Include="..\datastructure\datainfor\SceneConfig.h" />
+    <ClInclude Include="..\datastructure\datainfor\SceneMapManager.h" />
+    <ClInclude Include="..\nsytworld\QuestComplete.h" />
+    <ClInclude Include="..\nsytworld\QuestCondition.h" />
+    <ClInclude Include="..\nsytworld\QuestDef.h" />
+    <ClInclude Include="..\nsytworld\QuestDestroy.h" />
+    <ClInclude Include="..\nsytworld\QuestDoc.h" />
+    <ClInclude Include="..\nsytworld\QuestMan.h" />
+    <ClInclude Include="..\nsytworld\QuestReadWriteTool.h" />
+    <ClInclude Include="..\nsytworld\QuestReward.h" />
+    <ClInclude Include="..\nsytworld\QuestTrigger.h" />
+    <ClInclude Include="..\datastructure\datainfor\ConstellationConfigManager.h" />
+    <ClInclude Include="..\server\account\AccountConfigMgr.h" />
+    <ClInclude Include="..\server\DanceGroupFairyLand\DanceGroupFairyLandCfg.h" />
+    <ClInclude Include="..\server\DanceGroupFairyLand\DanceGroupFairyLandCfgMgr.h" />
+    <ClInclude Include="..\server\dancegroup\BigMamaConfig.h" />
+    <ClInclude Include="..\server\dancegroup\BigMamaConfigManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\datastructure\datainfor\AuctionGoodsInfo.cpp" />
+    <ClCompile Include="..\datastructure\datainfor\ConstellationConfig.cpp" />
+    <ClCompile Include="..\datastructure\datainfor\ConfigManager.cpp" />
+    <ClCompile Include="..\datastructure\datainfor\EffectConfigManager.cpp" />
+    <ClCompile Include="..\datastructure\datainfor\FileStream.cpp" />
+    <ClCompile Include="..\datastructure\datainfor\GoodsInfo.cpp" />
+    <ClCompile Include="..\datastructure\datainfor\LimitedGoodsInfo.cpp" />
+    <ClCompile Include="..\datastructure\datainfor\MagicArrayConfig.cpp" />
+    <ClCompile Include="..\datastructure\datainfor\MagicArrayConfigManager.cpp" />
+    <ClCompile Include="..\datastructure\datainfor\MagicLampConfig.cpp" />
+    <ClCompile Include="..\datastructure\datainfor\MagicLampConfigMgr.cpp" />
+    <ClCompile Include="..\datastructure\datainfor\PhotoRoomConfigManager.cpp" />
+    <ClCompile Include="..\datastructure\datainfor\ServerConfig.cpp" />
+    <ClCompile Include="..\datastructure\datainfor\WeddingRoomConfigMgr.cpp" />
+    <ClCompile Include="..\datastructure\datainfor\ItemConfig.cpp" />
+    <ClCompile Include="..\datastructure\datainfor\ItemConfigManager.cpp" />
+    <ClCompile Include="..\datastructure\datainfor\AchievementConfig.cpp" />
+    <ClCompile Include="..\datastructure\datainfor\AchievementConfigManager.cpp" />
+    <ClCompile Include="..\datastructure\datainfor\EffectConfig.cpp" />
+    <ClCompile Include="..\datastructure\datainfor\ExpConfig.cpp" />
+    <ClCompile Include="..\datastructure\datainfor\ExpConfigManager.cpp" />
+    <ClCompile Include="..\datastructure\datainfor\WeddingRoomConfig.cpp" />
+    <ClCompile Include="..\datastructure\datainfor\PhotoRoomConfig.cpp" />
+    <ClCompile Include="..\datastructure\datainfor\AmuseRoomConfig.cpp" />
+    <ClCompile Include="..\datastructure\datainfor\AmuseRoomConfigManager.cpp" />
+    <ClCompile Include="..\datastructure\datainfor\ModeConfig.cpp" />
+    <ClCompile Include="..\datastructure\datainfor\MusicConfig.cpp" />
+    <ClCompile Include="..\datastructure\datainfor\MusicConfigManager.cpp" />
+    <ClCompile Include="..\datastructure\datainfor\MusicStageConfig.cpp" />
+    <ClCompile Include="..\datastructure\datainfor\MusicStageManager.cpp" />
+    <ClCompile Include="..\datastructure\datainfor\SceneConfig.cpp" />
+    <ClCompile Include="..\datastructure\datainfor\SceneMapManager.cpp" />
+    <ClCompile Include="..\datastructure\ItemBase.cpp" />
+    <ClCompile Include="..\datastructure\Localization.cpp" />
+    <ClCompile Include="..\nsytworld\QuestComplete.cpp" />
+    <ClCompile Include="..\nsytworld\QuestCondition.cpp" />
+    <ClCompile Include="..\nsytworld\QuestDestroy.cpp" />
+    <ClCompile Include="..\nsytworld\QuestDoc.cpp" />
+    <ClCompile Include="..\nsytworld\QuestMan.cpp" />
+    <ClCompile Include="..\nsytworld\QuestReadWriteTool.cpp" />
+    <ClCompile Include="..\nsytworld\QuestReward.cpp" />
+    <ClCompile Include="..\nsytworld\QuestTrigger.cpp" />
+    <ClCompile Include="..\datastructure\datainfor\ConstellationConfigManager.cpp" />
+    <ClCompile Include="..\server\account\AccountConfigMgr.cpp" />
+    <ClCompile Include="..\server\DanceGroupFairyLand\DanceGroupFairyLandCfg.cpp" />
+    <ClCompile Include="..\server\DanceGroupFairyLand\DanceGroupFairyLandCfgMgr.cpp" />
+    <ClCompile Include="..\server\dancegroup\BigMamaConfig.cpp" />
+    <ClCompile Include="..\server\dancegroup\BigMamaConfigManager.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

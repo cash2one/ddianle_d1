@@ -1,0 +1,495 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E362B72A-91CA-408D-8D85-530793F9448C}</ProjectGuid>
+    <RootNamespace>LibServerFrame</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ForceConformanceInForLoopScope>false</ForceConformanceInForLoopScope>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4350;4365;4514;4710;4820;4640;4100;4127;4996</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>debug/libserverframe.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>..\server\libserverframe.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\datastructure\datainfor\GMDataInfo.h" />
+    <ClInclude Include="..\datastructure\DataStruct_Rank.h" />
+    <ClInclude Include="..\datastructure\datainfor\ServerConfig.h" />
+    <ClInclude Include="..\datastructure\DataStruct_SpecialMall.h" />
+    <ClInclude Include="..\datastructure\ImageData.h" />
+    <ClInclude Include="..\server\account\AccountMsgDef.h" />
+    <ClInclude Include="..\server\activity\GameMsg_S2S_Activities.h" />
+    <ClInclude Include="..\server\activity\RedEnvelope\GameMsg_GS_RedEnvelope.h" />
+    <ClInclude Include="..\server\activity\RedEnvelope\RedEnvelope.h" />
+    <ClInclude Include="..\server\activity\RedEnvelope\RedEnvelopeConfigManager.h" />
+    <ClInclude Include="..\server\CeremonyRoom\ceremonyRoomHead.h" />
+    <ClInclude Include="..\server\CeremonyRoom\GameMsg_CeremonyRoom.h" />
+    <ClInclude Include="..\server\chatGrp\GroupChatHistory.h" />
+    <ClInclude Include="..\server\chat\ChatMsgDef.h" />
+    <ClInclude Include="..\server\compensation\CompensationManager.h" />
+    <ClInclude Include="..\datastructure\DanceGroupDataMgr.h" />
+    <ClInclude Include="..\datastructure\DanceGroupInfoDef.h" />
+    <ClInclude Include="..\server\Couple\CoupleMsgDef.h" />
+    <ClInclude Include="..\server\Couple\GameMsg_G2S_Couple.h" />
+    <ClInclude Include="..\server\Couple\GameMsg_S2G_Couple.h" />
+    <ClInclude Include="..\datastructure\DataStruct_Agent.h" />
+    <ClInclude Include="..\datastructure\DataStruct_Base.h" />
+    <ClInclude Include="..\datastructure\DataStruct_Couple.h" />
+    <ClInclude Include="..\datastructure\DataStruct_DanceGroup.h" />
+    <ClInclude Include="..\datastructure\DataStruct_DB.h" />
+    <ClInclude Include="..\server\DanceGroupFairyLand\GameMsg_FairyLand.h" />
+    <ClInclude Include="..\server\dancegroup\DanceGroupMsgDef.h" />
+    <ClInclude Include="..\server\dancegroup\DanceGroupRankMgr.h" />
+    <ClInclude Include="..\server\dancegroup\DataStruct_BigMama.h" />
+    <ClInclude Include="..\server\dancegroup\GameMsg_BigMamaServer.h" />
+    <ClInclude Include="..\server\dancegroup\GameMsg_C2S_DanceGroup.h" />
+    <ClInclude Include="..\server\dancegroup\GameMsg_G2S_DanceGroup.h" />
+    <ClInclude Include="..\server\dancegroup\GameMsg_G2S_DanceGroupChallenge.h" />
+    <ClInclude Include="..\server\dancegroup\GameMsg_S2C_DanceGroup.h" />
+    <ClInclude Include="..\server\dancegroup\GameMsg_S2G_DanceGroup.h" />
+    <ClInclude Include="..\datastructure\FriendDataManager.h" />
+    <ClInclude Include="..\server\dancegroup\GameMsg_S2G_DanceGroupChallenge.h" />
+    <ClInclude Include="..\server\Dungeon\GameMsg_G2S_Dungeon.h" />
+    <ClInclude Include="..\server\Dungeon\GameMsg_S2G_Dungeon.h" />
+    <ClInclude Include="..\server\friend\GameMsg_G2S_BecomeFriends.h" />
+    <ClInclude Include="..\server\friend\GameMsg_G2S_FindPlayerFromID.h" />
+    <ClInclude Include="..\server\friend\GameMsg_G2S_FriendApplicationBack2Sender.h" />
+    <ClInclude Include="..\server\friend\GameMsg_G2S_FriendApplicationForward2Receiver.h" />
+    <ClInclude Include="..\server\friend\GameMsg_G2S_FriendLogin.h" />
+    <ClInclude Include="..\server\friend\GameMsg_G2S_GetBlackListOnlineInfo.h" />
+    <ClInclude Include="..\server\friend\GameMsg_G2S_GetFriendOnlineInfoResult.h" />
+    <ClInclude Include="..\server\friend\GameMsg_G2S_GetTempListOnlineInfo.h" />
+    <ClInclude Include="..\server\friend\GameMsg_G2S_NotifyGameHasBeenDeletedBlacklist.h" />
+    <ClInclude Include="..\server\friend\GameMsg_G2S_NotifyGameHasBeenDeletedFriend.h" />
+    <ClInclude Include="..\server\friend\GameMsg_G2S_NotifyGameRemoveFollowedFriend.h" />
+    <ClInclude Include="..\server\friend\GameMsg_G2S_NotifyGameRemoveFriend.h" />
+    <ClInclude Include="..\server\friend\GameMsg_G2S_NotifyHasBeenAccepted.h" />
+    <ClInclude Include="..\server\friend\GameMsg_G2S_PushOnlineInfoToAllFriends.h" />
+    <ClInclude Include="..\server\friend\GameMsg_G2S_UpdateAttributeToAllFriend.h" />
+    <ClInclude Include="..\server\friend\GameMsg_S2G_AddBlackFriend.h" />
+    <ClInclude Include="..\server\friend\GameMsg_S2G_AddBlackList.h" />
+    <ClInclude Include="..\server\friend\GameMsg_S2G_AddMuteFriend.h" />
+    <ClInclude Include="..\server\friend\GameMsg_S2G_AddMuteList.h" />
+    <ClInclude Include="..\server\friend\GameMsg_S2G_BecomeFriends.h" />
+    <ClInclude Include="..\server\friend\GameMsg_S2G_FindPlayerFromID.h" />
+    <ClInclude Include="..\server\friend\GameMsg_S2G_FriendApplication.h" />
+    <ClInclude Include="..\server\friend\GameMsg_S2G_FriendLogin.h" />
+    <ClInclude Include="..\server\friend\GameMsg_S2G_GetBlackListOnlineInfo.h" />
+    <ClInclude Include="..\server\friend\GameMsg_S2G_GetFriendOnlineInfo.h" />
+    <ClInclude Include="..\server\friend\GameMsg_S2G_GetTempListOnlineInfo.h" />
+    <ClInclude Include="..\server\friend\GameMsg_S2G_NotifyGameHasBeenDeletedBlacklist.h" />
+    <ClInclude Include="..\server\friend\GameMsg_S2G_NotifyGameHasBeenDeletedFriend.h" />
+    <ClInclude Include="..\server\friend\GameMsg_S2G_NotifyGameRemoveFollowedFriend.h" />
+    <ClInclude Include="..\server\friend\GameMsg_S2G_NotifyGameRemoveFriend.h" />
+    <ClInclude Include="..\server\friend\GameMsg_S2G_NotifyHasBeenAccepted.h" />
+    <ClInclude Include="..\server\friend\GameMsg_S2G_NotifyHasBeenDeletedFriend.h" />
+    <ClInclude Include="..\server\friend\GameMsg_S2G_PushOnlineInfoToAllFriends.h" />
+    <ClInclude Include="..\server\friend\GameMsg_S2G_RemoveBlackList.h" />
+    <ClInclude Include="..\server\friend\GameMsg_S2G_RemoveFriend.h" />
+    <ClInclude Include="..\server\friend\GameMsg_S2G_RemoveMuteList.h" />
+    <ClInclude Include="..\server\friend\GameMsg_S2G_RequestFriendOnlineInfo.h" />
+    <ClInclude Include="..\server\friend\GameMsg_S2G_UpdateAttributeToAllFriend.h" />
+    <ClInclude Include="..\server\GM\GameMsg_G2S_Announce.h" />
+    <ClInclude Include="..\server\GM\GameMsg_G2S_GetRoomListByGM.h" />
+    <ClInclude Include="..\server\GM\GameMsg_G2S_NewCompensation.h" />
+    <ClInclude Include="..\server\GM\GameMsg_GM_share.h" />
+    <ClInclude Include="..\server\GM\GameMsg_S2A_LockOrUnLockAccountByGm.h" />
+    <ClInclude Include="..\server\grade\GradeInfoMgr.h" />
+    <ClInclude Include="..\server\group\GameMsg_LBS.h" />
+    <ClInclude Include="..\datastructure\LogStructDef.h" />
+    <ClInclude Include="..\server\Handbook\GameMsg_Handbook.h" />
+    <ClInclude Include="..\server\Handbook\HandbookStruct.h" />
+    <ClInclude Include="..\server\libServerFrame\Circulator.h" />
+    <ClInclude Include="..\server\libServerFrame\CirculatorBase.h" />
+    <ClInclude Include="..\server\libServerFrame\Console.h" />
+    <ClInclude Include="..\server\libServerFrame\DBInterface.h" />
+    <ClInclude Include="..\server\libServerFrame\GameMsgCacheEnt.h" />
+    <ClInclude Include="..\server\libServerFrame\Main.h" />
+    <ClInclude Include="..\server\libServerFrame\QueryManager.h" />
+    <ClInclude Include="..\server\logic\HostMsgDef.h" />
+    <ClInclude Include="..\server\login\GameMsg_Player_SwitchLine.h" />
+    <ClInclude Include="..\server\login\GameMsg_S2G_Login.h" />
+    <ClInclude Include="..\server\login\GameMsg_S2G_Logout.h" />
+    <ClInclude Include="..\server\login\GameMsg_Server_AccountLogin.h" />
+    <ClInclude Include="..\server\login\GameMsg_Server_AccountLogout.h" />
+    <ClInclude Include="..\server\login\GameMsg_Server_DropClient.h" />
+    <ClInclude Include="..\server\login\GameMsg_Server_Login.h" />
+    <ClInclude Include="..\server\login\GameMsg_Server_LoginInfo.h" />
+    <ClInclude Include="..\server\login\GameMsg_Server_LoginResult.h" />
+    <ClInclude Include="..\server\login\GameMsg_Server_VerifyAccount.h" />
+    <ClInclude Include="..\server\Macros\Macros.h" />
+    <ClInclude Include="..\server\mail\GameMsg_External.h" />
+    <ClInclude Include="..\server\mall\Currency.h" />
+    <ClInclude Include="..\server\mall\GameMsg_G2S_TimeEgg.h" />
+    <ClInclude Include="..\server\mall\GameMsg_S2G_TimeEgg.h" />
+    <ClInclude Include="..\server\mall\GameMsg_SpecialMall.h" />
+    <ClInclude Include="..\server\Medal\GameMsg_Gm_medal.h" />
+    <ClInclude Include="..\server\Medal\MedalCfg.h" />
+    <ClInclude Include="..\server\Medal\MedalCfgMgr.h" />
+    <ClInclude Include="..\server\Medal\MedalCondition.h" />
+    <ClInclude Include="..\server\Medal\MedalConditionFactory.h" />
+    <ClInclude Include="..\server\Medal\MedalConditionImp.h" />
+    <ClInclude Include="..\server\music\BGMMgr.h" />
+    <ClInclude Include="..\server\music\MusicBoardMgr.h" />
+    <ClInclude Include="..\server\music\MusicStageFileManager.h" />
+    <ClInclude Include="..\server\Pattern\Observer.h" />
+    <ClInclude Include="..\server\Pattern\Param.h" />
+    <ClInclude Include="..\server\Pattern\Service.h" />
+    <ClInclude Include="..\server\payment\PaymentInfoMgr.h" />
+    <ClInclude Include="..\server\Pet\Pet.h" />
+    <ClInclude Include="..\server\Pet\PetConfig\PetBaseInfo.h" />
+    <ClInclude Include="..\server\Pet\PetConfig\PetConfigManager.h" />
+    <ClInclude Include="..\server\Pet\PetConfig\PetEvolutionInfo.h" />
+    <ClInclude Include="..\server\Pet\PetConfig\PetExchangeInfo.h" />
+    <ClInclude Include="..\server\Pet\PetConfig\PetQualityInfo.h" />
+    <ClInclude Include="..\server\Pet\PetConfig\PetSkillConfig.h" />
+    <ClInclude Include="..\server\Pet\PetEgg.h" />
+    <ClInclude Include="..\server\PhotoRoom\PhotoRoomMsgDef.h" />
+    <ClInclude Include="..\server\player\GameMsg_G2S_PlayerInfo.h" />
+    <ClInclude Include="..\server\player\GameMsg_PlayerSetting.h" />
+    <ClInclude Include="..\server\player\GameMsg_S2G_PlayerInfo.h" />
+    <ClInclude Include="..\server\player\GameMsg_S2G_UpdateAttrInfo.h" />
+    <ClInclude Include="..\server\player\GameMsg_S2G_UpdateRoomInfo.h" />
+    <ClInclude Include="..\server\Rank\GameMsg_Rank_SG.h" />
+    <ClInclude Include="..\server\Rank\RankMgr.h" />
+    <ClInclude Include="..\server\Rank\RankDefine.h" />
+    <ClInclude Include="..\server\roomLib\GameMsgNewRoom.h" />
+    <ClInclude Include="..\server\roomLib\GameMsgRoomBroadcast.h" />
+    <ClInclude Include="..\server\roomLib\GameMsg_C2S_RoomMsg.h" />
+    <ClInclude Include="..\server\roomLib\GameMsg_S2C_RoomMsg.h" />
+    <ClInclude Include="..\server\roomLib\RoomCheckDataMgr.h" />
+    <ClInclude Include="..\server\roomLib\RoomDanceInfo.h" />
+    <ClInclude Include="..\server\roomLib\RoomDataStruct.h" />
+    <ClInclude Include="..\server\roomLib\RoomLibBase.h" />
+    <ClInclude Include="..\server\roomLib\RoomMarkCalculator.h" />
+    <ClInclude Include="..\server\roomLib\RoomMarkInfo.h" />
+    <ClInclude Include="..\server\roomLib\RoomPosManager.h" />
+    <ClInclude Include="..\server\roomLib\RoomSettingMgr.h" />
+    <ClInclude Include="..\server\room\GameMsg_LiveRoom.h" />
+    <ClInclude Include="..\server\share\CommonMsgDef.h" />
+    <ClInclude Include="..\server\share\GameMsg_ChargeOnline.h" />
+    <ClInclude Include="..\server\share\GameMsg_Cmd.h" />
+    <ClInclude Include="..\server\share\GameMsg_CmdRes.h" />
+    <ClInclude Include="..\server\share\GameMsg_Forward.h" />
+    <ClInclude Include="..\server\share\GameMsg_G2S_AddMCoinByGm.h" />
+    <ClInclude Include="..\server\share\GameMsg_G2S_GameServerInfoResult.h" />
+    <ClInclude Include="..\server\share\GameMsg_G2S_LockOrUnLockAccountByGm.h" />
+    <ClInclude Include="..\server\share\GameMsg_GameServerLinkInfo.h" />
+    <ClInclude Include="..\server\share\GameMsg_LinkCount.h" />
+    <ClInclude Include="..\server\share\GameMsg_LinkInfo.h" />
+    <ClInclude Include="..\server\share\GameMsg_S2A_AddMCoinByCmd.h" />
+    <ClInclude Include="..\server\share\GameMsg_S2G_GameServerClosed.h" />
+    <ClInclude Include="..\server\share\GameMsg_S2G_GameServerInfo.h" />
+    <ClInclude Include="..\server\share\GameMsg_Server_Connected.h" />
+    <ClInclude Include="..\server\agent\AgentMsg_Announce.h" />
+    <ClInclude Include="..\server\agent\AgentMsg_Close.h" />
+    <ClInclude Include="..\server\agent\AgentMsg_Execute.h" />
+    <ClInclude Include="..\server\agent\AgentMsg_Exit.h" />
+    <ClInclude Include="..\server\agent\AgentMsg_Kill.h" />
+    <ClInclude Include="..\server\agent\AgentMsg_Setting.h" />
+    <ClInclude Include="..\server\agent\AgentMsg_ShutdownInTime.h" />
+    <ClInclude Include="..\server\agent\AgentMsg_Start.h" />
+    <ClInclude Include="..\server\agent\AgentMsg_Stat.h" />
+    <ClInclude Include="..\server\agent\AgentMsg_SysInfo.h" />
+    <ClInclude Include="..\server\chat\GameMsg_S2G_Chat.h" />
+    <ClInclude Include="..\server\mail\GameMsg_Mail.h" />
+    <ClInclude Include="..\server\mall\GameMsg_Mall.h" />
+    <ClInclude Include="..\server\chat\GameMsg_G2S_AdminChat.h" />
+    <ClInclude Include="..\server\chat\GameMsg_G2S_Chat.h" />
+    <ClInclude Include="..\server\chat\GameMsg_G2S_Chat_Admin.h" />
+    <ClInclude Include="..\server\chat\GameMsg_G2S_ChatWindow.h" />
+    <ClInclude Include="..\server\chat\GameMsg_G2S_WorldChat.h" />
+    <ClInclude Include="..\server\lua\InitLua.h" />
+    <ClInclude Include="..\server\lua\LauxLib.h" />
+    <ClInclude Include="..\server\lua\Lua.h" />
+    <ClInclude Include="..\server\lua\LuaCallback.h" />
+    <ClInclude Include="..\server\lua\LuaConf.h" />
+    <ClInclude Include="..\server\lua\LuaLib.h" />
+    <ClInclude Include="..\server\share\GameMsg_SyncSetting.h" />
+    <ClInclude Include="..\server\share\GameServerLinkInfo.h" />
+    <ClInclude Include="..\server\share\LinkingInfos.h" />
+    <ClInclude Include="..\server\share\ServerDataStruct.h" />
+    <ClInclude Include="..\server\share\ServerMsgDef.h" />
+    <ClInclude Include="..\server\util\CommonFunc.h" />
+    <ClInclude Include="..\server\util\Crontab.h" />
+    <ClInclude Include="..\server\util\GameStringTipsDef.h" />
+    <ClInclude Include="..\server\util\IDCreater.h" />
+    <ClInclude Include="..\server\util\ITimer.h" />
+    <ClInclude Include="..\server\util\linuxfunc.h" />
+    <ClInclude Include="..\server\util\NameDeny.h" />
+    <ClInclude Include="..\server\util\Split.h" />
+    <ClInclude Include="..\server\util\TimerMgr.h" />
+    <ClInclude Include="..\server\vip\GameMsg_S2G_VIP.h" />
+    <ClInclude Include="..\server\vip\VIPDataMgr.h" />
+    <ClInclude Include="..\server\vip\VIPStruct.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\datastructure\datainfor\GMDataInfo.cpp" />
+    <ClCompile Include="..\datastructure\DataStruct_Rank.cpp" />
+    <ClCompile Include="..\datastructure\datainfor\ServerConfig.cpp" />
+    <ClCompile Include="..\datastructure\DataStruct_SpecialMall.cpp" />
+    <ClCompile Include="..\datastructure\ImageData.cpp" />
+    <ClCompile Include="..\server\activity\GameMsg_S2S_Activities.cpp" />
+    <ClCompile Include="..\server\activity\RedEnvelope\GameMsg_GS_RedEnvelope.cpp" />
+    <ClCompile Include="..\server\activity\RedEnvelope\RedEnvelope.cpp" />
+    <ClCompile Include="..\server\activity\RedEnvelope\RedEnvelopeConfigManager.cpp" />
+    <ClCompile Include="..\server\CeremonyRoom\ceremonyRoomHead.cpp" />
+    <ClCompile Include="..\server\CeremonyRoom\GameMsg_CeremonyRoom.cpp" />
+    <ClCompile Include="..\server\chatGrp\GroupChatHistory.cpp" />
+    <ClCompile Include="..\server\compensation\CompensationManager.cpp" />
+    <ClCompile Include="..\datastructure\DanceGroupDataMgr.cpp" />
+    <ClCompile Include="..\server\Couple\GameMsg_G2S_Couple.cpp" />
+    <ClCompile Include="..\server\Couple\GameMsg_S2G_Couple.cpp" />
+    <ClCompile Include="..\datastructure\DataStruct_Base.cpp" />
+    <ClCompile Include="..\datastructure\DataStruct_Couple.cpp" />
+    <ClCompile Include="..\datastructure\DataStruct_DanceGroup.cpp" />
+    <ClCompile Include="..\datastructure\DataStruct_DB.cpp" />
+    <ClCompile Include="..\server\DanceGroupFairyLand\GameMsg_FairyLand.cpp" />
+    <ClCompile Include="..\server\dancegroup\DanceGroupRankMgr.cpp" />
+    <ClCompile Include="..\server\dancegroup\DataStruct_BigMama.cpp" />
+    <ClCompile Include="..\server\dancegroup\GameMsg_BigMamaServer.cpp" />
+    <ClCompile Include="..\server\dancegroup\GameMsg_C2S_DanceGroup.cpp" />
+    <ClCompile Include="..\server\dancegroup\GameMsg_G2S_DanceGroup.cpp" />
+    <ClCompile Include="..\server\dancegroup\GameMsg_G2S_DanceGroupChallenge.cpp" />
+    <ClCompile Include="..\server\dancegroup\GameMsg_S2C_DanceGroup.cpp" />
+    <ClCompile Include="..\server\dancegroup\GameMsg_S2G_DanceGroup.cpp" />
+    <ClCompile Include="..\datastructure\FriendDataManager.cpp" />
+    <ClCompile Include="..\server\dancegroup\GameMsg_S2G_DanceGroupChallenge.cpp" />
+    <ClCompile Include="..\server\Dungeon\GameMsg_G2S_Dungeon.cpp" />
+    <ClCompile Include="..\server\Dungeon\GameMsg_S2G_Dungeon.cpp" />
+    <ClCompile Include="..\server\friend\GameMsg_G2S_BecomeFriends.cpp" />
+    <ClCompile Include="..\server\friend\GameMsg_G2S_FindPlayerFromID.cpp" />
+    <ClCompile Include="..\server\friend\GameMsg_G2S_FriendApplicationBack2Sender.cpp" />
+    <ClCompile Include="..\server\friend\GameMsg_G2S_FriendApplicationForward2Receiver.cpp" />
+    <ClCompile Include="..\server\friend\GameMsg_G2S_FriendLogin.cpp" />
+    <ClCompile Include="..\server\friend\GameMsg_G2S_GetBlackListOnlineInfo.cpp" />
+    <ClCompile Include="..\server\friend\GameMsg_G2S_GetFriendOnlineInfoResult.cpp" />
+    <ClCompile Include="..\server\friend\GameMsg_G2S_GetTempListOnlineInfo.cpp" />
+    <ClCompile Include="..\server\friend\GameMsg_G2S_NotifyGameHasBeenDeletedBlacklist.cpp" />
+    <ClCompile Include="..\server\friend\GameMsg_G2S_NotifyGameHasBeenDeletedFriend.cpp" />
+    <ClCompile Include="..\server\friend\GameMsg_G2S_NotifyGameRemoveFollowedFriend.cpp" />
+    <ClCompile Include="..\server\friend\GameMsg_G2S_NotifyGameRemoveFriend.cpp" />
+    <ClCompile Include="..\server\friend\GameMsg_G2S_NotifyHasBeenAccepted.cpp" />
+    <ClCompile Include="..\server\friend\GameMsg_G2S_PushOnlineInfoToAllFriends.cpp" />
+    <ClCompile Include="..\server\friend\GameMsg_G2S_UpdateAttributeToAllFriend.cpp" />
+    <ClCompile Include="..\server\friend\GameMsg_S2G_AddBlackFriend.cpp" />
+    <ClCompile Include="..\server\friend\GameMsg_S2G_AddBlackList.cpp" />
+    <ClCompile Include="..\server\friend\GameMsg_S2G_AddMuteFriend.cpp" />
+    <ClCompile Include="..\server\friend\GameMsg_S2G_AddMuteList.cpp" />
+    <ClCompile Include="..\server\friend\GameMsg_S2G_BecomeFriends.cpp" />
+    <ClCompile Include="..\server\friend\GameMsg_S2G_FindPlayerFromID.cpp" />
+    <ClCompile Include="..\server\friend\GameMsg_S2G_FriendApplication.cpp" />
+    <ClCompile Include="..\server\friend\GameMsg_S2G_FriendLogin.cpp" />
+    <ClCompile Include="..\server\friend\GameMsg_S2G_GetBlackListOnlineInfo.cpp" />
+    <ClCompile Include="..\server\friend\GameMsg_S2G_GetFriendOnlineInfo.cpp" />
+    <ClCompile Include="..\server\friend\GameMsg_S2G_GetTempListOnlineInfo.cpp" />
+    <ClCompile Include="..\server\friend\GameMsg_S2G_NotifyGameHasBeenDeletedBlacklist.cpp" />
+    <ClCompile Include="..\server\friend\GameMsg_S2G_NotifyGameHasBeenDeletedFriend.cpp" />
+    <ClCompile Include="..\server\friend\GameMsg_S2G_NotifyGameRemoveFollowedFriend.cpp" />
+    <ClCompile Include="..\server\friend\GameMsg_S2G_NotifyGameRemoveFriend.cpp" />
+    <ClCompile Include="..\server\friend\GameMsg_S2G_NotifyHasBeenAccepted.cpp" />
+    <ClCompile Include="..\server\friend\GameMsg_S2G_NotifyHasBeenDeletedFriend.cpp" />
+    <ClCompile Include="..\server\friend\GameMsg_S2G_PushOnlineInfoToAllFriends.cpp" />
+    <ClCompile Include="..\server\friend\GameMsg_S2G_RemoveBlackList.cpp" />
+    <ClCompile Include="..\server\friend\GameMsg_S2G_RemoveFriend.cpp" />
+    <ClCompile Include="..\server\friend\GameMsg_S2G_RemoveMuteList.cpp" />
+    <ClCompile Include="..\server\friend\GameMsg_S2G_RequestFriendOnlineInfo.cpp" />
+    <ClCompile Include="..\server\friend\GameMsg_S2G_UpdateAttributeToAllFriend.cpp" />
+    <ClCompile Include="..\server\GM\GameMsg_G2S_Announce.cpp" />
+    <ClCompile Include="..\server\GM\GameMsg_G2S_GetRoomListByGM.cpp" />
+    <ClCompile Include="..\server\GM\GameMsg_G2S_NewCompensation.cpp" />
+    <ClCompile Include="..\server\GM\GameMsg_GM_share.cpp" />
+    <ClCompile Include="..\server\GM\GameMsg_S2A_LockOrUnLockAccountByGm.cpp" />
+    <ClCompile Include="..\datastructure\LogStructDef.cpp" />
+    <ClCompile Include="..\server\grade\GradeInfoMgr.cpp" />
+    <ClCompile Include="..\server\group\GameMsg_LBS.cpp" />
+    <ClCompile Include="..\server\Handbook\GameMsg_Handbook.cpp" />
+    <ClCompile Include="..\server\Handbook\HandbookStruct.cpp" />
+    <ClCompile Include="..\server\libServerFrame\Circulator.cpp" />
+    <ClCompile Include="..\server\libServerFrame\CirculatorBase.cpp" />
+    <ClCompile Include="..\server\libServerFrame\Console.cpp" />
+    <ClCompile Include="..\server\libServerFrame\DBInterface.cpp" />
+    <ClCompile Include="..\server\libServerFrame\GameMsgCacheEnt.cpp" />
+    <ClCompile Include="..\server\libServerFrame\Main.cpp" />
+    <ClCompile Include="..\server\libServerFrame\QueryManager.cpp" />
+    <ClCompile Include="..\server\login\GameMsg_Player_SwitchLine.cpp" />
+    <ClCompile Include="..\server\login\GameMsg_S2G_Login.cpp" />
+    <ClCompile Include="..\server\login\GameMsg_S2G_Logout.cpp" />
+    <ClCompile Include="..\server\login\GameMsg_Server_AccountLogin.cpp" />
+    <ClCompile Include="..\server\login\GameMsg_Server_AccountLogout.cpp" />
+    <ClCompile Include="..\server\login\GameMsg_Server_DropClient.cpp" />
+    <ClCompile Include="..\server\login\GameMsg_Server_Login.cpp" />
+    <ClCompile Include="..\server\login\GameMsg_Server_LoginInfo.cpp" />
+    <ClCompile Include="..\server\login\GameMsg_Server_LoginResult.cpp" />
+    <ClCompile Include="..\server\login\GameMsg_Server_VerifyAccount.cpp" />
+    <ClCompile Include="..\server\mail\GameMsg_External.cpp" />
+    <ClCompile Include="..\server\mall\Currency.cpp" />
+    <ClCompile Include="..\server\mall\GameMsg_G2S_TimeEgg.cpp" />
+    <ClCompile Include="..\server\mall\GameMsg_S2G_TimeEgg.cpp" />
+    <ClCompile Include="..\server\mall\GameMsg_SpecialMall.cpp" />
+    <ClCompile Include="..\server\Medal\GameMsg_Gm_medal.cpp" />
+    <ClCompile Include="..\server\Medal\MedalCfg.cpp" />
+    <ClCompile Include="..\server\Medal\MedalCfgMgr.cpp" />
+    <ClCompile Include="..\server\Medal\MedalCondition.cpp" />
+    <ClCompile Include="..\server\Medal\MedalConditionFactory.cpp" />
+    <ClCompile Include="..\server\Medal\MedalConditionImp.cpp" />
+    <ClCompile Include="..\server\music\BGMMgr.cpp" />
+    <ClCompile Include="..\server\music\MusicBoardMgr.cpp" />
+    <ClCompile Include="..\server\music\MusicStageFileManager.cpp" />
+    <ClCompile Include="..\server\Pattern\Observer.cpp" />
+    <ClCompile Include="..\server\Pattern\Param.cpp" />
+    <ClCompile Include="..\server\Pattern\Service.cpp" />
+    <ClCompile Include="..\server\payment\PaymentInfoMgr.cpp" />
+    <ClCompile Include="..\server\Pet\Pet.cpp" />
+    <ClCompile Include="..\server\Pet\PetConfig\PetBaseInfo.cpp" />
+    <ClCompile Include="..\server\Pet\PetConfig\PetConfigManager.cpp" />
+    <ClCompile Include="..\server\Pet\PetConfig\PetEvolutionInfo.cpp" />
+    <ClCompile Include="..\server\Pet\PetConfig\PetExchangeInfo.cpp" />
+    <ClCompile Include="..\server\Pet\PetConfig\PetQualityInfo.cpp" />
+    <ClCompile Include="..\server\Pet\PetConfig\PetSkillConfig.cpp" />
+    <ClCompile Include="..\server\Pet\PetEgg.cpp" />
+    <ClCompile Include="..\server\player\GameMsg_G2S_PlayerInfo.cpp" />
+    <ClCompile Include="..\server\player\GameMsg_PlayerSetting.cpp" />
+    <ClCompile Include="..\server\player\GameMsg_S2G_PlayerInfo.cpp" />
+    <ClCompile Include="..\server\player\GameMsg_S2G_UpdateAttrInfo.cpp" />
+    <ClCompile Include="..\server\player\GameMsg_S2G_UpdateRoomInfo.cpp" />
+    <ClCompile Include="..\server\Rank\GameMsg_Rank_SG.cpp" />
+    <ClCompile Include="..\server\Rank\RankMgr.cpp" />
+    <ClCompile Include="..\server\Rank\RankDefine.cpp" />
+    <ClCompile Include="..\server\roomLib\GameMsgNewRoom.cpp" />
+    <ClCompile Include="..\server\roomLib\GameMsgRoomBroadcast.cpp" />
+    <ClCompile Include="..\server\roomLib\GameMsg_C2S_RoomMsg.cpp" />
+    <ClCompile Include="..\server\roomLib\GameMsg_S2C_RoomMsg.cpp" />
+    <ClCompile Include="..\server\roomLib\RoomCheckDataMgr.cpp" />
+    <ClCompile Include="..\server\roomLib\RoomDanceInfo.cpp" />
+    <ClCompile Include="..\server\roomLib\RoomDataStruct.cpp" />
+    <ClCompile Include="..\server\roomLib\RoomLibBase.cpp" />
+    <ClCompile Include="..\server\roomLib\RoomMarkCalculator.cpp" />
+    <ClCompile Include="..\server\roomLib\RoomMarkInfo.cpp" />
+    <ClCompile Include="..\server\roomLib\RoomPosManager.cpp" />
+    <ClCompile Include="..\server\roomLib\RoomSettingMgr.cpp" />
+    <ClCompile Include="..\server\room\GameMsg_LiveRoom.cpp" />
+    <ClCompile Include="..\server\share\GameMsg_ChargeOnline.cpp" />
+    <ClCompile Include="..\server\share\GameMsg_Cmd.cpp" />
+    <ClCompile Include="..\server\share\GameMsg_CmdRes.cpp" />
+    <ClCompile Include="..\server\share\GameMsg_Forward.cpp" />
+    <ClCompile Include="..\server\share\GameMsg_G2S_AddMCoinByGm.cpp" />
+    <ClCompile Include="..\server\share\GameMsg_G2S_GameServerInfoResult.cpp" />
+    <ClCompile Include="..\server\share\GameMsg_G2S_LockOrUnLockAccountByGm.cpp" />
+    <ClCompile Include="..\server\share\GameMsg_GameServerLinkInfo.cpp" />
+    <ClCompile Include="..\server\share\GameMsg_LinkCount.cpp" />
+    <ClCompile Include="..\server\share\GameMsg_LinkInfo.cpp" />
+    <ClCompile Include="..\server\share\GameMsg_S2A_AddMCoinByCmd.cpp" />
+    <ClCompile Include="..\server\share\GameMsg_S2G_GameServerClosed.cpp" />
+    <ClCompile Include="..\server\share\GameMsg_S2G_GameServerInfo.cpp" />
+    <ClCompile Include="..\server\share\GameMsg_Server_Connected.cpp" />
+    <ClCompile Include="..\server\agent\AgentMsg_Announce.cpp" />
+    <ClCompile Include="..\server\agent\AgentMsg_Close.cpp" />
+    <ClCompile Include="..\server\agent\AgentMsg_Execute.cpp" />
+    <ClCompile Include="..\server\agent\AgentMsg_Exit.cpp" />
+    <ClCompile Include="..\server\agent\AgentMsg_Kill.cpp" />
+    <ClCompile Include="..\server\agent\AgentMsg_Setting.cpp" />
+    <ClCompile Include="..\server\agent\AgentMsg_ShutdownInTime.cpp" />
+    <ClCompile Include="..\server\agent\AgentMsg_Start.cpp" />
+    <ClCompile Include="..\server\agent\AgentMsg_Stat.cpp" />
+    <ClCompile Include="..\server\agent\AgentMsg_SysInfo.cpp" />
+    <ClCompile Include="..\server\chat\GameMsg_S2G_Chat.cpp" />
+    <ClCompile Include="..\server\mail\GameMsg_Mail.cpp" />
+    <ClCompile Include="..\server\mall\GameMsg_Mall.cpp" />
+    <ClCompile Include="..\server\chat\GameMsg_G2S_AdminChat.cpp" />
+    <ClCompile Include="..\server\chat\GameMsg_G2S_Chat.cpp" />
+    <ClCompile Include="..\server\chat\GameMsg_G2S_Chat_Admin.cpp" />
+    <ClCompile Include="..\server\chat\GameMsg_G2S_ChatWindow.cpp" />
+    <ClCompile Include="..\server\chat\GameMsg_G2S_WorldChat.cpp" />
+    <ClCompile Include="..\server\lua\InitLua.cpp" />
+    <ClCompile Include="..\server\share\GameMsg_SyncSetting.cpp" />
+    <ClCompile Include="..\server\share\GameServerLinkInfo.cpp" />
+    <ClCompile Include="..\server\share\LinkingInfos.cpp" />
+    <ClCompile Include="..\server\util\CommonFunc.cpp" />
+    <ClCompile Include="..\server\util\Crontab.cpp" />
+    <ClCompile Include="..\server\util\IDCreater.cpp" />
+    <ClCompile Include="..\server\util\linuxfunc.cpp" />
+    <ClCompile Include="..\server\util\NameDeny.cpp" />
+    <ClCompile Include="..\server\util\TimerMgr.cpp" />
+    <ClCompile Include="..\server\vip\GameMsg_S2G_VIP.cpp" />
+    <ClCompile Include="..\server\vip\VIPDataMgr.cpp" />
+    <ClCompile Include="..\server\vip\VIPStruct.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\datainfor\DataInfor.vcxproj">
+      <Project>{008312de-31d3-4b3a-9cc6-9457d79048b9}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

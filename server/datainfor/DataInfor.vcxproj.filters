@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Basic">
+      <UniqueIdentifier>{1fc4cbc9-2bf5-4f51-9f50-d4c30fc711a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ConfigManager">
+      <UniqueIdentifier>{de96e240-4aa5-4509-93c4-9285d164b891}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ConfigManager\MagicLamp">
+      <UniqueIdentifier>{0ac44392-d081-4083-8c22-f4355ac8e679}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ConfigManager\Music">
+      <UniqueIdentifier>{97c49966-57ce-4e47-9535-a3aaeba021a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ConfigManager\Quest">
+      <UniqueIdentifier>{f7b271a5-fc94-48ec-904d-fbfac1e6d4be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ConfigManager\PhotoRoom">
+      <UniqueIdentifier>{92488efb-dd85-42e4-8d0f-a650f5343c96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ConfigManager\SpecialMall">
+      <UniqueIdentifier>{14839b85-29f9-488d-bae4-6fba4d5aa333}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ConfigManager\WeddingRoom">
+      <UniqueIdentifier>{348d004b-ade1-4cf5-93c9-ae9c7d3ce8cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ConfigManager\Item">
+      <UniqueIdentifier>{07d53f61-8ef0-4b00-aa88-bf2ce23ce1b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ConfigManager\Effect">
+      <UniqueIdentifier>{4863686a-88b4-4ae3-bb88-7ed7f78cfa83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ConfigManager\Exp">
+      <UniqueIdentifier>{587b2b9e-0600-4fdf-8cf6-447cb512230a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ConfigManager\Constellation">
+      <UniqueIdentifier>{3ca6c847-94a8-4015-ba61-b50a6ad5e587}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ConfigManager\AmuseRoom">
+      <UniqueIdentifier>{23c2dbb2-81cd-4518-98d9-e4a9d0f25126}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ConfigManager\Achievement">
+      <UniqueIdentifier>{4a711352-cc40-4fd1-ac33-b91b2ae40061}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ConfigManager\AccountConfig">
+      <UniqueIdentifier>{529f7c86-8a6d-47a2-8598-a73aa2c6ed50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ConfigManager\MagicArray">
+      <UniqueIdentifier>{deb171b7-589a-43ec-bc7d-bee0527765d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ConfigManager\BigMama">
+      <UniqueIdentifier>{20340835-5713-4b48-993f-7ee996f252f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ConfigManager\DanceGroupFairyLand">
+      <UniqueIdentifier>{5f66f6f4-94ea-4faf-b7a6-29547ef012ce}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\datastructure\datainfor\DataInfoDefine.h">
+      <Filter>Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\datainfor\FileStream.h">
+      <Filter>Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\Macro_Define.h">
+      <Filter>Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\datainfor\ItemType.h">
+      <Filter>ConfigManager\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\datainfor\MusicStageManager.h">
+      <Filter>ConfigManager\Music</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nsytworld\QuestComplete.h">
+      <Filter>ConfigManager\Quest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nsytworld\QuestCondition.h">
+      <Filter>ConfigManager\Quest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nsytworld\QuestDef.h">
+      <Filter>ConfigManager\Quest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nsytworld\QuestDestroy.h">
+      <Filter>ConfigManager\Quest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nsytworld\QuestDoc.h">
+      <Filter>ConfigManager\Quest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nsytworld\QuestMan.h">
+      <Filter>ConfigManager\Quest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nsytworld\QuestReadWriteTool.h">
+      <Filter>ConfigManager\Quest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nsytworld\QuestReward.h">
+      <Filter>ConfigManager\Quest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nsytworld\QuestTrigger.h">
+      <Filter>ConfigManager\Quest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\datainfor\MagicLampConfig.h">
+      <Filter>ConfigManager\MagicLamp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\datainfor\MagicLampConfigMgr.h">
+      <Filter>ConfigManager\MagicLamp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\datainfor\GoodsInfo.h">
+      <Filter>ConfigManager\SpecialMall</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\datainfor\LimitedGoodsInfo.h">
+      <Filter>ConfigManager\SpecialMall</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\datainfor\AuctionGoodsInfo.h">
+      <Filter>ConfigManager\SpecialMall</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\datainfor\ServerConfig.h">
+      <Filter>Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\datainfor\SceneMapManager.h">
+      <Filter>ConfigManager\Music</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\datainfor\SceneConfig.h">
+      <Filter>ConfigManager\Music</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\datainfor\MusicStageConfig.h">
+      <Filter>ConfigManager\Music</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\datainfor\MusicConfigManager.h">
+      <Filter>ConfigManager\Music</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\datainfor\MusicConfig.h">
+      <Filter>ConfigManager\Music</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\datainfor\ItemConfigManager.h">
+      <Filter>ConfigManager\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\datainfor\ItemConfig.h">
+      <Filter>ConfigManager\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\datainfor\EffectConfig.h">
+      <Filter>ConfigManager\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\datainfor\ExpConfigManager.h">
+      <Filter>ConfigManager\Exp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\datainfor\ExpConfig.h">
+      <Filter>ConfigManager\Exp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\datainfor\WeddingRoomConfig.h">
+      <Filter>ConfigManager\WeddingRoom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\datainfor\WeddingRoomConfigMgr.h">
+      <Filter>ConfigManager\WeddingRoom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\datainfor\ConstellationConfig.h">
+      <Filter>ConfigManager\Constellation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\datainfor\AmuseRoomConfig.h">
+      <Filter>ConfigManager\AmuseRoom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\datainfor\AmuseRoomConfigManager.h">
+      <Filter>ConfigManager\AmuseRoom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\datainfor\AchievementConfig.h">
+      <Filter>ConfigManager\Achievement</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\datainfor\AchievementConfigManager.h">
+      <Filter>ConfigManager\Achievement</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\datainfor\PhotoRoomConfigManager.h">
+      <Filter>ConfigManager\PhotoRoom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\datainfor\EffectConfigManager.h">
+      <Filter>ConfigManager\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\datainfor\ConstellationConfigManager.h">
+      <Filter>ConfigManager\Constellation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\datainfor\ConfigManager.h">
+      <Filter>ConfigManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\datainfor\ModeConfig.h">
+      <Filter>ConfigManager\Music</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\datainfor\PhotoRoomConfig.h">
+      <Filter>ConfigManager\PhotoRoom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\Localization.h">
+      <Filter>Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\datainfor\XQMap.h">
+      <Filter>Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\account\AccountConfigMgr.h">
+      <Filter>ConfigManager\AccountConfig</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\datainfor\MagicArrayConfigManager.h">
+      <Filter>ConfigManager\MagicArray</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\datainfor\MagicArrayConfig.h">
+      <Filter>ConfigManager\MagicArray</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\dancegroup\BigMamaConfig.h">
+      <Filter>ConfigManager\BigMama</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\dancegroup\BigMamaConfigManager.h">
+      <Filter>ConfigManager\BigMama</Filter>
+    </ClInclude>
+    <ClInclude Include="..\datastructure\ItemBase.h">
+      <Filter>Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\DanceGroupFairyLand\DanceGroupFairyLandCfg.h">
+      <Filter>ConfigManager\DanceGroupFairyLand</Filter>
+    </ClInclude>
+    <ClInclude Include="..\server\DanceGroupFairyLand\DanceGroupFairyLandCfgMgr.h">
+      <Filter>ConfigManager\DanceGroupFairyLand</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\datastructure\datainfor\FileStream.cpp">
+      <Filter>Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\datastructure\datainfor\MusicStageManager.cpp">
+      <Filter>ConfigManager\Music</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nsytworld\QuestComplete.cpp">
+      <Filter>ConfigManager\Quest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nsytworld\QuestCondition.cpp">
+      <Filter>ConfigManager\Quest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nsytworld\QuestDestroy.cpp">
+      <Filter>ConfigManager\Quest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nsytworld\QuestDoc.cpp">
+      <Filter>ConfigManager\Quest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nsytworld\QuestMan.cpp">
+      <Filter>ConfigManager\Quest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nsytworld\QuestReadWriteTool.cpp">
+      <Filter>ConfigManager\Quest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nsytworld\QuestReward.cpp">
+      <Filter>ConfigManager\Quest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nsytworld\QuestTrigger.cpp">
+      <Filter>ConfigManager\Quest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\datastructure\datainfor\MagicLampConfig.cpp">
+      <Filter>ConfigManager\MagicLamp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\datastructure\datainfor\MagicLampConfigMgr.cpp">
+      <Filter>ConfigManager\MagicLamp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\datastructure\datainfor\GoodsInfo.cpp">
+      <Filter>ConfigManager\SpecialMall</Filter>
+    </ClCompile>
+    <ClCompile Include="..\datastructure\datainfor\LimitedGoodsInfo.cpp">
+      <Filter>ConfigManager\SpecialMall</Filter>
+    </ClCompile>
+    <ClCompile Include="..\datastructure\datainfor\AuctionGoodsInfo.cpp">
+      <Filter>ConfigManager\SpecialMall</Filter>
+    </ClCompile>
+    <ClCompile Include="..\datastructure\datainfor\ServerConfig.cpp">
+      <Filter>Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\datastructure\datainfor\SceneMapManager.cpp">
+      <Filter>ConfigManager\Music</Filter>
+    </ClCompile>
+    <ClCompile Include="..\datastructure\datainfor\SceneConfig.cpp">
+      <Filter>ConfigManager\Music</Filter>
+    </ClCompile>
+    <ClCompile Include="..\datastructure\datainfor\MusicStageConfig.cpp">
+      <Filter>ConfigManager\Music</Filter>
+    </ClCompile>
+    <ClCompile Include="..\datastructure\datainfor\MusicConfigManager.cpp">
+      <Filter>ConfigManager\Music</Filter>
+    </ClCompile>
+    <ClCompile Include="..\datastructure\datainfor\MusicConfig.cpp">
+      <Filter>ConfigManager\Music</Filter>
+    </ClCompile>
+    <ClCompile Include="..\datastructure\datainfor\ItemConfigManager.cpp">
+      <Filter>ConfigManager\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\datastructure\datainfor\ItemConfig.cpp">
+      <Filter>ConfigManager\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\datastructure\datainfor\EffectConfig.cpp">
+      <Filter>ConfigManager\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\datastructure\datainfor\EffectConfigManager.cpp">
+      <Filter>ConfigManager\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\datastructure\datainfor\ExpConfigManager.cpp">
+      <Filter>ConfigManager\Exp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\datastructure\datainfor\ExpConfig.cpp">
+      <Filter>ConfigManager\Exp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\datastructure\datainfor\WeddingRoomConfig.cpp">
+      <Filter>ConfigManager\WeddingRoom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\datastructure\datainfor\WeddingRoomConfigMgr.cpp">
+      <Filter>ConfigManager\WeddingRoom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\datastructure\datainfor\ConstellationConfig.cpp">
+      <Filter>ConfigManager\Constellation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\datastructure\datainfor\AmuseRoomConfig.cpp">
+      <Filter>ConfigManager\AmuseRoom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\datastructure\datainfor\AmuseRoomConfigManager.cpp">
+      <Filter>ConfigManager\AmuseRoom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\datastructure\datainfor\AchievementConfig.cpp">
+      <Filter>ConfigManager\Achievement</Filter>
+    </ClCompile>
+    <ClCompile Include="..\datastructure\datainfor\AchievementConfigManager.cpp">
+      <Filter>ConfigManager\Achievement</Filter>
+    </ClCompile>
+    <ClCompile Include="..\datastructure\datainfor\PhotoRoomConfigManager.cpp">
+      <Filter>ConfigManager\PhotoRoom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\datastructure\datainfor\ConstellationConfigManager.cpp">
+      <Filter>ConfigManager\Constellation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\datastructure\datainfor\ConfigManager.cpp">
+      <Filter>ConfigManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\datastructure\datainfor\ModeConfig.cpp">
+      <Filter>ConfigManager\Music</Filter>
+    </ClCompile>
+    <ClCompile Include="..\datastructure\datainfor\PhotoRoomConfig.cpp">
+      <Filter>ConfigManager\PhotoRoom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\datastructure\Localization.cpp">
+      <Filter>Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\account\AccountConfigMgr.cpp">
+      <Filter>ConfigManager\AccountConfig</Filter>
+    </ClCompile>
+    <ClCompile Include="..\datastructure\datainfor\MagicArrayConfig.cpp">
+      <Filter>ConfigManager\MagicArray</Filter>
+    </ClCompile>
+    <ClCompile Include="..\datastructure\datainfor\MagicArrayConfigManager.cpp">
+      <Filter>ConfigManager\MagicArray</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\dancegroup\BigMamaConfig.cpp">
+      <Filter>ConfigManager\BigMama</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\dancegroup\BigMamaConfigManager.cpp">
+      <Filter>ConfigManager\BigMama</Filter>
+    </ClCompile>
+    <ClCompile Include="..\datastructure\ItemBase.cpp">
+      <Filter>Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\DanceGroupFairyLand\DanceGroupFairyLandCfg.cpp">
+      <Filter>ConfigManager\DanceGroupFairyLand</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\DanceGroupFairyLand\DanceGroupFairyLandCfgMgr.cpp">
+      <Filter>ConfigManager\DanceGroupFairyLand</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
